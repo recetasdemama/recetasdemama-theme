@@ -183,6 +183,56 @@ a:active { position: relative; top: 1px;}
 	padding-right: 8px;
 }
 
+/* =========================================================
+	Sidebar
+========================================================= */
+.widget-area aside {
+	border-top: 1px solid #F3EFED;
+	padding: 20px 0;
+}
+.widget-area aside:first-child {
+	border: 0;
+	padding-top: 0;
+}
+
+.widget-title {
+	font: bold 16px/20px Georgia, serif;
+}
+
+/* Categories List */
+.popular-category-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.popular-category-list li {
+	background: url(images/categories.png) 0 -24px no-repeat;
+	padding-left: 22px;
+	margin: 1px 0 1px 15px;
+}
+.popular-category-list li:hover {background-position: 0 2px;}
+
+/* Search form */
+#searchform label {
+	display: none;
+}
+#searchform #s {
+	float: left;
+	border: 0;
+	height: 34px;
+	width: 178px;
+	background: url(images/search-box.png) no-repeat;
+	outline: none;
+	padding: 0 5px 0 35px;
+}
+#searchform #searchsubmit {
+	float: right;
+	border: 0;
+	height: 34px;
+	width:  82px;
+	text-indent: -9999.999em;
+	background: url(images/search-button.png) no-repeat;
+}
 
 /* =Structure
 -------------------------------------------------------------- */
@@ -196,6 +246,7 @@ a:active { position: relative; top: 1px;}
 	margin: 0 330px 0 0;
 }
 #main .widget-area {
+	margin-top: 35px;
 	float: right;
 	overflow: hidden;
 	width: 300px;
@@ -343,44 +394,6 @@ a:active { position: relative; top: 1px;}
 	text-align: center;
 }
 
-/* Aside Posts */
-.format-aside .entry-header {
-	display: none;
-}
-.single .format-aside .entry-header {
-	display: block;
-}
-.format-aside .entry-content,
-.format-aside .entry-summary {
-	padding-top: 1em;
-}
-.single .format-aside .entry-content,
-.single .format-aside .entry-summary {
-	padding-top: 0;
-}
-
-/* Gallery Posts */
-.format-gallery .gallery-thumb {
-	float: left;
-	margin: 0 1em 0 0;
-}
-
-/* Image Posts */
-.format-image .entry-header {
-	display: none;
-}
-.single .format-image .entry-header {
-	display: block;
-}
-.format-image .entry-content,
-.format-image .entry-summary {
-	padding-top: 1em;
-}
-.single .format-image .entry-content,
-.single .format-image .entry-summary {
-	padding-top: 0;
-}
-
 
 /* =Images
 -------------------------------------------------------------- */
@@ -431,18 +444,6 @@ img.alignright {
 
 /* =Forms
 -------------------------------------------------------------- */
-
-#searchform label {
-	display: none;
-}
-#searchform input#s {
-	width: 60%;
-}
-input[type=text],
-input#s {
-	margin: 0 1em 0 0;
-	width: 60%;
-}
 textarea {
 	width: 80%;
 }
