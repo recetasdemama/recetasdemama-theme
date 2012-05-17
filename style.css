@@ -152,6 +152,7 @@ a:active { position: relative; top: 1px;}
 }
 
 #content h1.entry-title {
+	line-height: 26px;
 	margin: 25px 0 5px;
 }
 #content h1.entry-title a {
@@ -170,7 +171,7 @@ a:active { position: relative; top: 1px;}
 	font-size: 12px;
 	color: #B6B1AB;
 }
-#content img {max-width: 940px;}
+#content img {max-width: 650px;}
 #content img.postthumbnail {
 	margin: 10px 0 4px 0;
 	background: #DED8D3;
@@ -198,15 +199,15 @@ a:active { position: relative; top: 1px;}
 
 .widget-title {
 	font: bold 16px/20px Georgia, serif;
+	margin-top: 0;
 }
 
 /* Siguenos */
-.widget_siguenos_wg .widget-title {
+#secondary .widget_siguenos_wg .widget-title {
 	float: left;
-	margin: 0;
 }
-.widget ul.social {float: right;margin-top: -3px;}
-ul.social li {
+#secondary .widget ul.social {float: right;margin-top: -3px;}
+#secondary ul.social li {
 	float:left;
 	width: 27px;
 	height:27px;
@@ -217,16 +218,14 @@ ul.social li {
 	-moz-opacity: .60;
 	filter:alpha(opacity=60);
 }
-ul.social li:hover {opacity: 1;
--moz-opacity: 1;
-filter:alpha(opacity=1);}
-ul.social li a       	{display: block; width: 27px; height: 27px;}
-ul.social li a:hover 	{border:0 !important;}
+#secondary ul.social li:hover {opacity: 1; -moz-opacity: 1; filter:alpha(opacity=1);}
+#secondary ul.social li a       	{display: block; width: 27px; height: 27px;}
+#secondary ul.social li a:hover 	{border:0 !important;}
 
-ul.social li.facebook         {background-position: 0px 0px;}
-ul.social li.twitter          {background-position: -25px 0px;}
-ul.social li.youtube            {background-position: -51px 0px;}
-ul.social li.rss              {background-position: -78px 0px;}
+#secondary ul.social li.facebook         {background-position: 0px 0px;}
+#secondary ul.social li.twitter          {background-position: -25px 0px;}
+#secondary ul.social li.youtube            {background-position: -51px 0px;}
+#secondary ul.social li.rss              {background-position: -78px 0px;}
 
 /* Categories List */
 .popular-category-list {
@@ -261,6 +260,14 @@ ul.social li.rss              {background-position: -78px 0px;}
 	width:  82px;
 	text-indent: -9999.999em;
 	background: url(images/search-button.png) no-repeat;
+}
+
+/* =========================================================
+	Footer
+========================================================= */
+#colophon {
+	background: url(images/footer-bg.png) repeat-x;
+	height: 292px;
 }
 
 /* =Structure

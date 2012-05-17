@@ -14,10 +14,21 @@
 
 <footer id="colophon" role="contentinfo">
 	<div id="site-generator" class="page-wp">
-		<?php do_action( 'toolbox_credits' ); ?>
-		<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'toolbox' ) ); ?>" title="<?php esc_attr_e( 'Semantic Personal Publishing Platform', 'toolbox' ); ?>" rel="generator"><?php printf( __( 'Proudly powered by %s', 'toolbox' ), 'WordPress' ); ?></a>
-		<span class="sep"> | </span>
-		<?php printf( __( 'Theme: %1$s by %2$s.', 'toolbox' ), 'Toolbox', '<a href="http://automattic.com/" rel="designer">Automattic</a>' ); ?>
+		<div class="copy">
+			<h3>Las Recetas de Mamá © 2012</h3>
+			<ul>
+				<li><a href="#">Empresa</a></li>
+				<li><a href="#">Contacta con nosotros</a></li>
+			</ul>
+			<a href="#" class="tienda-button">Visita nuestra tienda online</a>
+		</div>
+		<div>
+			<?php if ( is_active_sidebar( 'sidebar-footer' ) ) : ?>
+			<div id="sidebar-footer" class="widget-area" role="complementary">
+				<?php dynamic_sidebar( 'sidebar-footer' ); ?>
+			</div><!-- #sidebar-footer .widget-area -->
+			<?php endif; ?>
+		</div>
 	</div>
 </footer><!-- #colophon -->
 
