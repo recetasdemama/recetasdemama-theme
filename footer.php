@@ -24,7 +24,7 @@
 	</div>
 	<div id="sign" class="page-wp">
 		<p><a href="http://cleverconsulting.net">Diseño de Clever Consulting</a></p>
-		<p><a href="http://splendeo.es">Desarrollado por Splendeo</a></p>
+		<p><a href="http://www.splendeo.es/">Desarrollado por Splendeo</a></p>
 	</div>
 </footer><!-- #colophon -->
 
