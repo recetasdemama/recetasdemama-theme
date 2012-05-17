@@ -11,24 +11,20 @@
 
 	</div><!-- #main -->
 </div> <!-- #wrap -->
+<div class="clear"></div>
 
 <footer id="colophon" role="contentinfo">
 	<div id="site-generator" class="page-wp">
-		<div class="copy">
-			<h3>Las Recetas de Mamá © 2012</h3>
-			<ul>
-				<li><a href="#">Empresa</a></li>
-				<li><a href="#">Contacta con nosotros</a></li>
-			</ul>
-			<a href="#" class="tienda-button">Visita nuestra tienda online</a>
-		</div>
-		<div>
-			<?php if ( is_active_sidebar( 'sidebar-footer' ) ) : ?>
-			<div id="sidebar-footer" class="widget-area" role="complementary">
-				<?php dynamic_sidebar( 'sidebar-footer' ); ?>
-			</div><!-- #sidebar-footer .widget-area -->
-			<?php endif; ?>
-		</div>
+		<?php if ( is_active_sidebar( 'sidebar-footer' ) ) : ?>
+		<div id="sidebar-footer" class="widget-area" role="complementary">
+			<?php dynamic_sidebar( 'sidebar-footer' ); ?>
+		</div><!-- #sidebar-footer .widget-area -->
+		<?php endif; ?>
+		<div class="clear"></div>
+	</div>
+	<div id="sign" class="page-wp">
+		<p><a href="http://cleverconsulting.net">Diseño de Clever Consulting</a></p>
+		<p><a href="http://splendeo.es">Desarrollado por Splendeo</a></p>
 	</div>
 </footer><!-- #colophon -->
 
