@@ -22,8 +22,6 @@ get_header(); ?>
 
 				if ( have_posts() ) : ?>
 
-				<?php toolbox_content_nav( 'nav-above' ); ?>
-
 				<?php /* Start the Loop */ ?>
 				<?php while ( have_posts() ) : the_post(); ?>
 

@@ -143,6 +143,15 @@ a:active { position: relative; top: 1px;}
 /* =========================================================
 	Content
 ========================================================= */
+.bignews {
+	border-bottom: 1px dotted #CCC6C0;
+	margin-bottom: 20px;
+}
+
+#more-news h2 {
+	font: bold 16px 'Georgia';
+}
+
 .box-news {
 	width: 200px;
 	float: left;
@@ -355,7 +364,7 @@ a:active { position: relative; top: 1px;}
 	margin: 0 330px 0 0;
 }
 #main .widget-area {
-	margin-top: 35px;
+	margin-top: 45px;
 	float: right;
 	overflow: hidden;
 	width: 300px;
