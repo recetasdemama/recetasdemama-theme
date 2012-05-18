@@ -13,19 +13,27 @@ get_header(); ?>
 			<div id="content" class="category-page" role="main">
 
 				<?php
+
+				$terms = apply_filters( 'taxonomy-images-get-terms', '' );
+				if ( ! empty( $terms ) ) {
+				    foreach( (array) $terms as $term ) {
+				        $cat_img[$term->term_id] = wp_get_attachment_image( $term->image_id, 'list_img' );
+				    }
+				}
+
 				$args=array(
 					'orderby' => 'name',
 					'order' => 'ASC'
 				);
 				$categories=get_categories($args);
-				 	foreach($categories as $category) { ?>
+			 	foreach($categories as $category) { ?>
 
-				 		<div class="cat-box">
-				 			<a href="/category/archives/<?=$category->category_nicename;?>">
-				 				<img src="http://lorempixel.com/154/114/food" />
-				 				<h4><?=$category->name?> (<?=$category->count?>)</h4>
-				 			</a>
-				 		</div>  
+			 		<div class="cat-box">
+			 			<a href="/category/archives/<?=$category->category_nicename;?>">
+			 				<?=$cat_img[$category->term_taxonomy_id];?>
+			 				<h4><?=$category->name?> (<?=$category->count?>)</h4>
+			 			</a>
+			 		</div>  
 
 				<?php } ?>
 
