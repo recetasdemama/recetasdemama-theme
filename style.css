@@ -193,6 +193,33 @@ a:active { position: relative; top: 1px;}
 	padding-right: 8px;
 }
 
+/* Página de Categorías */
+.cat-box {
+	float: left;
+	margin: 20px 11px 0;
+}
+.cat-box img {
+	background: #DED8D3;
+	padding: 1px;
+	border: 9px solid #F6F5F1;
+	border-radius: 5px;
+	-webkit-transition: all 0.25s ease-in;  
+	-moz-transition:    all 0.25s ease-in;  
+	-o-transition:      all 0.25s ease-in;  
+	transition:         all 0.25s ease-in;  
+}
+.cat-box h4 {
+	font: bold italic 14px Georgia, sans-serif;
+	color: #3FB7D8;
+	text-align: center;
+	margin-top: 6px;
+}
+
+
+.cat-box a:hover {border: 0;}
+.cat-box a:hover img {background: #F6F5F1;border: 9px solid #DED8D3;}
+.cat-box a:hover h4 {color: #14728C;}
+
 /* =========================================================
 	Sidebar
 ========================================================= */
