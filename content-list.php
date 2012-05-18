@@ -17,7 +17,7 @@
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
-		<?php the_post_thumbnail( 'Noticias lista', array('class' => 'postthumbnail') ); ?>
+		<?php get_the_image( array( 'size' => 'list_img', 'width' => '180', 'height' => '130' ) ); ?>
 	</div><!-- .entry-content -->
 
 </article><!-- #post-<?php the_ID(); ?> -->

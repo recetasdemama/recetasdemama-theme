@@ -1,33 +1,5 @@
 <?php
 
-/*
-Plugin Name: Twitter for Wordpress
-Version: 1.9.7
-Plugin URI: http://rick.jinlabs.com/code/twitter
-Description: Displays your public Twitter messages for all to read. Based on <a href="http://cavemonkey50.com/code/pownce/">Pownce for Wordpress</a> by <a href="http://cavemonkey50.com/">Cavemonkey50</a>.
-Author: Ricardo Gonz&aacute;lez
-Author URI: http://rick.jinlabs.com/
-*/
-
-/*  Copyright 2007  Ricardo González Castro (rick[in]jinlabs.com)
-
-    This program is free software; you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation; either version 2 of the License, or
-    (at your option) any later version.
-
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
-
-    You should have received a copy of the GNU General Public License
-    along with this program; if not, write to the Free Software
-    Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
-*/
-
-
-
 define('MAGPIE_CACHE_ON', 1); //2.7 Cache Bug
 define('MAGPIE_CACHE_AGE', 180);
 define('MAGPIE_INPUT_ENCODING', 'UTF-8');

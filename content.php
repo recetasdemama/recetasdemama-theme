@@ -22,7 +22,7 @@
 	</div><!-- .entry-summary -->
 	<?php else : ?>
 	<div class="entry-content">
-		<?php the_post_thumbnail( 'Ancho total', array('class' => 'postthumbnail') ); ?>
+		<?php get_the_image( array( 'size' => 'full_img', 'width' => '180', 'height' => '130' ) ); ?>
 		<?php the_excerpt( __( 'Leer la receta entera', 'toolbox' ) ); ?>
 		<?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', 'toolbox' ), 'after' => '</div>' ) ); ?>
 	</div><!-- .entry-content -->

@@ -1,5 +1,10 @@
 <?php
 /*
+ *  Get First image from post
+ */ 
+include 'includes/get-the-image.php';
+
+/*
  * Widget: Status Twitter
  */
 include 'includes/twitter.php';
@@ -34,8 +39,8 @@ add_filter('the_excerpt', 'new_excerpt_more');
 /*
  * Añadimos tamaños de imagenes personalizados
  */
-add_image_size( 'Ancho total', 630, 400, 1);
-add_image_size( 'Noticias lista', 180, 130, 1);
+add_image_size( 'full_img', 630, 400, 1);
+add_image_size( 'list_img', 180, 130, 1);
 
 /**
  * Toolbox functions and definitions
