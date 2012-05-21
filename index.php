@@ -49,6 +49,7 @@ get_header(); ?>
 
 				<?php endwhile; ?>
 
+				<div class="clear"></div>
 				<?php toolbox_content_nav( 'nav-below' ); ?>
 
 			<?php else : ?>
@@ -65,7 +66,6 @@ get_header(); ?>
 				</article><!-- #post-0 -->
 
 			<?php endif; ?>
-
 			</div><!-- #content -->
 		</div><!-- #primary -->
 
