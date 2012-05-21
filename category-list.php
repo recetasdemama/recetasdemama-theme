@@ -29,7 +29,7 @@ get_header(); ?>
 			 	foreach($categories as $category) { ?>
 
 			 		<div class="cat-box">
-			 			<a href="/category/archives/<?=$category->category_nicename;?>">
+			 			<a href="<?=get_category_link($category->term_taxonomy_id);?>">
 			 				<?=$cat_img[$category->term_taxonomy_id];?>
 			 				<h4><?=$category->name?> (<?=$category->count?>)</h4>
 			 			</a>
