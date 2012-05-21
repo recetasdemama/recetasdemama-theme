@@ -21,8 +21,8 @@
 		<?php the_excerpt(); ?>
 	</div><!-- .entry-summary -->
 	<?php else : ?>
+	<?php get_the_image( array( 'size' => 'full_img', 'width' => '630', 'height' => '380' ) ); ?>
 	<div class="entry-content">
-		<?php get_the_image( array( 'size' => 'full_img', 'width' => '180', 'height' => '130' ) ); ?>
 		<?php the_excerpt( __( 'Leer la receta entera', 'toolbox' ) ); ?>
 		<?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', 'toolbox' ), 'after' => '</div>' ) ); ?>
 	</div><!-- .entry-content -->

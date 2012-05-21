@@ -32,9 +32,7 @@ a {
 	color: #40B7D8;
 	text-decoration: none;
 }
-a:hover {
-	border-bottom: 1px dotted #40B7D8;
-}
+a:hover {}
 a:active { position: relative; top: 1px;}
 
 /* ===================================================
@@ -159,15 +157,17 @@ a:active { position: relative; top: 1px;}
 .box-news.middle-box {
 	margin: 0 20px;
 }
+.box-news a:hover {border: none !important;}
 
 #content h1.entry-title {
-	line-height: 26px;
+	line-height: 18px;
 	margin: 25px 0 5px;
 }
 #content h1.entry-title a {
 	font: bold italic 18px/22px Georgia, serif;
 	color: #807E7A;
 }
+#content h1.entry-title a:hover {border:0;}
 #content .box-news h1.entry-title {
 	margin-top: 0;
 	height: 30px;
@@ -176,18 +176,25 @@ a:active { position: relative; top: 1px;}
 	font: bold italic 13px/14px Georgia, serif !important;
 	color: #807E7A;
 }
+#content .box-news h1.entry-title a:hover {border:0;}
 #content .entry-meta {
 	font-size: 12px;
 	color: #B6B1AB;
 }
 #content img {max-width: 650px;}
-#content img.postthumbnail {
+#content img.full_img,
+#content img.list_img {
 	margin: 10px 0 4px 0;
 	background: #DED8D3;
 	padding: 1px;
 	border: 9px solid #F6F5F1;
 	border-radius: 5px;
 }
+#content .entry-content {
+	margin-bottom: 15px;
+}
+
+#content .entry-content a:hover {border-bottom: 1px dotted #40B7D8;}
 #content .more-link {
 	background: url(images/more-link.png) right 4px no-repeat;
 	padding-right: 8px;
