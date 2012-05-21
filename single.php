@@ -30,5 +30,5 @@ get_header(); ?>
 			</div><!-- #content -->
 		</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
+<?php get_template_part( 'sidebar-single', get_post_format() ) ?>
 <?php get_footer(); ?>

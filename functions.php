@@ -138,7 +138,7 @@ add_filter( 'wp_page_menu_args', 'toolbox_page_menu_args' );
  */
 function toolbox_widgets_init() {
 	register_sidebar( array(
-		'name' => __( 'Sidebar 1', 'toolbox' ),
+		'name' => __( 'Sidebar Home', 'toolbox' ),
 		'id' => 'sidebar-1',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget' => "</aside>",
@@ -149,6 +149,15 @@ function toolbox_widgets_init() {
 	register_sidebar( array(
 		'name' => __( 'Footer', 'toolbox' ),
 		'id' => 'sidebar-footer',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget' => "</aside>",
+		'before_title' => '<h1 class="widget-title">',
+		'after_title' => '</h1>',
+	) );
+
+	register_sidebar( array(
+		'name' => __( 'Sidebar Single', 'toolbox' ),
+		'id' => 'sidebar-2',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget' => "</aside>",
 		'before_title' => '<h1 class="widget-title">',
