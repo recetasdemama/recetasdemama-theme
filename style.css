@@ -159,6 +159,30 @@ a:active { position: relative; top: 1px;}
 }
 .box-news a:hover {border: none !important;}
 
+.box-news .entry-content{
+	position: relative;
+}
+.box-news .entry-content .video-receta {
+	width: 50px; height: 50px;
+	background: url(images/post-cats.png) no-repeat 10px 20px;
+	margin-bottom: -50px;
+	position: absolute;
+}
+.box-news .entry-content .sin-gluten {
+	width: 80px; height: 70px;
+	background: url(images/post-cats.png) no-repeat 10px -74px;
+	position: absolute;
+	bottom: 14px;
+	left: -14px;
+}
+.box-news .entry-content .patrocinado {
+	width: 80px; height: 70px;
+	background: url(images/post-cats.png) no-repeat -70px 0px;
+	position: absolute;
+	top: 14px;
+	right: 5px;
+}
+
 #content h1.entry-title {
 	line-height: 18px;
 	margin: 25px 0 5px;

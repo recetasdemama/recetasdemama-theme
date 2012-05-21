@@ -17,6 +17,29 @@
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
+		<?php
+			/* Obtenemos todas las cats */
+			$id = get_the_ID();
+			$categories = wp_get_post_categories($id);
+			
+			/* Añadiremos es slug de las categorias */
+			$cats = array(); 
+			foreach($categories as $c){
+				$cat = get_category( $c );
+				$cats[] = $cat->slug;
+			}
+
+			/* Creamos los divs dependiendo de las categorias*/
+			if ( in_array('video-receta', $cats) ) {
+				echo "<div class='video-receta'></div>";
+			}
+			if ( in_array('sin-gluten', $cats) ) {
+				echo "<div class='sin-gluten'></div>";
+			}
+			if ( in_array('patrocinado', $cats) ) {
+				echo "<div class='patrocinado'></div>";
+			}
+		?>
 		<?php get_the_image( array( 'size' => 'list_img', 'width' => '180', 'height' => '130' ) ); ?>
 	</div><!-- .entry-content -->
 
