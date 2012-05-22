@@ -172,15 +172,15 @@ a:active { position: relative; top: 1px;}
 	width: 90px; height: 80px;
 	background: url(images/post-cats.png) no-repeat 10px -74px;
 	position: absolute;
-	bottom: 10px;
-	left: -14px;
+	bottom: -1px;
+	left: -24px;
 }
 .box-news .entry-content .patrocinado a {
 	width: 80px; height: 70px;
 	background: url(images/post-cats.png) no-repeat -70px 0px;
 	position: absolute;
-	top: 14px;
-	right: 5px;
+	top: 4px;
+	right: -5px;
 }
 .box-news .entry-content a:active {position: static; top: 0;}
 
