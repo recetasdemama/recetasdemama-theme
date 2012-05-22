@@ -31,13 +31,13 @@
 
 			/* Creamos los divs dependiendo de las categorias*/
 			if ( in_array('video-receta', $cats) ) {
-				echo "<div class='video-receta'></div>";
+				echo "<div class='video-receta'><a href='".get_permalink()."'></a></div>";
 			}
 			if ( in_array('sin-gluten', $cats) ) {
-				echo "<div class='sin-gluten'></div>";
+				echo "<div class='sin-gluten'><a href='".get_permalink()."'></a></div>";
 			}
 			if ( in_array('patrocinado', $cats) ) {
-				echo "<div class='patrocinado'></div>";
+				echo "<div class='patrocinado'><a href='".get_permalink()."'></a></div>";
 			}
 		?>
 		<?php get_the_image( array( 'size' => 'list_img', 'width' => '180', 'height' => '130' ) ); ?>
