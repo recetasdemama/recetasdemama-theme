@@ -255,6 +255,7 @@ a:active { position: relative; top: 1px;}
 /* =========================================================
 	Sidebar
 ========================================================= */
+#secondary {overflow: visible !important;}
 #secondary aside {
 	border-top: 1px solid #F3EFED;
 	padding: 20px 0;
@@ -294,6 +295,39 @@ a:active { position: relative; top: 1px;}
 #secondary ul.social li.twitter  {background-position: 0 -27px;}
 #secondary ul.social li.youtube  {background-position: 0 -53px;}
 #secondary ul.social li.rss      {background-position: 0 -79px;}
+
+/* Subscribe Box */
+#mc_embed_signup {
+	background: url(images/subscribe-bg.png) no-repeat;
+	width: 312px;
+	height: 163px;
+	margin-left: -2px;
+	padding: 15px 0 0 0;
+	text-align: center;
+
+	font: bold 16px/20px Georgia, serif;
+	color: #807E7A;
+}
+#mc_embed_signup p {margin: 0 0 5px 0;}
+#mc_embed_signup input[type=text] {
+	margin-top: 5px;
+	width: 60%;
+	border: 1px solid #DED8D3;
+	border-radius: 5px;
+	padding: 6px;
+}
+#mc_embed_signup input[type=submit] {
+	background: url(images/subscribe-button.png) no-repeat 0 2px;
+	width: 124px;
+	height: 34px;
+	border: 0;
+	margin-top: 7px;
+	color: #FFD6CC;
+	font-weight: bold;
+	text-align: left;
+	padding-left: 40px;
+	text-shadow: 2px 2px 2px rgba(0,0,0,.3);
+}
 
 /* Categories List */
 .popular-category-list {
