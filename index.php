@@ -18,36 +18,44 @@ get_header(); ?>
 			<div id="content" role="main">
 
 			<?php 
+
 				$i = 0; // Variable para contar post
 
 				if ( have_posts() ) : ?>
 
-				<?php /* Start the Loop */ ?>
-				<?php while ( have_posts() ) : the_post(); ?>
+					<?php /* Start the Loop */ ?>
+					<?php while ( have_posts() ) : the_post(); 
 
-					<?php
-						/* 
-						 * Si es la primera mostramos el formato de noticia
-						 * grande
-						 */
-						if ( $i == 0 ) {
-							$i++;
+
+						if ( !is_paged() ) { ?>
+
+							<?php
+								/* 
+								 * Si es la primera mostramos el formato de noticia
+								 * grande
+								 */
+								if ( $i == 0 ) {
+									$i++;
+									get_template_part( 'content', get_post_format() );
+								}
+								/*
+								 * El resto se mostrará en listas
+								 */
+								else { 
+									if ( $i == 1 ) { ?>
+									<div id="more-news">
+										<h2>Más recetas recientes</h2>
+									</div>
+									<? } ?>
+										<? get_template_part('content-list', get_post_format()); ?>
+								<?	$i++; 
+								} 
+						} else { 
+							// Contenido para paginas
 							get_template_part( 'content', get_post_format() );
-						}
-						/*
-						 * El resto se mostrará en listas
-						 */
-						else { 
-							if ( $i == 1 ) { ?>
-							<div id="more-news">
-								<h2>Más recetas recientes</h2>
-							</div>
-							<? } ?>
-								<? get_template_part('content-list', get_post_format()); ?>
-						<?	$i++; 
-						} ?>
+						}?>
 
-				<?php endwhile; ?>
+						<?php endwhile;  ?>
 
 				<div class="clear"></div>
 				<?php toolbox_content_nav( 'nav-below' ); ?>
