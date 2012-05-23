@@ -11,6 +11,11 @@ get_header(); ?>
 
 		<div id="primary" class="full-width">
 			<div id="content" class="category-page" role="main">
+				<div class="header">
+					<h2>Categorías</h2>
+					<?php include (TEMPLATEPATH . '/searchform.php'); ?>
+				</div>
+				<div class="clear"></div>
 
 				<?php
 
