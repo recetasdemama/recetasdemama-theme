@@ -309,10 +309,12 @@ article.leftimgnews {clear: left; padding-bottom: 15px;}
 #secondary ul.social li.rss      {background-position: 0 -79px;}
 
 /* Subscribe Box */
-#mc_embed_signup {
-	background: url(images/subscribe-bg.png) no-repeat;
+.nsu_widget {
+	background: url(images/subscribe-bg.png) -1px 10px no-repeat;
 	width: 312px;
 	height: 163px;
+	display: block;
+	margin-top: 16px !important;
 	margin-left: -5px;
 	margin-bottom: -15px;
 	padding: 15px 0 0 0;
@@ -321,15 +323,17 @@ article.leftimgnews {clear: left; padding-bottom: 15px;}
 	font: bold 16px/20px Georgia, serif;
 	color: #807E7A;
 }
-#mc_embed_signup p {margin: 0 0 5px 0;}
-#mc_embed_signup input[type=text] {
+.nsu_widget h1 {display: none;}
+.nsu_widget .nsu-text-before-form {margin: 2px 0 5px 0;}
+.nsu_widget p {margin: 0}
+.nsu_widget input[type=text] {
 	margin-top: 5px;
 	width: 60%;
 	border: 1px solid #DED8D3;
 	border-radius: 5px;
 	padding: 6px;
 }
-#mc_embed_signup input[type=submit] {
+.nsu_widget input[type=submit] {
 	background: url(images/subscribe-button.png) no-repeat 0 2px;
 	width: 124px;
 	height: 34px;
