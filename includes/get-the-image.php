@@ -150,8 +150,20 @@ function get_the_image( $args = array() ) {
 		return $image;
 	}
 
-	/* Display the image if we get to this point. */
-	echo $image;
+	/* Si hay alguna imagen */
+	if ( $image ) {
+		echo $image;
+	}
+	/* Si no, Imprimimmos la imagen por defecto */
+	else {
+		if ($args["width"] > 190)
+			$imagedefault = array("src" => "/wp-content/themes/recetasmama/images/No-image_big.png");
+		else
+			$imagedefault = array("src" => "/wp-content/themes/recetasmama/images/No-image_small.png");
+		$imagedefault = get_the_image_format( $args, $imagedefault );
+
+		echo $imagedefault;
+	}
 }
 
 /* Internal Functions */
