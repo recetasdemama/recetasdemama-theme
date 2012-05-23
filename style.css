@@ -533,11 +533,11 @@ a:active { position: relative; top: 1px;}
 	overflow: hidden;
 }
 #content nav .nav-previous {
-	float: left;
+	float: right;
 }
 #content nav .nav-previous {
-	float: right;
-	text-align: right;
+	float: left;
+	text-align: left;
 }
 #content #nav-above {
 	display: none;
@@ -613,29 +613,29 @@ a:active { position: relative; top: 1px;}
 #nav-below a {color: #989391}
 #nav-below a:hover {text-decoration: underline;}
 
-#nav-below .nav-previous a {padding-right: 5px;}
+#nav-below .nav-previous a {padding-left: 5px;}
 #nav-below .nav-previous:before {
-	content: ' ';
-	display: block;
-	background: url(images/pagination.png) no-repeat -20px 0;
-	width: 20px; height: 20px;
-	float: right;
-}
-#nav-below .nav-previous:hover:before {
-	background-position: -20px -20px;
-}
-
-#nav-below .nav-next {float:left;}
-#nav-below .nav-next a {padding-left: 5px;width: inherit;}
-#nav-below .nav-next:before {
 	content: ' ';
 	display: block;
 	background: url(images/pagination.png) no-repeat 0 0;
 	width: 20px; height: 20px;
 	float: left;
 }
-#nav-below .nav-next:hover:before {
+#nav-below .nav-previous:hover:before {
 	background-position: 0 -20px;
+}
+
+#nav-below .nav-next {float:right;}
+#nav-below .nav-next a {padding-right: 5px;width: inherit;}
+#nav-below .nav-next:before {
+	content: ' ';
+	display: block;
+	background: url(images/pagination.png) no-repeat -20px 0;
+	width: 20px; height: 20px;
+	float: right;
+}
+#nav-below .nav-next:hover:before {
+	background-position: -20px -20px;
 }
 
 
