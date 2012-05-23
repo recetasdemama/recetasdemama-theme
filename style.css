@@ -219,8 +219,7 @@ article.leftimgnews {clear: left; padding-bottom: 15px;}
 	color: #B6B1AB;
 }
 #content img {max-width: 650px;}
-#content img.full_img,
-#content img.list_img {
+#content article.post img {
 	margin: 10px 0 4px 0;
 	background: #DED8D3;
 	padding: 1px;
