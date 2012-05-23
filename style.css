@@ -252,6 +252,9 @@ article.leftimgnews {clear: left; padding-bottom: 15px;}
 	float: left;
 	margin: 20px 10px 0 11px;
 }
+.cat-box a {
+	display: block;
+}
 .cat-box img {
 	background: #DED8D3;
 	padding: 1px;
