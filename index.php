@@ -36,7 +36,7 @@ get_header(); ?>
 								 */
 								if ( $i == 0 ) {
 									$i++;
-									get_template_part( 'content', get_post_format() );
+									get_template_part( 'content-hightlight', get_post_format() );
 								}
 								/*
 								 * El resto se mostrará en listas

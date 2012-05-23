@@ -141,15 +141,18 @@ a:active { position: relative; top: 1px;}
 /* =========================================================
 	Content
 ========================================================= */
+/* Primera noticia grande en home */
 .bignews {
 	border-bottom: 1px dotted #CCC6C0;
 	margin-bottom: 20px;
 }
 
+/* Titulo mas noticias del home*/
 #more-news h2 {
 	font: bold 16px 'Georgia';
 }
 
+/* Cajas de noticias */
 .box-news {
 	width: 200px;
 	float: left;
@@ -184,6 +187,15 @@ a:active { position: relative; top: 1px;}
 }
 .box-news .entry-content a:active {position: static; top: 0;}
 
+/* Noticias para archivo, categorías, busquedad, paginas, etc. */
+article.leftimgnews {clear: left; padding-bottom: 15px;}
+.leftimgnews .list_img {
+	float: left;
+	margin: -15px 20px 0 0 !important;
+}
+.leftimgnews .entry-content {padding-top: 25px; line-height: 20px; padding-right: 20px;}
+
+/* Contenido general */
 #content h1.entry-title {
 	line-height: 18px;
 	margin: 25px 0 5px;

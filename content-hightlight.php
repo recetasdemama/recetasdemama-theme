@@ -1,11 +1,11 @@
 <?php
 /**
- * Formato de noticias por defecto
- * Usado en Categorias, Archivo, Busqueda, Paginación, etc.
+ * Formato de Noticia Destacada
+ * Para la primera noticia del Home.
  */
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class('leftimgnews'); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class('bignews'); ?>>
 	<header class="entry-header">
 		<h1 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'toolbox' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
 
@@ -22,8 +22,8 @@
 		<?php the_excerpt(); ?>
 	</div><!-- .entry-summary -->
 	<?php else : ?>
+	<?php get_the_image( array( 'size' => 'full_img', 'width' => '630', 'height' => '380' ) ); ?>
 	<div class="entry-content">
-		<?php get_the_image( array( 'size' => 'list_img', 'width' => '180', 'height' => '130' ) ); ?>
 		<?php the_excerpt( __( 'Leer la receta entera', 'toolbox' ) ); ?>
 		<?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', 'toolbox' ), 'after' => '</div>' ) ); ?>
 	</div><!-- .entry-content -->

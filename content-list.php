@@ -1,6 +1,7 @@
 <?php
 /**
- * @package Toolbox
+ * Formato para noticias en cuadricula
+ * Usado en la cuadricula de la página de inicio
  */
 ?>
 
