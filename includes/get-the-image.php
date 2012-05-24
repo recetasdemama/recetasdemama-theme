@@ -157,9 +157,9 @@ function get_the_image( $args = array() ) {
 	/* Si no, Imprimimmos la imagen por defecto */
 	else {
 		if ($args["width"] > 190)
-			$imagedefault = array("src" => "/wp-content/themes/recetasmama/images/No-image_big.png");
+			$imagedefault = array("src" => get_bloginfo('template_url') . "/images/no_image_big.png");
 		else
-			$imagedefault = array("src" => "/wp-content/themes/recetasmama/images/No-image_small.png");
+			$imagedefault = array("src" => get_bloginfo('template_url') . "/images/no_image_big.png");
 		$imagedefault = get_the_image_format( $args, $imagedefault );
 
 		echo $imagedefault;
