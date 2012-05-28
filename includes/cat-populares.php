@@ -33,8 +33,6 @@ class Popular_Cats extends WP_Widget {
     			LEFT JOIN $wpdb->terms a
     			ON b.term_id = a.term_id
     			WHERE b.taxonomy = 'category'
-    			$ex_zero
-    			$cat_exc_sql
     			ORDER BY b.count DESC
     			LIMIT ".$args['npopularcats'];
     	$get_categories = $wpdb->get_results($query);
@@ -42,11 +40,7 @@ class Popular_Cats extends WP_Widget {
     	// Prepare cats list
 	   	$list = '<ul class="popular-category-list">';
 		foreach($get_categories as $cat) {
-			$list .= '<li><a href="' . get_category_link( $cat->term_id ) . '">' . $cat->name;
-				if($instance['catlist_show_count'] == 1) {
-					$list .= ' (' . $cat->count . ')';
-				}
-			$list .= '</a></li>';
+			$list .= '<li><a href="' . get_category_link( $cat->term_id ) . '">' . $cat->name . '</a></li>';
 		}
 		$list .= '</ul>';
 
