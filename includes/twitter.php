@@ -21,9 +21,7 @@ $twitter_options['prefix'] = 'twitter';
 function twitter_messages($username = '', $num = 1, $list = false, $update = true, $linked  = '#', $hyperlinks = true, $twitter_users = true, $encode_utf8 = false) {
 
 	global $twitter_options;
-	include_once(ABSPATH . WPINC . '/rss.php');
-	
-	$messages = fetch_rss('http://twitter.com/statuses/user_timeline/'.$username.'.rss');
+  $messages = fetch_feed('http://twitter.com/statuses/user_timeline/'.$username.'.rss');
 
 	if ($list) echo '<ul class="twitter">';
 	
@@ -32,17 +30,20 @@ function twitter_messages($username = '', $num = 1, $list = false, $update = tru
 		echo 'RSS not configured';
 		if ($list) echo '</li>';
 	} else {
-			if ( empty($messages->items) ) {
+		  $feed_count = $messages->get_item_quantity();
+      if ( empty($feed_count) ) {
 				if ($list) echo '<li>';
 				echo 'No public Twitter messages.';
 				if ($list) echo '</li>';
 			} else {
         $i = 0;
-				foreach ( $messages->items as $message ) {
-					$msg = " ".substr(strstr($message['description'],': '), 2, strlen($message['description']))." ";
-					if($encode_utf8) $msg = utf8_encode($msg);
-					$link = $message['link'];
-				
+				foreach ( $messages->get_items() as $message ) {
+          $desc = $message->get_description();
+          $date = $message->get_date();
+          $msg = " ".substr(strstr($desc,': '), 2, strlen($desc))." ";
+          if($encode_utf8) $msg = utf8_encode($msg);
+          $link = $message->get_link();
+          
 					if ($list) echo '<li class="twitter-item">'; elseif ($num != 1) echo '<p class="twitter-message">';
 
           if ($hyperlinks) { $msg = hyperlinks($msg); }
@@ -61,7 +62,7 @@ function twitter_messages($username = '', $num = 1, $list = false, $update = tru
           
           
         if($update) {				
-          $time = strtotime($message['pubdate']);
+          $time = strtotime($date);
           
           if ( ( abs( time() - $time) ) < 86400 )
             $h_time = sprintf( __('%s ago'), human_time_diff( $time ) );
@@ -126,7 +127,7 @@ function widget_twitter_init() {
 		extract($args);
 
 		// Each widget can store its own options. We keep strings here.
-		include_once(ABSPATH . WPINC . '/rss.php');
+				
 		$options = get_option('widget_twitter');
 		
 		// fill options with default values if value is not set
@@ -137,8 +138,7 @@ function widget_twitter_init() {
 			}
 		}
 		
-		$messages = fetch_rss('http://twitter.com/statuses/user_timeline/'.$item['username'].'.rss');
-
+    $messages = fetch_feed('http://twitter.com/statuses/user_timeline/'.$item['username'].'.rss');
 
 		// These lines generate our output.
     echo $before_widget . $before_title . '<a href="http://twitter.com/' . $item['username'] . '" class="twitter_title_link">'. $item['title'] . '</a>' . $after_title;
