@@ -237,6 +237,61 @@ article.leftimgnews {clear: left; padding-bottom: 15px;}
 	padding-right: 8px;
 }
 
+/* Recetas */
+div#recipress_recipe {
+	background: none !important;
+	border-top: 5px solid #F6F5F1;
+	border-bottom: 5px solid #F6F5F1;
+	border-radius: 0;
+	margin: 30px 0;
+}
+	h2.fn {display: none;}
+
+	ul.recipe-details,
+	ul.ingredients { border-bottom: 1px dotted #CCC; }
+
+	ul.ingredients {padding-bottom: 20px;}
+
+	#recipress_recipe .recipe-details li b, #recipress_recipe .recipe-taxes li b, #recipress_recipe h3 {
+		text-transform: none !important;
+		font-size: 12px !important;
+		color: #7F7E79 !important;
+	}
+	div#recipress_recipe.hrecipe.recipress-light h3 {
+		font-size: 14px !important;
+		color: #7F7E79 !important;
+	}
+
+	ul.ingredients, ol.instructions {
+		list-style: none;
+		margin: 0; padding: 0;
+	}
+	ul.ingredients {padding-bottom: 15px;}
+
+		ul.ingredients li {
+			padding-left:  25px;
+			margin-left:   10px;
+			margin-bottom: 2px;
+			background: url('images/recipe-tick.png') 0 4px no-repeat;
+		}
+		ol.instructions li {
+			margin-bottom: 12px;
+		}
+
+	.#recipress_recipe li .notes {color: #DED8D2 !important; opacity: 1 !important; -moz-opacity: 1 !important; filter:alpha(opacity=1) !important;}
+
+	ul.recipe-taxes li {
+		margin-top: 10px;
+		height: 18px;
+		padding-left: 20px;
+		border-left: 1px solid #7F7E79;
+	}
+	ul.recipe-taxes li:first-child {
+		padding:0; border: 0;
+	}
+
+	footer.entry-meta {display: none;}
+
 /* Página de Categorías */
 .category-page .header {
 	border-bottom: 1px dotted #CCC6C0;
