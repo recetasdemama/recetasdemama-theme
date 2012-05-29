@@ -156,6 +156,7 @@ a:active { position: relative; top: 1px;}
 .box-news {
 	width: 200px;
 	float: left;
+	margin-bottom: 15px;
 }
 .box-news.middle-box {
 	margin: 0 25px;
@@ -199,18 +200,18 @@ article.leftimgnews {clear: left; padding-bottom: 15px;}
 #content h1.entry-title {
 	line-height: 18px;
 	margin: 25px 0 5px;
+	font: bold italic 18px/22px Georgia, serif;
 }
 #content h1.entry-title a {
-	font: bold italic 18px/22px Georgia, serif;
 	color: #807E7A;
 }
 #content h1.entry-title a:hover {border:0;}
 #content .box-news h1.entry-title {
 	margin-top: 0;
 	height: 30px;
+	font: bold italic 13px/18px Georgia, serif !important;
 }
 #content .box-news h1.entry-title a {
-	font: bold italic 13px/14px Georgia, serif !important;
 	color: #807E7A;
 }
 #content .box-news h1.entry-title a:hover {border:0;}
