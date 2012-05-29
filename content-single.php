@@ -9,7 +9,8 @@
 		<h1 class="entry-title"><?php the_title(); ?></h1>
 
 		<div class="entry-meta">
-			<?php toolbox_posted_on(); ?>
+			<? the_date('d/m/Y', 'Publicado el ',''); ?>
+			en <? the_category(', '); ?>
 		</div><!-- .entry-meta -->
 	</header><!-- .entry-header -->
 
