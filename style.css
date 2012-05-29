@@ -244,6 +244,9 @@ div#recipress_recipe {
 	border-bottom: 5px solid #F6F5F1;
 	border-radius: 0;
 	margin: 30px 0;
+	padding-left: 0;
+	padding-right: 0;
+	padding-top: 0;
 }
 	h2.fn {display: none;}
 
