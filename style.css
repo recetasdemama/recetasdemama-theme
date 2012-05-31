@@ -250,10 +250,25 @@ div#recipress_recipe {
 }
 	h2.fn {display: none;}
 
-	ul.recipe-details,
-	ul.ingredients { border-bottom: 1px dotted #CCC; }
+	/* Iconos */
+	#yield {background: url(images/yield.png) no-repeat left -2px;padding-left: 20px;}
+	#prep {background: url(images/prep.png) no-repeat left 1px;padding-left: 20px;}
 
-	ul.ingredients {padding-bottom: 20px;}
+	div#recipress_recipe h3 {
+		border-top: 1px dotted #CCC;
+		clear: both;
+		padding-top: 15px;
+	}
+
+	ul.recipe-details {
+		float: left;
+		border-bottom: 0!important;
+	}
+	ul.recipe-details.right {
+		float: right;
+	}
+
+	ul.ingredients {padding-bottom: 24px;}
 
 	#recipress_recipe .recipe-details li b, #recipress_recipe .recipe-taxes li b, #recipress_recipe h3 {
 		text-transform: none !important;
