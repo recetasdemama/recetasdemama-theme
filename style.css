@@ -310,6 +310,15 @@ div#recipress_recipe {
 
 	footer.entry-meta {display: none;}
 
+/* Entradas relacionadas */
+#related_posts {
+	margin-top: 50px;
+}
+	#related_posts h3 {
+		padding-bottom: 5px;
+		border-bottom: 1px solid #CCC;
+	}
+
 /* Página de Categorías */
 .category-page .header {
 	border-bottom: 1px dotted #CCC6C0;
