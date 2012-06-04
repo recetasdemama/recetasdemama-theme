@@ -59,6 +59,7 @@ header, nav, article, footer, address { display:block; }
 	background: url(images/recetasdemama.png) no-repeat;
 }
 #branding h1 a:hover {border:0;}
+
 /* Bloque publicidad */
 #header-ads {
 	margin-top: 5px;
@@ -84,6 +85,7 @@ header, nav, article, footer, address { display:block; }
 }
 #access li {
 	display: inline-block;
+	*float:right;
 	padding: 0 1.5em;
 }
 #access a {
@@ -200,6 +202,11 @@ article.leftimgnews {clear: left; padding-bottom: 15px;}
 .leftimgnews .entry-content {padding-top: 25px; line-height: 20px; padding-right: 20px;}
 
 /* Contenido general */
+
+#primary #content { /* Fix IE */
+	*width: 660px;
+}
+
 #content h1.entry-title {
 	line-height: 18px;
 	margin: 25px 0 5px;
