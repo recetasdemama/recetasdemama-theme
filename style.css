@@ -35,6 +35,9 @@ a {
 a:hover {}
 a:active { position: relative; top: 1px;}
 
+/* HTML5 Fix */
+header, nav, article, footer, address { display:block; }
+
 /* ===================================================
    HEADER 
    =================================================== */
