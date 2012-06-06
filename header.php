@@ -52,6 +52,13 @@
 <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
 <![endif]-->
 
+<?php if(strstr($_SERVER['HTTP_USER_AGENT'],'iPad')){ ?>
+	<link rel="stylesheet" type="text/css" media="all" href="<?php echo get_template_directory_uri(); ?>/css/ipad.css" />
+<?php } ?>
+<?php if(strstr($_SERVER['HTTP_USER_AGENT'],'iPhone')){ ?>
+	<link rel="stylesheet" type="text/css" media="all" href="<?php echo get_template_directory_uri(); ?>/css/iphone.css" />
+<?php } ?>
+
 <?php wp_head(); ?>
 </head>
 
