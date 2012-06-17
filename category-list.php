@@ -33,7 +33,7 @@ get_header(); ?>
 			 		<div class="cat-box">
 			 			<a href="<?= get_category_link($category->term_id); ?>">
 			 			  <?= $cat_img[$category->term_id]; ?>
-			 			  <h4><?= $category->name ?> (<?= $category->count ?>)</h4>
+			 			  <h4><?= $category->name ?></h4>
 			 			</a>
 			 		</div>  
 				<?php } ?>
