@@ -18,28 +18,24 @@ get_header(); ?>
 				<div class="clear"></div>
 
 				<?php
-
 				$terms = apply_filters( 'taxonomy-images-get-terms', '' );
 				if ( ! empty( $terms ) ) {
 				    foreach( (array) $terms as $term ) {
 				        $cat_img[$term->term_id] = wp_get_attachment_image( $term->image_id, 'list_img' );
 				    }
 				}
-
 				$args=array(
 					'orderby' => 'name',
 					'order' => 'ASC'
 				);
 				$categories=get_categories($args);
 			 	foreach($categories as $category) { ?>
-
 			 		<div class="cat-box">
-			 			<a href="<?=get_category_link($category->term_taxonomy_id);?>">
-			 				<?=$cat_img[$category->term_taxonomy_id];?>
-			 				<h4><?=$category->name?> (<?=$category->count?>)</h4>
+			 			<a href="<?= get_category_link($category->term_id); ?>">
+			 			  <?= $cat_img[$category->term_id]; ?>
+			 			  <h4><?= $category->name ?> (<?= $category->count ?>)</h4>
 			 			</a>
 			 		</div>  
-
 				<?php } ?>
 
 			</div><!-- #content -->
