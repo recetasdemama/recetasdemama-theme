@@ -22,6 +22,7 @@
 			/* Obtenemos todas las cats */
 			$id = get_the_ID();
 			$categories = wp_get_post_categories($id);
+			$tags = wp_get_post_tags($id);
 			
 			/* Añadiremos es slug de las categorias */
 			$cats = array(); 
@@ -29,7 +30,11 @@
 				$cat = get_category( $c );
 				$cats[] = $cat->slug;
 			}
-
+			foreach($tags as $t){
+				$tag = get_category( $t );
+				$cats[] = $tag->slug;
+			}
+			
 			/* Creamos los divs dependiendo de las categorias*/
 			if ( in_array('video-receta', $cats) ) {
 				echo "<div class='video-receta'><a href='".get_permalink()."'></a></div>";
