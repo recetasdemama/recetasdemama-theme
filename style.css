@@ -468,17 +468,17 @@ div#recipress_recipe {
 	}
 
 /* Categories List */
-ul.popular-category-list {
+.widget_categories ul, ul.popular-category-list {
 	list-style: none;
 	margin: 0;
 	padding: 0;
 }
-ul.popular-category-list li {
+.widget_categories ul li, ul.popular-category-list li {
 	background: url(images/categories.png) 0 -24px no-repeat;
 	padding-left: 22px;
-	margin: 1px 0 1px 15px;
+	margin: 1px 0 2px 15px;
 }
-ul.popular-category-list li:hover {background-position: 0 2px;}
+.widget_categories ul li:hover, ul.popular-category-list li:hover { background-position: 0 2px; }
 
 /* Search form */
 #searchform {
