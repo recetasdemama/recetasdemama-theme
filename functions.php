@@ -124,6 +124,20 @@ $themecolors = array(
 	'text' => '444444',
 );
 
+
+
+/**
+ * Remove pagination on category pages and search results.
+ */
+function toolbox_remove_pagination_on_category_and_search_pages($query){
+      if( $query->is_main_query() && (is_category() || is_search()) ){
+          $query->set('posts_per_page', -1);
+      }
+}
+add_action('pre_get_posts','toolbox_remove_pagination_on_category_and_search_pages');
+
+
+
 /**
  * Get our wp_nav_menu() fallback, wp_page_menu(), to show a home link.
  */

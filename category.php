@@ -6,17 +6,11 @@
  * @since Toolbox 0.1
  */
 
-get_header();
-$wp_query->query_vars["posts_per_page"] = 500;
-$wp_query->get_posts();
-?>
-
+get_header(); ?>
 
 		<section id="primary">
 			<div id="content" role="main">
-			  
-      <!-- configuracion para evitar la paginacion 	-->
-    
+
 			<?php if ( have_posts() ) : ?>
 
 				<header class="page-header">
