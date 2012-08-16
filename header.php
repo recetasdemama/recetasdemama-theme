@@ -59,7 +59,12 @@
 		<div class="page-wp">
 			<h1 id="site-title"><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 			<div id="header-ads">
-				<?php if ( is_active_sidebar( 'upper-ad' ) ) { dynamic_sidebar( 'upper-ad' ); } ?>
+				<?php if ( is_home() ) {
+				  if ( is_active_sidebar( 'home-ad-banner' ) ) { dynamic_sidebar( 'home-ad-banner' ); }
+			  } else {
+			    if ( is_active_sidebar( 'ad-banner' ) ) { dynamic_sidebar( 'ad-banner' ); }
+			  }
+				?>
 			</div>
 			<nav id="access" role="navigation">
 				<h1 class="assistive-text section-heading"><?php _e( 'Main menu', 'toolbox' ); ?></h1>
