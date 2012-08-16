@@ -30,7 +30,7 @@ add_theme_support( 'post-thumbnails' );
 function new_excerpt_more($more) {
     global $post;
     $excerpt  = get_the_excerpt($post->ID);
-	$moreLink = '<a class="more-link" href="'. get_permalink($post->ID) . '">Leer la receta entera</a>';
+	$moreLink = '<a class="more-link" href="'. get_permalink($post->ID) . '">Seguir leyendo</a>';
 
 	echo $excerpt." ".$moreLink;
 }
@@ -41,6 +41,32 @@ add_filter('the_excerpt', 'new_excerpt_more');
  */
 add_image_size( 'full_img', 630, 380, true);
 add_image_size( 'list_img', 180, 130, true);
+
+/**
+ * Remove pagination on category pages and search results.
+ */
+function recetasdemama_remove_pagination_on_category_and_search_pages($query){
+      if( $query->is_main_query() && (is_category() || is_search()) ){
+          $query->set('posts_per_page', -1);
+      }
+}
+add_action('pre_get_posts','recetasdemama_remove_pagination_on_category_and_search_pages');
+
+/*
+ * Add a new excerpt function with a word limit variable
+ */
+function excerpt($limit) {
+  $moreLink = '<a class="more-link" href="'. get_permalink($post->ID) . '">Seguir leyendo</a>';
+  $excerpt = explode(' ', get_the_excerpt(), $limit);
+  if (count($excerpt)>=$limit) {
+    array_pop($excerpt);
+    $excerpt = implode(" ",$excerpt).'...';
+  } else {
+    $excerpt = implode(" ",$excerpt);
+  }
+  $excerpt = preg_replace('`\[[^\]]*\]`','',$excerpt);
+  echo $excerpt." ".$moreLink;
+}
 
 /**
  * Toolbox functions and definitions
@@ -123,20 +149,6 @@ $themecolors = array(
 	'border' => 'eeeeee',
 	'text' => '444444',
 );
-
-
-
-/**
- * Remove pagination on category pages and search results.
- */
-function toolbox_remove_pagination_on_category_and_search_pages($query){
-      if( $query->is_main_query() && (is_category() || is_search()) ){
-          $query->set('posts_per_page', -1);
-      }
-}
-add_action('pre_get_posts','toolbox_remove_pagination_on_category_and_search_pages');
-
-
 
 /**
  * Get our wp_nav_menu() fallback, wp_page_menu(), to show a home link.
@@ -223,7 +235,6 @@ function toolbox_content_nav( $nav_id ) {
 	<?php
 }
 endif; // toolbox_content_nav
-
 
 if ( ! function_exists( 'toolbox_comment' ) ) :
 /**
@@ -314,7 +325,6 @@ function toolbox_body_classes( $classes ) {
 	if ( ! is_multi_author() ) {
 		$classes[] = 'single-author';
 	}
-
 	return $classes;
 }
 add_filter( 'body_class', 'toolbox_body_classes' );

@@ -181,7 +181,7 @@ header, nav, article, footer, address { display:block; }
 	width: 90px; height: 80px;
 	background: url(images/post-cats.png) no-repeat 10px -74px;
 	position: absolute;
-	bottom: -1px;
+	top: 68px;
 	left: -24px;
 }
 .box-news .entry-content .patrocinado a {

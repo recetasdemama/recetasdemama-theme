@@ -47,6 +47,9 @@
 			}
 		?>
 		<?php get_the_image( array( 'size' => 'list_img', 'width' => '180', 'height' => '130' ) ); ?>
+		<p>
+		  <?php excerpt(12); ?>
+		</p>
 	</div><!-- .entry-content -->
 
 </article><!-- #post-<?php the_ID(); ?> -->
