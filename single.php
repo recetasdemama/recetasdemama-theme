@@ -29,5 +29,5 @@ get_header(); ?>
 			</div><!-- #content -->
 		</div><!-- #primary -->
 
-<?php get_template_part( 'sidebar-single', get_post_format() ) ?>
+<?php get_sidebar('single'); ?>
 <?php get_footer(); ?>

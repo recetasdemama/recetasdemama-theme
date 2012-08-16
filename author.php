@@ -70,5 +70,5 @@ get_header(); ?>
 			</div><!-- #content -->
 		</section><!-- #primary -->
 
-<?php get_sidebar(); ?>
+<?php get_sidebar('single'); ?>
 <?php get_footer(); ?>
