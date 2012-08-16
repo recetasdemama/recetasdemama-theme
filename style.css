@@ -976,3 +976,7 @@ article.comment {
 
 #colophon {
 }
+
+#colophon .widget {
+  width: auto;
+}
