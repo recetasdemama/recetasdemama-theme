@@ -682,7 +682,7 @@ form#commentform label {
 	margin: 0 330px 0 0;
 }
 #main .widget-area {
-	margin-top: 45px;
+	margin-top: 2em;
 	float: right;
 	overflow: hidden;
 	width: 300px;
