@@ -70,6 +70,9 @@ header, nav, article, footer, address { display:block; }
 	float: right;
 }
 #header-ads img {margin-left: 12px;}
+
+#header-ads .widget {padding-left: 12px}
+
 /* Menu */
 #access {
 	display: block;

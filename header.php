@@ -50,6 +50,13 @@
 <?php } ?>
 
 <?php wp_head(); ?>
+<script type="text/javascript">
+  sas_tmstp=Math.round(Math.random()*10000000000);sas_masterflag=1;
+  function SmartAdServer(sas_pageid,sas_formatid,sas_target) {
+   if (sas_masterflag==1) {sas_masterflag=0;sas_master='M';} else {sas_master='S';};
+   document.write('<scr'+'ipt src="http://reachandrich.antevenio.com/call/pubj/' + sas_pageid + '/' + sas_formatid + '/' + sas_master + '/' + sas_tmstp + '/' + escape(sas_target) + '?"></scr'+'ipt>');
+  }
+</script>
 </head>
 
 <body <?php body_class(); ?>>
