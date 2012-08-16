@@ -959,6 +959,17 @@ article.comment {
 	float: left;
 }
 
+.widget .video_recipe {
+  width: 110px;
+  float: left;
+  margin: 0 20px;
+}
+
+.video_recipe img {
+  border: 9px solid #F6F5F1;
+  border-radius: 5px;
+}
+
 
 /* =Footer
 -------------------------------------------------------------- */
