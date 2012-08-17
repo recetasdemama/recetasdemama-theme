@@ -1,0 +1,985 @@
+/*
+Theme Name: Las Recetas de Mama
+Theme URI: http://wordpress.org/extend/themes/toolbox
+Author: Clever Testing
+Author URI: http://clevertesting.net/
+Description: Theme para el blog Las Recetas de Mama
+Version: 1.4
+License: GNU General Public License
+License URI: license.txt
+Tags: custom-menu, sticky-post, microformats, rtl-language-support, translation-ready, full-width-template, post-formats
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+/* Clever Consulting 
+	- Victor Falcon
+*/
+.page-wp {
+	width: 980px;
+	margin: 0 auto;
+}
+.clear {clear: both; float: none;}
+
+body {
+	margin: 0;
+	font: 14px/18px Helvetica, sans-serif;
+	color: #7F7E79;
+}
+
+a {
+	color: #40B7D8;
+	text-decoration: none;
+}
+a:hover {}
+a:active { position: relative; top: 1px;}
+
+/* HTML5 Fix */
+header, nav, article, footer, address { display:block; }
+
+/* ===================================================
+   HEADER 
+   =================================================== */
+#branding {
+	background: url(images/header-bg.png) repeat-x;
+	height: 185px;
+}
+/* Logo */
+#branding h1 {
+	text-indent: -99999.999em;
+	margin: 0;
+	float: left;
+}
+#branding h1 a {
+	margin-top: -1px;
+	display: block;
+	width: 219px;
+	height: 184px;
+	background: url(images/recetasdemama.png) no-repeat;
+}
+#branding h1 a:hover {border:0;}
+
+/* Bloque publicidad */
+#header-ads {
+	margin-top: 5px;
+	background: #DED8D3 url(images/publicidad.png) no-repeat 2px;
+	border: 1px solid #DED8D3;
+	width: 740px;
+	height: 90px;
+	float: right;
+}
+#header-ads img {margin-left: 12px;}
+
+#header-ads .widget {padding-left: 12px}
+
+/* Menu */
+#access {
+	display: block;
+	float: right;
+	margin-top: 14px;
+	width: 742px;
+	text-align: right;
+}
+#access ul {
+	list-style: none;
+	margin: 0;
+	padding-left: 0;
+}
+#access li {
+	display: inline-block;
+	*float:right;
+	padding: 0 1.5em;
+}
+#access a {
+	color: #B6B1AB;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-decoration: none;
+	text-shadow: 1px 1px 0 #FFF;
+	display: block;
+	height: 42px;
+	line-height: 42px;
+	padding: 0 1.5em;
+	margin:  0 -2.22em 0 -1.5em;
+}
+#access li.current_page_item {
+	background: url(images/active-section.png) no-repeat;
+	height: 42px;
+}
+#access li.current_page_item a {
+	background: url(images/active-section-2.png) no-repeat right;
+	height: 42px;
+	color: #7F7E79;
+}
+#access ul ul {
+	box-shadow: 0 3px 3px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0 3px 3px rgba(0,0,0,0.2);
+	-webkit-box-shadow: 0 3px 3px rgba(0,0,0,0.2);
+	display: none;
+	float: left;
+	position: absolute;
+	top: 2em;
+	left: 0;
+	z-index: 99999;
+}
+#access ul ul ul {
+	left: 100%;
+	top: 0;
+}
+#access ul ul a {
+	background: #dedede;
+	line-height: 1em;
+	padding: .5em .5em .5em 1em;
+	width: 10em;
+	height: auto;
+}
+#access li:hover > a,
+#access ul ul :hover > a {
+	color: #7F7E79;
+	border: none;
+}
+#access ul ul a:hover {
+	background: #cecece;
+}
+#access ul li:hover > ul {
+	display: block;
+}
+
+/* =========================================================
+	Content
+========================================================= */
+/* Primera noticia grande en home */
+.bignews {
+	border-bottom: 1px dotted #CCC6C0;
+	margin-bottom: 20px;
+}
+
+/* Titulo mas noticias del home*/
+#more-news h2 {
+	font: bold 16px 'Georgia';
+}
+
+/* Cajas de noticias */
+.box-news {
+	width: 200px;
+	float: left;
+	margin-bottom: 15px;
+}
+.box-news.middle-box {
+	margin: 0 25px;
+}
+.box-news a:hover {border: none !important;}
+
+.box-news .entry-content{
+	position: relative;
+}
+.box-news .entry-content .video-receta a {
+	width: 50px; height: 50px;
+	background: url(images/post-cats.png) no-repeat 10px 20px;
+	margin-bottom: -50px;
+	position: absolute;
+}
+.box-news .entry-content .sin-gluten a {
+	width: 90px; height: 80px;
+	background: url(images/post-cats.png) no-repeat 10px -74px;
+	position: absolute;
+	top: 68px;
+	left: -24px;
+}
+.box-news .entry-content .patrocinado a {
+	width: 80px; height: 70px;
+	background: url(images/post-cats.png) no-repeat -70px 0px;
+	position: absolute;
+	top: 4px;
+	right: -5px;
+}
+.box-news .entry-content a:active {position: static; top: 0;}
+
+/* Noticias para archivo, categorías, busquedad, paginas, etc. */
+article.leftimgnews {clear: left; padding-bottom: 15px;}
+.leftimgnews .list_img {
+	float: left;
+	margin: -15px 20px 0 0 !important;
+}
+.leftimgnews .entry-content {padding-top: 25px; line-height: 20px; padding-right: 20px;}
+
+/* Contenido general */
+
+#primary #content { /* Fix IE */
+	*width: 660px;
+}
+
+#content h1.entry-title {
+	line-height: 18px;
+	margin: 25px 0 5px;
+	font: bold italic 18px/22px Georgia, serif;
+}
+#content h1.entry-title a {
+	color: #807E7A;
+}
+#content h1.entry-title a:hover {border:0;}
+#content .box-news h1.entry-title {
+	margin-top: 0;
+	height: 30px;
+	font: bold italic 13px/18px Georgia, serif !important;
+}
+#content .box-news h1.entry-title a {
+	color: #807E7A;
+}
+#content .box-news h1.entry-title a:hover {border:0;}
+#content .entry-meta {
+	font-size: 12px;
+	color: #B6B1AB;
+}
+#content img {max-width: 650px;}
+#content article.post img {
+  clear: both;
+  display: block;
+	margin: 10px auto 4px auto;
+	background: #DED8D3;
+	padding: 1px;
+	border: 9px solid #F6F5F1;
+	border-radius: 5px;
+}
+#content .entry-content {
+	margin-bottom: 15px;
+}
+
+#content .entry-content a:hover {border-bottom: 1px dotted #40B7D8;}
+#content .more-link {
+	background: url(images/more-link.png) right 4px no-repeat;
+	padding-right: 8px;
+}
+
+/* Recetas */
+div#recipress_recipe {
+	background: white !important;
+	border-top: 5px solid #F6F5F1;
+	border-bottom: 5px solid #F6F5F1;
+	border-radius: 0;
+	margin: 30px 0;
+	padding-left: 0;
+	padding-right: 0;
+	padding-top: 0;
+}
+	div#recipress_recipe.hrecipe.recipress-light {background: white !important; filter: none;}
+
+	h2.fn {display: none;}
+
+	/* Iconos */
+	#yield {background: url(images/yield.png) no-repeat left -2px;padding-left: 20px;}
+	#prep {background: url(images/prep.png) no-repeat left 1px;padding-left: 20px;}
+
+	div#recipress_recipe h3 {
+		border-top: 1px dotted #CCC;
+		clear: both;
+		padding-top: 15px;
+	}
+
+	ul.recipe-details {
+		float: left;
+		border-bottom: 0!important;
+	}
+	ul.recipe-details.right {
+		float: right;
+	}
+
+	ul.ingredients {padding-bottom: 24px;}
+
+	#recipress_recipe .recipe-details li b, #recipress_recipe .recipe-taxes li b, #recipress_recipe h3 {
+		text-transform: none !important;
+		font-size: 12px !important;
+		color: #7F7E79 !important;
+	}
+	div#recipress_recipe.hrecipe.recipress-light h3 {
+		font-size: 14px !important;
+		color: #7F7E79 !important;
+	}
+
+	ul.ingredients, ol.instructions {
+		list-style: none;
+		margin: 0; padding: 0;
+	}
+	ul.ingredients {padding-bottom: 15px;}
+
+		ul.ingredients li {
+			padding-left:  25px;
+			margin-left:   10px;
+			margin-bottom: 2px;
+			background: url('images/recipe-tick.png') 0 4px no-repeat;
+		}
+		ol.instructions li {
+			margin-bottom: 12px;
+		}
+
+	.#recipress_recipe li .notes {color: #DED8D2 !important; opacity: 1 !important; -moz-opacity: 1 !important; filter:alpha(opacity=1) !important;}
+
+	ul.recipe-taxes li {
+		margin-top: 10px;
+		height: 18px;
+		padding-left: 20px;
+		border-left: 1px solid #7F7E79;
+	}
+	ul.recipe-taxes li:first-child {
+		padding:0; border: 0;
+	}
+
+	footer.entry-meta {display: none;}
+
+/* Entradas relacionadas */
+#related_posts {
+	margin-top: 50px;
+}
+	#related_posts h3 {
+		padding-bottom: 5px;
+		border-bottom: 1px solid #CCC;
+	}
+
+/* Página de Categorías */
+.category-page .header {
+	border-bottom: 1px dotted #CCC6C0;
+	height: 55px;
+	margin: 10px 0 5px 0;
+}
+.category-page .header #searchform {float: right;margin-top: 10px;}
+.category-page .header h2 {
+	float: left;
+	font-family: Georgia;
+}
+
+.cat-box {
+	float: left;
+	margin: 20px 10px 0 11px;
+}
+.cat-box a {
+	display: block;
+}
+.cat-box img {
+	background: #DED8D3;
+	padding: 1px;
+	border: 9px solid #F6F5F1;
+	border-radius: 5px;
+	width: 155px;
+	height: 115px;
+	-webkit-transition: all 0.10 ease-in;  
+	-moz-transition:    all 0.10 ease-in;  
+	-o-transition:      all 0.10 ease-in;  
+	transition:         all 0.10 ease-in;  
+}
+.cat-box h4 {
+	font: bold italic 14px Georgia, sans-serif;
+	color: #3FB7D8;
+	text-align: center;
+	margin-top: 6px;
+}
+
+
+.cat-box a:hover {border: 0;}
+.cat-box a:hover img {background: #F6F5F1;border: 9px solid #DED8D3;}
+.cat-box a:hover h4 {color: #14728C;}
+
+/* =========================================================
+	Sidebar
+========================================================= */
+#secondary {overflow: visible !important;}
+#secondary aside {
+	border-top: 1px solid #F3EFED;
+	padding: 20px 0;
+	clear: both;
+}
+#secondary aside:first-child {
+	border: 0;
+	padding-top: 0;
+}
+
+.widget-title {
+	font: bold 16px/20px Georgia, serif;
+	margin-top: 0;
+}
+
+/* Siguenos */
+#secondary .widget_siguenos_wg .widget-title {
+	float: left;
+}
+#secondary .widget ul.social {float: right;margin-top: -3px;}
+#secondary ul.social li {
+	float:left;
+	width: 26px;
+	height:26px;
+	text-indent: -99999.999em;
+	background: url(images/social.png) no-repeat;
+	margin-left: 4px;
+	opacity: .60;
+	-moz-opacity: .60;
+}
+#secondary ul.social li:hover    {opacity: 1; -moz-opacity: 1;}
+#secondary ul.social li a        {display: block; width: 27px; height: 27px;}
+#secondary ul.social li a:hover  {border:0 !important;}
+
+#secondary ul.social li.facebook {background-position: 0   0px;}
+#secondary ul.social li.twitter  {background-position: 0 -27px;}
+#secondary ul.social li.youtube  {background-position: 0 -53px;}
+#secondary ul.social li.rss      {background-position: 0 -79px;}
+
+/* Subscribe Box */
+.nsu_widget {
+	background: url(images/subscribe-bg.png) -1px 10px no-repeat;
+	width: 312px;
+	height: 163px;
+	display: block;
+	margin-top: 16px !important;
+	margin-left: -5px;
+	margin-bottom: -15px;
+	padding: 15px 0 0 0;
+	text-align: center;
+
+	font: bold 16px/20px Georgia, serif;
+	color: #807E7A;
+}
+.nsu_widget h1 {display: none;}
+.nsu_widget .nsu-text-before-form {margin: 2px 0 5px 0;}
+.nsu_widget p {margin: 0}
+.nsu_widget input[type=text] {
+	margin-top: 5px;
+	width: 60%;
+	border: 1px solid #DED8D3;
+	border-radius: 5px;
+	padding: 6px;
+}
+.nsu_widget input[type=submit] {
+	background: url(images/subscribe-button.png) no-repeat 0 2px;
+	width: 124px;
+	height: 34px;
+	border: 0;
+	margin-top: 7px;
+	color: #FFD6CC;
+	font-weight: bold;
+	text-align: left;
+	padding-left: 40px;
+	text-shadow: 2px 2px 2px rgba(0,0,0,.3);
+}
+
+/* 	Widgets
+ *	Estilo general
+ */
+.widget ul {
+	list-style: none;
+	margin:0 0 0 5px;
+	padding:0;
+}
+	.widget ul li {
+		margin: 0 0 10px 0;
+	}
+
+/* Categories List */
+.widget_categories ul, ul.popular-category-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.widget_categories ul li, ul.popular-category-list li {
+	background: url(images/categories.png) 0 -24px no-repeat;
+	padding-left: 22px;
+	margin: 1px 0 2px 15px;
+}
+.widget_categories ul li:hover, ul.popular-category-list li:hover { background-position: 0 2px; }
+
+/* Search form */
+#searchform {
+	width: 300px;
+}
+#searchform label {
+	display: none;
+}
+#searchform #s {
+	float: left;
+	border: 0;
+	height: 34px;
+	width: 178px;
+	background: url(images/search-box.png) no-repeat;
+	outline: none;
+	padding: 0 5px 0 35px;
+}
+#searchform #searchsubmit {
+	float: right;
+	border: 0;
+	height: 34px;
+	width:  82px;
+	text-indent: -9999.999em;
+	background: url(images/search-button.png) no-repeat;
+}
+
+/*
+ * 	Comentarios
+ * 	Estilo para comentarios
+ */
+h2#comments-title,
+h3#reply-title {
+	font-size: 18px;
+	margin-top: 50px;
+	padding-bottom: 8px;
+	border-bottom: 1px solid #CCC;
+}
+h3#reply-title {
+	font-size: 14px;
+	border-bottom: 0;
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+
+ol.commentlist {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+	ol.commentlist li {padding: 18px 5px 0px 5px;}
+
+	ol.commentlist img.avatar {display: none;}
+	ol.commentlist cite.fn {
+		font-weight: bold;
+		font-style: normal !important;
+		float: left;
+	}
+	ol.commentlist .says,
+	ol.commentlist .reply { display: none; }
+
+	.comment-meta.commentmetadata {
+		float: left;
+		border-left: 1px solid #CCC;
+		margin-left: 10px;
+		padding-left: 10px;
+		margin-bottom: 10px;
+	}
+		.comment-meta.commentmetadata a {color: #7F7E79;}
+		.comment-meta.commentmetadata a:hover {border-bottom: 1px dotted #7F7E79;}
+
+	.comment-content {
+		clear: both;
+		border-bottom: 1px dotted #ccc;
+		font: italic 14px/20px Georgia, serif;
+	}
+
+	.bypostauthor {
+		background: #F5FBFD;
+	}
+
+form#commentform label {
+	font-size: 12px;
+	font-weight: bold;
+	color: #807E7A;
+}
+	.form-allowed-tags {display: none;}
+
+	form#commentform input[type=text],
+	form#commentform textarea {
+		border: 1px solid #DED8D3;
+		border-radius: 5px;
+		padding: 5px;
+	}
+
+	form#commentform input[type=submit] {
+		background: url(images/publicar-comentario.png);
+		border: 0;
+		width: 154px;
+		height: 34px;
+		text-indent: -9999.99em;
+		cursor: pointer;
+	}
+	form#commentform input[type=submit]:active {
+		position: relative;
+		top: 1px;
+	}
+
+
+/* =========================================================
+	Footer
+========================================================= */
+#colophon {
+	margin-top: 60px;
+	background: url(images/footer-bg.png) repeat-x;
+	height: 260px;
+	padding-top: 30px;
+	font-size: 12px;
+	overflow: hidden;
+}
+
+#colophon a       {color: #807E7A;}
+#colophon a:hover {color: #40B7D8;border:0} 
+
+#colophon h1.widget-title {
+	font-size: 14px;
+}
+#colophon .widget {
+	float: left;
+	margin-left: 65px;
+}
+#colophon .widget:first-child {margin-left: 0;}
+
+#colophon .widget ul {
+	list-style: none;
+	margin:0;
+	padding:0;
+}
+#colophon .widget ul li {margin: 1px 0;}
+
+/* Boton tienda */
+.tienda-button {
+	background: url(images/tienda-button.png) no-repeat;
+	width: 164px;
+	height: 54px;
+	display: block;
+	margin-top: 15px;
+	text-indent:-99999.999em;
+}
+.tienda-button:hover {position: relative;top: -1px;}
+.tienda-button:active {position: relative;top: 3px;}
+
+/* Twitter */
+.widget_twitter {
+	width: 270px;
+	background: url(images/twitter-bird.png) no-repeat;
+	height: 150px;
+	padding: 20px 0 0 30px;
+}
+.twitter-item {
+	font: italic 16px/20px Georgia, serif;
+}
+.twitter-timestamp {font-size: 10px;}
+
+/**/
+#colophon ul.social li a {
+	background: url(images/social.png) no-repeat;
+	padding: 4px 0 4px 35px;
+	margin: 3px 0;
+	display: block;
+}
+#colophon ul.social li.facebook a {background-position: 0   -106px;}
+#colophon ul.social li.twitter a  {background-position: 0 -133px;}
+#colophon ul.social li.youtube a  {background-position: 0 -158px;}
+#colophon ul.social li.rss a      {background-position: 0 -184px;}
+
+#colophon ul.social li.facebook a:hover {background-position: 0   0px;}
+#colophon ul.social li.twitter a:hover  {background-position: 0 -27px;}
+#colophon ul.social li.youtube a:hover  {background-position: 0 -53px;}
+#colophon ul.social li.rss a:hover      {background-position: 0 -79px;}
+
+/* Sign */
+#colophon #sign {
+	text-align: right;
+	margin-top: 30px;
+	padding-top: 6px;
+	background: url(images/recetasdemama-sign.png) no-repeat center 15px;
+}
+#colophon #sign p {margin: 2px 0;}
+
+/* =Structure
+-------------------------------------------------------------- */
+
+#primary {
+	float: left;
+	margin: 0 -320px 0 0;
+	width: 100%;
+}
+#content {
+	margin: 0 330px 0 0;
+}
+#main .widget-area {
+	margin-top: 2em;
+	float: right;
+	overflow: hidden;
+	width: 300px;
+}
+#colophon {
+	clear: both;
+	display: block;
+	width: 100%;
+}
+
+/* Increase the size of the content area for templates without sidebars */
+.full-width #content,
+.image-attachment #content,
+.error404 #content {
+	margin: 0;
+}
+
+/* Text meant only for screen readers */
+.screen-reader-text,
+.assistive-text {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+}
+
+/* Alignment */
+.alignleft {
+	display: inline;
+	float: left;
+}
+.alignright {
+	display: inline;
+	float: right;
+}
+.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+/* =Header
+-------------------------------------------------------------- */
+
+#site-title {
+	font-size: 2em;
+	font-weight: bold;
+	margin: .67em 0;
+}
+#site-description {
+	font-size: 1em;
+	font-weight: normal;
+	margin: 0 0 1em;
+}
+
+
+/* =Content
+-------------------------------------------------------------- */
+
+.sticky {
+}
+.entry-meta {
+	clear: both;
+	display: block;
+}
+.single-author .entry-meta .byline {
+	display: none;
+}
+#content nav {
+	display: block;
+	overflow: hidden;
+}
+#content nav .nav-previous {
+	float: right;
+}
+#content nav .nav-previous {
+	float: left;
+	text-align: left;
+}
+#content #nav-above {
+	display: none;
+}
+.paged #content #nav-above,
+.single #content #nav-above {
+	display: block;
+}
+#nav-below {
+	margin: 1em 0 0;
+}
+.page-link {
+	clear: both;
+	margin: 0 0 1em;
+}
+.page .edit-link {
+	clear: both;
+	display: block;
+}
+
+/* 404 page */
+.error404 .widget {
+	float: left;
+	width: 33%;
+}
+.error404 .widget .widgettitle,
+.error404 .widget ul {
+	margin-right: 1em;
+}
+.error404 .widget_tag_cloud {
+	clear: both;
+	float: none;
+	width: 100%;
+}
+
+/* Notices */
+.post .notice,
+.error404 #searchform {
+	background: #eee;
+	display: block;
+	padding: 1em;
+}
+
+/* Image Attachments */
+.image-attachment div.entry-meta {
+	float: left;
+}
+.image-attachment nav {
+	float: right;
+	margin: 0 0 1em 0;
+}
+.image-attachment .entry-content {
+	clear: both;
+}
+.image-attachment .entry-content .entry-attachment {
+	background: #eee;
+	margin: 0 0 1em;
+	padding: 1em;
+	text-align: center;
+}
+.image-attachment .entry-content .attachment {
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+}
+
+/* Navegation */
+#nav-below {
+	font: italic 14px/18px Georgia, serif;
+	border-top: 1px dotted #DDD;
+	padding-top: 14px;
+}
+#nav-below a {color: #989391}
+#nav-below a:hover {text-decoration: underline;}
+
+#nav-below .nav-previous a {padding-left: 5px;}
+#nav-below .nav-previous:before {
+	content: ' ';
+	display: block;
+	background: url(images/pagination.png) no-repeat 0 0;
+	width: 20px; height: 20px;
+	float: left;
+}
+#nav-below .nav-previous:hover:before {
+	background-position: 0 -20px;
+}
+
+#nav-below .nav-next {float:right;}
+#nav-below .nav-next a {padding-right: 5px;width: inherit;}
+#nav-below .nav-next:before {
+	content: ' ';
+	display: block;
+	background: url(images/pagination.png) no-repeat -20px 0;
+	width: 20px; height: 20px;
+	float: right;
+}
+#nav-below .nav-next:hover:before {
+	background-position: -20px -20px;
+}
+
+
+/* =Images
+-------------------------------------------------------------- */
+
+a img {
+	border: none;
+}
+p img {
+	margin-bottom: 0.5em; /* a small bottom margin prevents content floating under images */
+}
+/*
+Resize images to fit the main content area.
+- Applies only to images uploaded via WordPress by targeting size-* classes.
+- Other images will be left alone. Use "size-auto" class to apply to other images.
+*/
+img.size-auto,
+img.size-full,
+img.size-large,
+img.size-medium,
+.attachment img,
+.widget-area img,
+.wp-caption {
+	max-width: 100%; /* When images are too wide for containing element, force them to fit. */
+	height: auto; /* Override height to match resized width for correct aspect ratio. */
+}
+img.alignleft {
+	margin-right: 1em;
+}
+img.alignright {
+	margin-left: 1em;
+}
+.wp-caption {
+	padding: .5em;
+	text-align: center;
+}
+.wp-caption img {
+	margin: .25em;
+}
+.wp-caption .wp-caption-text {
+	margin: .5em;
+}
+.gallery-caption {
+}
+.wp-smiley {
+	margin: 0;
+}
+
+
+/* =Forms
+-------------------------------------------------------------- */
+textarea {
+	width: 80%;
+}
+
+/* Class for labelling required form items */
+.required {
+	color: #cc0033;
+}
+
+
+/* =Comments
+-------------------------------------------------------------- */
+
+article.comment {
+	display: block;
+}
+#respond input[type=text] {
+	display: block;
+	width: 60%;
+}
+#respond textarea {
+	display: block;
+	margin: 0 0 1em;
+	width: 80%;
+}
+#respond .form-allowed-tags {
+	clear: both;
+	width: 80%;
+}
+#respond .form-allowed-tags code {
+	display: block;
+}
+
+
+/* =Widgets
+-------------------------------------------------------------- */
+
+.widget {
+	display: block;
+}
+.widget-area .widget_search {
+	overflow: hidden;
+}
+.widget-area .widget_search input {
+	float: left;
+}
+
+.widget .video_recipe {
+  width: 110px;
+  float: left;
+  margin: 0 20px;
+}
+
+.video_recipe img {
+  border: 9px solid #F6F5F1;
+  border-radius: 5px;
+}
+
+
+/* =Footer
+-------------------------------------------------------------- */
+
+#colophon {
+}
+
+#colophon .widget {
+  width: auto;
+}
