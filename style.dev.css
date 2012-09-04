@@ -423,7 +423,7 @@ div#recipress_recipe {
 #secondary ul.social li.rss      {background-position: 0 -79px;}
 
 /* Subscribe Box */
-.nsu_widget {
+.nsu_widget form {
 	background: url(images/subscribe-bg.png) -1px 10px no-repeat;
 	width: 312px;
 	height: 163px;
@@ -431,17 +431,15 @@ div#recipress_recipe {
 	margin-top: 16px !important;
 	margin-left: -5px;
 	margin-bottom: -15px;
-	padding: 15px 0 0 0;
-	text-align: center;
-
+	padding: 25px 0 0 0;
+	text-align: right;
 	font: bold 16px/20px Georgia, serif;
 	color: #807E7A;
 }
-.nsu_widget h1 {display: none;}
 .nsu_widget .nsu-text-before-form {margin: 2px 0 5px 0;}
 .nsu_widget p {margin: 0}
 .nsu_widget input[type=text] {
-	margin-top: 5px;
+	margin: 5px 20px 0 0;
 	width: 60%;
 	border: 1px solid #DED8D3;
 	border-radius: 5px;
@@ -452,7 +450,7 @@ div#recipress_recipe {
 	width: 124px;
 	height: 34px;
 	border: 0;
-	margin-top: 7px;
+	margin-top: 7px 20px 0 0;
 	color: #FFD6CC;
 	font-weight: bold;
 	text-align: left;
@@ -991,8 +989,8 @@ article.comment {
 .nsu-form p,.nsu-text-before-form,.nsu-text-after-form{ clear:both; display:block; margin:5px 0; }
 .nsu-text-before-form ul,nsu-text-after-form ul,.nsu-text-before-form ol,nsu-text-after-form ol{ margin-left:15px; }
 
-.nsu-form label{display:block; font-weight:bold; }
-.nsu-form input{ padding:2px; display:block; color:#999; }
+.nsu-form label{font-weight:bold; margin: 0 10px;}
+.nsu-form input{ padding:2px; color:#999; }
 .nsu-form input:focus, .nsu-form input:active{ color:#000; }
 
 .nsu-field{ background:white; }
