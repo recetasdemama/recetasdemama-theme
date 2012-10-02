@@ -165,6 +165,7 @@ header, nav, article, footer, address { display:block; }
 	width: 200px;
 	float: left;
 	margin-bottom: 15px;
+	height: 270px;
 }
 .box-news.middle-box {
 	margin: 0 25px;
