@@ -622,6 +622,8 @@ form#commentform label {
 }
 #colophon .widget ul li {margin: 1px 0;}
 
+#sidebar-footer {height: 170px;}
+
 /* Boton tienda */
 .tienda-button {
 	background: url(images/tienda-button.png) no-repeat;
