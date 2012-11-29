@@ -43,13 +43,34 @@
 <![endif]-->
 
 <?php wp_head(); ?>
-<script type="text/javascript">
-  sas_tmstp=Math.round(Math.random()*10000000000);sas_masterflag=1;
-  function SmartAdServer(sas_pageid,sas_formatid,sas_target) {
-   if (sas_masterflag==1) {sas_masterflag=0;sas_master='M';} else {sas_master='S';};
-   document.write('<scr'+'ipt src="http://reachandrich.antevenio.com/call/pubj/' + sas_pageid + '/' + sas_formatid + '/' + sas_master + '/' + sas_tmstp + '/' + escape(sas_target) + '?"></scr'+'ipt>');
-  }
+
+<script type='text/javascript'>
+var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+(function() {
+var gads = document.createElement('script');
+gads.async = true;
+gads.type = 'text/javascript';
+var useSSL = 'https:' == document.location.protocol;
+gads.src = (useSSL ? 'https:' : 'http:') + 
+'//www.googletagservices.com/tag/js/gpt.js';
+var node = document.getElementsByTagName('script')[0];
+node.parentNode.insertBefore(gads, node);
+})();
 </script>
+
+<script type='text/javascript'>
+googletag.cmd.push(function() {
+googletag.defineSlot('/10243634/rectangulo-mediano-bottom', [300, 250], 'div-gpt-ad-1354204486194-0').addService(googletag.pubads());
+googletag.defineSlot('/10243634/rectangulo-mediano-home', [300, 250], 'div-gpt-ad-1354204486194-1').addService(googletag.pubads());
+googletag.defineSlot('/10243634/rectangulo-mediano-single', [300, 250], 'div-gpt-ad-1354204486194-2').addService(googletag.pubads());
+googletag.defineSlot('/10243634/skyscraper-home', [728, 90], 'div-gpt-ad-1354204486194-3').addService(googletag.pubads());
+googletag.defineSlot('/10243634/skyscraper-single', [728, 90], 'div-gpt-ad-1354204486194-4').addService(googletag.pubads());
+googletag.pubads().enableSingleRequest();
+googletag.enableServices();
+});
+</script>
+
 </head>
 
 <body <?php body_class(); ?>>
