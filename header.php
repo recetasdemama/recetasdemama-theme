@@ -36,6 +36,7 @@
 	?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'template_url' ); ?>/style.2012-10-15.css" />
+<link rel="publisher" href="https://plus.google.com/101111441869338785722" />
 <?php if ( is_singular() && get_option( 'thread_comments' ) ) wp_enqueue_script( 'comment-reply' ); ?>
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <!--[if lt IE 9]>
@@ -70,7 +71,6 @@ googletag.pubads().enableSingleRequest();
 googletag.enableServices();
 });
 </script>
-
 </head>
 
 <body <?php body_class(); ?>>
