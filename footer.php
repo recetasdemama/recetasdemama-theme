@@ -23,12 +23,22 @@
 		<div class="clear"></div>
 	</div>
 	<div id="sign" class="page-wp">
-		<p><a href="http://cleverconsulting.net">Diseño de Clever Consulting</a></p>
-		<p><a href="http://www.splendeo.es/">Desarrollado por Splendeo</a></p>
+		<p>&nbsp;</p>
+		<p>&nbsp;</p>
 	</div>
 </footer><!-- #colophon -->
 
 <?php wp_footer(); ?>
+
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/es_ES/all.js#xfbml=1&appId=180884128606005";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
 </body>
 </html>
