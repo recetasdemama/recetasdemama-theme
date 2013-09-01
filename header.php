@@ -62,11 +62,11 @@ node.parentNode.insertBefore(gads, node);
 
 <script type='text/javascript'>
 googletag.cmd.push(function() {
-googletag.defineSlot('/10243634/rectangulo-mediano-bottom', [300, 250], 'div-gpt-ad-1354204486194-0').addService(googletag.pubads());
-googletag.defineSlot('/10243634/rectangulo-mediano-home', [300, 250], 'div-gpt-ad-1354204486194-1').addService(googletag.pubads());
-googletag.defineSlot('/10243634/rectangulo-mediano-single', [300, 250], 'div-gpt-ad-1354204486194-2').addService(googletag.pubads());
-googletag.defineSlot('/10243634/skyscraper-home', [728, 90], 'div-gpt-ad-1354204486194-3').addService(googletag.pubads());
-googletag.defineSlot('/10243634/skyscraper-single', [728, 90], 'div-gpt-ad-1354204486194-4').addService(googletag.pubads());
+googletag.defineSlot('/10243634/rectangulo-mediano-bottom', [300, 250], 'div-gpt-ad-1378048115440-0').addService(googletag.pubads());
+googletag.defineSlot('/10243634/rectangulo-mediano-home', [300, 250], 'div-gpt-ad-1378048115440-1').addService(googletag.pubads());
+googletag.defineSlot('/10243634/rectangulo-mediano-single', [300, 250], 'div-gpt-ad-1378048115440-2').addService(googletag.pubads());
+googletag.defineSlot('/10243634/skyscraper-home', [728, 90], 'div-gpt-ad-1378048115440-3').addService(googletag.pubads());
+googletag.defineSlot('/10243634/skyscraper-single', [728, 90], 'div-gpt-ad-1378048115440-4').addService(googletag.pubads());
 googletag.pubads().enableSingleRequest();
 googletag.enableServices();
 });
