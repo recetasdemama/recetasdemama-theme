@@ -83,7 +83,7 @@ googletag.enableServices();
 		
 		                OAS_url         = 'http://a.diximedia.es/';
 		
-		                OAS_listpos     = 'Top,TopRight,Middle';
+		                OAS_listpos     = 'Top,TopRight,Middle,Middle2';
 		
 		                OAS_query       = '';
 		
