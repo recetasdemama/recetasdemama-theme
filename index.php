@@ -46,9 +46,9 @@ get_header(); ?>
 									<div id="more-news">
 										<h2>Más recetas recientes</h2>
 									</div>
-									<? } ?>
-										<? get_template_part('content-list', get_post_format()); ?>
-								<?	$i++; 
+									<?php } ?>
+										<?php get_template_part('content-list', get_post_format()); ?>
+								<?php	$i++; 
 								} 
 						} else { 
 							// Contenido para paginas
