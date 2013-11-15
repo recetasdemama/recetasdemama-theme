@@ -35,7 +35,7 @@
 
 	?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11" />
-<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'template_url' ); ?>/style.2012-10-15.css" />
+<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'template_url' ); ?>/style.2013-11-12.css" />
 <link rel="publisher" href="https://plus.google.com/101111441869338785722" />
 <?php if ( is_singular() && get_option( 'thread_comments' ) ) wp_enqueue_script( 'comment-reply' ); ?>
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
@@ -45,6 +45,7 @@
 
 <?php wp_head(); ?>
 
+<!-- DFP -->
 <script type='text/javascript'>
 var googletag = googletag || {};
 googletag.cmd = googletag.cmd || [];
@@ -62,16 +63,17 @@ node.parentNode.insertBefore(gads, node);
 
 <script type='text/javascript'>
 googletag.cmd.push(function() {
-googletag.defineSlot('/28676221/rectangle-medium-bottom', [300, 250], 'div-gpt-ad-1378048491015-0').addService(googletag.pubads());
-googletag.defineSlot('/28676221/rectangle-medium-home', [300, 250], 'div-gpt-ad-1378048491015-1').addService(googletag.pubads());
-googletag.defineSlot('/28676221/rectangle-medium-single', [300, 250], 'div-gpt-ad-1378048491015-2').addService(googletag.pubads());
-googletag.defineSlot('/28676221/skyscraper-home', [728, 90], 'div-gpt-ad-1378048491015-3').addService(googletag.pubads());
-googletag.defineSlot('/28676221/skyscraper-single', [728, 90], 'div-gpt-ad-1378048491015-4').addService(googletag.pubads());
+googletag.defineSlot('/28676221/rectangle-medium-bottom', [300, 250], 'div-gpt-ad-1384503223467-0').addService(googletag.pubads());
+googletag.defineSlot('/28676221/rectangle-medium-home', [300, 250], 'div-gpt-ad-1384503223467-1').addService(googletag.pubads());
+googletag.defineSlot('/28676221/rectangle-medium-single', [300, 250], 'div-gpt-ad-1384503223467-2').addService(googletag.pubads());
+googletag.defineSlot('/28676221/skyscraper-home', [728, 90], 'div-gpt-ad-1384503223467-3').addService(googletag.pubads());
+googletag.defineSlot('/28676221/skyscraper-single', [728, 90], 'div-gpt-ad-1384503223467-4').addService(googletag.pubads());
+googletag.defineSlot('/28676221/skyscrapper-small-home', [234, 60], 'div-gpt-ad-1384503223467-5').addService(googletag.pubads());
+googletag.defineSlot('/28676221/skyscrapper-small-single', [234, 60], 'div-gpt-ad-1384503223467-6').addService(googletag.pubads());
 googletag.pubads().enableSingleRequest();
 googletag.enableServices();
 });
 </script>
-
 
 <!--DIXIMEDIA-->
 
