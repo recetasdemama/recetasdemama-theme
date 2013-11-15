@@ -86,8 +86,12 @@ googletag.enableServices();
 		                OAS_listpos     = 'Top,TopRight,Middle,Middle2';
 		
 		                OAS_query       = '';
-		
-		                OAS_sitepage    =  'blogsfarm.com/recetasdemama';
+
+						<?php if(is_home()){?>
+		        		OAS_sitepage    =  'blogsfarm.com/recetasdemama/home';
+		        		<?php }else{?>
+		        		OAS_sitepage    =  'blogsfarm.com/recetasdemama/ros';
+		        		<?php }?>
 		
 		
 		
