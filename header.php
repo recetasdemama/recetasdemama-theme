@@ -35,7 +35,7 @@
 
 	?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11" />
-<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'template_url' ); ?>/style.2013-11-12.css" />
+<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'template_url' ); ?>/style.2013-11-16.css" />
 <link rel="publisher" href="https://plus.google.com/101111441869338785722" />
 <?php if ( is_singular() && get_option( 'thread_comments' ) ) wp_enqueue_script( 'comment-reply' ); ?>
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
@@ -48,7 +48,7 @@
 
 <body <?php body_class(); ?>>
 <?php do_action( 'before' ); ?>
-<div class="megabanner" align="center">
+<div id="top-megabanner" align="center">
 	<?php 
 		if ( is_home() ) {
 			  if ( is_active_sidebar( 'home-ad-banner' ) ) { dynamic_sidebar( 'home-ad-banner' ); }
