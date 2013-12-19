@@ -396,3 +396,30 @@ add_filter( 'attachment_link', 'toolbox_enhanced_image_navigation' );
 /**
  * This theme was built with PHP, Semantic HTML, CSS, love, and a Toolbox.
  */
+ 
+ add_action( 'admin_menu', 'theme_options_add_page' );
+ 
+ function theme_options_add_page() {
+ 	add_theme_page("Opciones Tema Recetas", "Opciones Tema Recetas", 'edit_theme_options', 'theme_options', 'theme_options_do_page' );
+ }
+ 
+ function theme_options_do_page() {
+	echo get_screen_icon() . "<h2>". __( 'Opciones Recetas de Mama', 'bones' ) . "</h2>";
+	global $select_options;
+	if ($_REQUEST['settings-updated'] == 1){
+		$skin_recetas = $_POST['skin_recetas'];update_option( 'skin_recetas', stripslashes($skin_recetas));
+	}
+	
+	echo '<form method="post" action="http://'.$_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'].'">'.
+			'<input type="hidden" name="settings-updated" value="1"/>'.
+			'<div align="center" style="margin-top:20px;"><table width="30%" cellpadding="10">'.
+			'<tr><td><strong>Skin en recetas</strong></td><td>'.
+			'<select name="skin_recetas"><option value="no">no</option><option value="si"';
+	
+	$skin_recetas = get_option("skin_recetas");
+	if($skin_recetas == "si") echo ' selected="selected"';
+	
+	echo	'>si</option></select></td></tr>';
+	echo '<tr><td></td><td><input type="submit" value="Submit" /></td></tr>';
+	echo '</table></div></form>';
+}

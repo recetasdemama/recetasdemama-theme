@@ -35,7 +35,7 @@
 
 	?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11" />
-<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'template_url' ); ?>/style.2013-11-12.css" />
+<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'template_url' ); ?>/style.2013-12-19.css" />
 <link rel="publisher" href="https://plus.google.com/101111441869338785722" />
 <?php if ( is_singular() && get_option( 'thread_comments' ) ) wp_enqueue_script( 'comment-reply' ); ?>
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
@@ -175,6 +175,10 @@ googletag.enableServices();
 <body <?php body_class(); ?>>
 <?php do_action( 'before' ); ?>
 <div class="megabanner" align="center">
+	<?php if(get_option("skin_recetas") == "si"){?>
+		<div style="width:980px;height:90px"></div>
+	<?php }?>
+
 	<?php 
 		if ( is_home() ) {
 			  if ( is_active_sidebar( 'home-ad-banner' ) ) { dynamic_sidebar( 'home-ad-banner' ); }
@@ -184,7 +188,7 @@ googletag.enableServices();
 	?>
 </div>
 <div id="wrap">
-	<header id="branding" role="banner">
+	<header id="branding" role="banner" style="<?php if(get_option("skin_recetas") == "si") echo "width:980px;margin:auto;";?>">
 		<div class="page-wp">
 			<h1 id="site-title"><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 			<div id="lainformacion">
