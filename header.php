@@ -44,141 +44,14 @@
 <![endif]-->
 
 <?php wp_head(); ?>
-
-<!-- DFP -->
-<script type='text/javascript'>
-var googletag = googletag || {};
-googletag.cmd = googletag.cmd || [];
-(function() {
-var gads = document.createElement('script');
-gads.async = true;
-gads.type = 'text/javascript';
-var useSSL = 'https:' == document.location.protocol;
-gads.src = (useSSL ? 'https:' : 'http:') + 
-'//www.googletagservices.com/tag/js/gpt.js';
-var node = document.getElementsByTagName('script')[0];
-node.parentNode.insertBefore(gads, node);
-})();
-</script>
-
-<script type='text/javascript'>
-googletag.cmd.push(function() {
-googletag.defineSlot('/28676221/rectangle-medium-bottom', [300, 250], 'div-gpt-ad-1384503223467-0').addService(googletag.pubads());
-googletag.defineSlot('/28676221/rectangle-medium-home', [300, 250], 'div-gpt-ad-1384503223467-1').addService(googletag.pubads());
-googletag.defineSlot('/28676221/rectangle-medium-single', [300, 250], 'div-gpt-ad-1384503223467-2').addService(googletag.pubads());
-googletag.defineSlot('/28676221/skyscraper-home', [728, 90], 'div-gpt-ad-1384503223467-3').addService(googletag.pubads());
-googletag.defineSlot('/28676221/skyscraper-single', [728, 90], 'div-gpt-ad-1384503223467-4').addService(googletag.pubads());
-googletag.defineSlot('/28676221/skyscrapper-small-home', [234, 60], 'div-gpt-ad-1384503223467-5').addService(googletag.pubads());
-googletag.defineSlot('/28676221/skyscrapper-small-single', [234, 60], 'div-gpt-ad-1384503223467-6').addService(googletag.pubads());
-googletag.pubads().enableSingleRequest();
-googletag.enableServices();
-});
-</script>
-
-<!--DIXIMEDIA-->
-
-		<script type="text/javascript">
-		
-		    //<![CDATA[
-		
-		
-		
-		                OAS_url         = 'http://a.diximedia.es/';
-		
-		                OAS_listpos     = 'Top,TopRight,Middle,Middle2';
-		
-		                OAS_query       = '';
-
-						<?php if(is_home()){?>
-		        		OAS_sitepage    =  'blogsfarm.com/recetasdemama/home';
-		        		<?php }else{?>
-		        		OAS_sitepage    =  'blogsfarm.com/recetasdemama/ros';
-		        		<?php }?>
-		
-		
-		
-		                OAS_rn      = '001234567890';
-		
-		                OAS_rns     = '1234567890';
-		
-		                OAS_rn      = new String (Math.random());
-		
-		                OAS_rns     = OAS_rn.substring (2, 11);
-		
-		                OAS_version = 11;
-		
-		
-		
-		                if (navigator.userAgent.indexOf('Mozilla/3') != -1) { OAS_version = 10;}
-		
-		                if (OAS_version >= 11) { document.write('<sc'+'ript type="text/javascript" src="' + OAS_url + '4/' + OAS_sitepage + '/1' +  OAS_rns + '@' + OAS_listpos + OAS_query + '"></scr' + 'ipt>');}
-		
-		
-		
-		                document.write('');
-		
-		
-		
-		                function OAS_NORMAL(pos){
-		
-		                    document.write('<a href="' + OAS_url + '1c/' + OAS_sitepage + '/1' + OAS_rns + '@' + OAS_listpos +  '!' + pos + OAS_query + '" target="_top">');
-		
-		                    document.write('<img src="' + OAS_url + '1/' + OAS_sitepage + '/1' + OAS_rns + '@' + OAS_listpos +  '!' + pos + OAS_query + '" border="0" alt="Click!" /></a>');
-		
-		                }
-		
-		                function OAS_AD(pos){
-		
-		                    if (OAS_version >= 11 && typeof(OAS_RICH)!='undefined') {
-		
-		                        OAS_RICH(pos);
-		
-		                    }else {
-		
-		                        OAS_NORMAL(pos);
-		
-		                    }
-		
-		                }
-		
-		                function OAS_VID(pos, site){
-		
-		                    if (site==null){
-		
-		                        var sitepage=OAS_sitepage;
-		
-		                    }else{
-		
-		                        var sitepage=site;
-		
-		                    }
-		
-		                    
-		
-		                    var position = (pos == undefined) ? "x90!x90" : pos;
-		
-		                    var oas = OAS_url + '2/';
-		
-		                    var oaspage = sitepage + '/1' + OAS_rns + '@' + position;
-		
-		                    var urlpubli = oas + oaspage;
-		
-		                    
-		
-		                    return urlpubli;
-		
-		                }    //]]>
-		
-		</script>
 </head>
 
 <body <?php body_class(); ?>>
 <?php do_action( 'before' ); ?>
-<div class="megabanner" align="center">
+<div id="top-megabanner" align="center">
 	<?php if(get_option("skin_recetas") == "si"){?>
 		<div style="width:980px;height:90px"></div>
 	<?php }?>
-
 	<?php 
 		if ( is_home() ) {
 			  if ( is_active_sidebar( 'home-ad-banner' ) ) { dynamic_sidebar( 'home-ad-banner' ); }
