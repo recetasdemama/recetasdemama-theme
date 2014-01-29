@@ -4,18 +4,26 @@
  */
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class('single hrecipe'); ?>>
+	<div class="img-cabecera">
+		<?php get_the_image( array( 'size' => 'full_img', 'image_class' => 'photo') ); ?>
+        <div class="entry-categorias">
+			<?php echo get_the_category_list(); ?>
+		</div>
+    </div>
 	<header class="entry-header">
-		<h1 class="entry-title"><?php the_title(); ?></h1>
+		<h1 class="entry-title fn"><?php the_title(); ?></h1>
 
 		<div class="entry-meta">
 			<? the_date('d/m/Y', 'Publicado el ',''); ?>
-			en <? the_category(', '); ?>
+			por <span><? the_author(); ?></span>
 		</div><!-- .entry-meta -->
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
 		<?php the_content(); ?>
+        <div class="firma">Espero que os guste</div>
+        <?php related_posts(); ?>
 		<?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', 'toolbox' ), 'after' => '</div>' ) ); ?>
 	</div><!-- .entry-content -->
 

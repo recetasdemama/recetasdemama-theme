@@ -34,13 +34,7 @@
 			?>
 		</h2>
 
-		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // are there comments to navigate through ?>
-		<nav id="comment-nav-above">
-			<h1 class="assistive-text section-heading"><?php _e( 'Comment navigation', 'toolbox' ); ?></h1>
-			<div class="nav-previous"><?php previous_comments_link( __( '&larr; Older Comments', 'toolbox' ) ); ?></div>
-			<div class="nav-next"><?php next_comments_link( __( 'Newer Comments &rarr;', 'toolbox' ) ); ?></div>
-		</nav>
-		<?php endif; // check for comment navigation ?>
+		
 
 		<ol class="commentlist">
 			<?php
@@ -56,7 +50,6 @@
 
 		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // are there comments to navigate through ?>
 		<nav id="comment-nav-below">
-			<h1 class="assistive-text section-heading"><?php _e( 'Comment navigation', 'toolbox' ); ?></h1>
 			<div class="nav-previous"><?php previous_comments_link( __( '&larr; Older Comments', 'toolbox' ) ); ?></div>
 			<div class="nav-next"><?php next_comments_link( __( 'Newer Comments &rarr;', 'toolbox' ) ); ?></div>
 		</nav>
@@ -72,5 +65,11 @@
 	<?php endif; ?>
 
 	<?php comment_form(); ?>
+    
 
 </div><!-- #comments -->
+<?php if ( is_active_sidebar( 'sidebar-coments' ) ) : ?>
+		<div id="sidebar-coments" class="widget-area" role="complementary">
+			<?php dynamic_sidebar( 'sidebar-coments' ); ?>
+		</div>
+    <?php endif; ?>

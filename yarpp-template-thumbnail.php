@@ -9,7 +9,7 @@ Author: Francisco de Juan
 ?>
 <?php if ($related_query->have_posts()):?>
 	<div class="clear"></div>
-  <div id="related_posts"><h3>Recetas relacionadas</h3>
+  <div id="related_posts"><h3>Recetas relacionadas...</h3>
   	<?php
   	    $i = 1;
   	    while ($related_query->have_posts()) : $related_query->the_post();

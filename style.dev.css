@@ -16,135 +16,6 @@ Use it to make something cool, have fun, and share what you've learned with othe
 /* Clever Consulting 
 	- Victor Falcon
 */
-.page-wp {
-	width: 980px;
-	margin: 0 auto;
-}
-.clear {clear: both; float: none;}
-
-body {
-	margin: 0;
-	font: 14px/18px Helvetica, sans-serif;
-	color: #7F7E79;
-}
-
-a {
-	color: #40B7D8;
-	text-decoration: none;
-}
-a:hover {}
-a:active { position: relative; top: 1px;}
-
-/* HTML5 Fix */
-header, nav, article, footer, address { display:block; }
-
-/* ===================================================
-   HEADER 
-   =================================================== */
-#branding {
-	background: url(images/header-bg.png) repeat-x;
-	height: 185px;
-}
-/* Logo */
-#branding h1 {
-	text-indent: -99999.999em;
-	margin: 0;
-	float: left;
-}
-#branding h1 a {
-	margin-top: -1px;
-	display: block;
-	width: 219px;
-	height: 184px;
-	background: url(images/recetasdemama.png) no-repeat;
-}
-#branding h1 a:hover {border:0;}
-
-/* Bloque publicidad */
-#header-ads {
-	margin-top: 5px;
-	background: #DED8D3 url(images/publicidad.png) no-repeat 2px;
-	border: 1px solid #DED8D3;
-	width: 740px;
-	height: 90px;
-	float: right;
-}
-#header-ads img {margin-left: 12px;}
-
-#header-ads .widget {padding-left: 12px}
-
-/* Menu */
-#access {
-	display: block;
-	float: right;
-	margin-top: 14px;
-	width: 742px;
-	text-align: right;
-}
-#access ul {
-	list-style: none;
-	margin: 0;
-	padding-left: 0;
-}
-#access li {
-	display: inline-block;
-	*float:right;
-	padding: 0 1.5em;
-}
-#access a {
-	color: #B6B1AB;
-	text-transform: uppercase;
-	font-weight: bold;
-	text-decoration: none;
-	text-shadow: 1px 1px 0 #FFF;
-	display: block;
-	height: 42px;
-	line-height: 42px;
-	padding: 0 1.5em;
-	margin:  0 -2.22em 0 -1.5em;
-}
-#access li.current_page_item {
-	background: url(images/active-section.png) no-repeat;
-	height: 42px;
-}
-#access li.current_page_item a {
-	background: url(images/active-section-2.png) no-repeat right;
-	height: 42px;
-	color: #7F7E79;
-}
-#access ul ul {
-	box-shadow: 0 3px 3px rgba(0,0,0,0.2);
-	-moz-box-shadow: 0 3px 3px rgba(0,0,0,0.2);
-	-webkit-box-shadow: 0 3px 3px rgba(0,0,0,0.2);
-	display: none;
-	float: left;
-	position: absolute;
-	top: 2em;
-	left: 0;
-	z-index: 99999;
-}
-#access ul ul ul {
-	left: 100%;
-	top: 0;
-}
-#access ul ul a {
-	background: #dedede;
-	line-height: 1em;
-	padding: .5em .5em .5em 1em;
-	width: 10em;
-	height: auto;
-}
-#access li:hover > a,
-#access ul ul :hover > a {
-	color: #7F7E79;
-	border: none;
-}
-#access ul ul a:hover {
-	background: #cecece;
-}
-#access ul li:hover > ul {
-	display: block;
-}
 
 /* =========================================================
 	Content
@@ -423,41 +294,7 @@ div#recipress_recipe {
 #secondary ul.social li.youtube  {background-position: 0 -53px;}
 #secondary ul.social li.rss      {background-position: 0 -79px;}
 
-/* Subscribe Box */
-.nsu_widget form {
-	background: url(images/subscribe-bg.png) -1px 10px no-repeat;
-	width: 312px;
-	height: 163px;
-	display: block;
-	margin-top: 16px !important;
-	margin-left: -5px;
-	margin-bottom: -15px;
-	padding: 25px 0 0 0;
-	text-align: right;
-	font: bold 16px/20px Georgia, serif;
-	color: #807E7A;
-}
-.nsu_widget .nsu-text-before-form {margin: 2px 0 5px 0;}
-.nsu_widget p {margin: 0}
-.nsu_widget input[type=text] {
-	margin: 5px 20px 0 0;
-	width: 60%;
-	border: 1px solid #DED8D3;
-	border-radius: 5px;
-	padding: 6px;
-}
-.nsu_widget input[type=submit] {
-	background: url(images/subscribe-button.png) no-repeat 0 2px;
-	width: 124px;
-	height: 34px;
-	border: 0;
-	margin: 7px 20px 0 0;
-	color: #FFD6CC;
-	font-weight: bold;
-	text-align: left;
-	padding-left: 40px;
-	text-shadow: 2px 2px 2px rgba(0,0,0,.3);
-}
+
 
 /* 	Widgets
  *	Estilo general
@@ -471,18 +308,6 @@ div#recipress_recipe {
 		margin: 0 0 10px 0;
 	}
 
-/* Categories List */
-.widget_categories ul, ul.popular-category-list {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-}
-.widget_categories ul li, ul.popular-category-list li {
-	background: url(images/categories.png) 0 -24px no-repeat;
-	padding-left: 22px;
-	margin: 1px 0 2px 15px;
-}
-.widget_categories ul li:hover, ul.popular-category-list li:hover { background-position: 0 2px; }
 
 /* Search form */
 #searchform {
@@ -591,88 +416,7 @@ form#commentform label {
 	}
 
 
-/* =========================================================
-	Footer
-========================================================= */
-#colophon {
-	margin-top: 60px;
-	background: url(images/footer-bg.png) repeat-x;
-	height: 260px;
-	padding-top: 30px;
-	font-size: 12px;
-	overflow: hidden;
-}
 
-#colophon a       {color: #807E7A;}
-#colophon a:hover {color: #40B7D8;border:0} 
-
-#colophon h1.widget-title {
-	font-size: 14px;
-}
-#colophon .widget {
-	float: left;
-	margin-left: 65px;
-}
-#colophon .widget:first-child {margin-left: 0;}
-
-#colophon .widget ul {
-	list-style: none;
-	margin:0;
-	padding:0;
-}
-#colophon .widget ul li {margin: 1px 0;}
-
-#sidebar-footer {height: 170px;}
-
-/* Boton tienda */
-.tienda-button {
-	background: url(images/tienda-button.png) no-repeat;
-	width: 164px;
-	height: 54px;
-	display: block;
-	margin-top: 15px;
-	text-indent:-99999.999em;
-}
-.tienda-button:hover {position: relative;top: -1px;}
-.tienda-button:active {position: relative;top: 3px;}
-
-/* Twitter */
-.widget_twitter {
-	width: 270px;
-	background: url(images/twitter-bird.png) no-repeat;
-	height: 150px;
-	padding: 20px 0 0 30px;
-}
-.twitter-item {
-	font: italic 16px/20px Georgia, serif;
-}
-.twitter-timestamp {font-size: 10px;}
-
-/**/
-#colophon ul.social li a {
-	background: url(images/social.png) no-repeat;
-	padding: 4px 0 4px 35px;
-	margin: 3px 0;
-	display: block;
-}
-#colophon ul.social li.facebook a {background-position: 0   -106px;}
-#colophon ul.social li.twitter a  {background-position: 0 -133px;}
-#colophon ul.social li.youtube a  {background-position: 0 -158px;}
-#colophon ul.social li.rss a      {background-position: 0 -184px;}
-
-#colophon ul.social li.facebook a:hover {background-position: 0   0px;}
-#colophon ul.social li.twitter a:hover  {background-position: 0 -27px;}
-#colophon ul.social li.youtube a:hover  {background-position: 0 -53px;}
-#colophon ul.social li.rss a:hover      {background-position: 0 -79px;}
-
-/* Sign */
-#colophon #sign {
-	text-align: right;
-	margin-top: 30px;
-	padding-top: 6px;
-	background: url(images/recetasdemama-sign.png) no-repeat center 15px;
-}
-#colophon #sign p {margin: 2px 0;}
 
 /* =Structure
 -------------------------------------------------------------- */
@@ -985,21 +729,6 @@ article.comment {
 }
 
 
-/* =Newsletter Sign Up plugin
--------------------------------------------------------------- */
-.nsu-form { margin:10px 0; }
-
-.nsu-form p,.nsu-text-before-form,.nsu-text-after-form{ clear:both; display:block; margin:5px 0; }
-.nsu-text-before-form ul,nsu-text-after-form ul,.nsu-text-before-form ol,nsu-text-after-form ol{ margin-left:15px; }
-
-.nsu-form label{font-weight:bold; margin: 0 10px;}
-.nsu-form input{ padding:2px; color:#999; }
-.nsu-form input:focus, .nsu-form input:active{ color:#000; }
-
-.nsu-field{ background:white; }
-input.nsu-submit{ color:#000; }
-
-.nsu-error { font-size:75%; font-style:italic; }
 
 
 /* =Recipress plugin

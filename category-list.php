@@ -8,14 +8,20 @@
  */
 
 get_header(); ?>
+<?php if ( is_active_sidebar( 'sidebar-header' ) ) : ?>
+	<div id="sidebar-header" class="widget-area" role="complementary">
+		<?php dynamic_sidebar( 'sidebar-header' ); ?>
+	</div>
+<?php endif; ?>
 
-		<div id="primary" class="full-width">
-			<div id="content" class="category-page" role="main">
-				<div class="header">
-					<h2>Categorías</h2>
-					<?php include (TEMPLATEPATH . '/searchform.php'); ?>
-				</div>
-				<div class="clear"></div>
+<h1 class="page-title tituloCategorias">
+	<div class="left"></div>
+	<div class="text">Categorías</div>
+    <div class="right"></div>
+</h1>
+<div class="global" id="content" role="main">
+		
+				
 
 				<?php
 				$terms = apply_filters( 'taxonomy-images-get-terms', '' );
@@ -30,15 +36,19 @@ get_header(); ?>
 				);
 				$categories=get_categories($args);
 			 	foreach($categories as $category) { ?>
-			 		<div class="cat-box">
-			 			<a href="<?= get_category_link($category->term_id); ?>">
-			 			  <?= $cat_img[$category->term_id]; ?>
-			 			  <h4><?= $category->name ?></h4>
-			 			</a>
-			 		</div>  
+                	<article class="mini cat">
+						<a href="<?= get_category_link($category->term_id); ?>">
+							<?= $cat_img[$category->term_id]; ?>
+                        </a>
+    					<header class="entry-header">
+							<h1 class="entry-title">
+        						<a href="<?= get_category_link($category->term_id); ?>"><?= $category->name ?></a>
+        					</h1>
+						</header><!-- .entry-header -->
+					</article>
 				<?php } ?>
 
 			</div><!-- #content -->
-		</div><!-- #primary -->
+		
 
 <?php get_footer(); ?>
