@@ -26,13 +26,13 @@ get_header(); ?>
 		while ( have_posts() ) : the_post(); 
 			if ( !is_paged() ) { 
 				if($i>=6){
-					if($iMini==0){
+					/*if($iMini==0){
 						?>
                         <h2>Más recetas deliciosas...</h2>
                         <?
 					}
 					$iMini++;
-					get_template_part( 'content-mini', get_post_format() );	
+					get_template_part( 'content-mini', get_post_format() );	*/
 				}else if($i==2){
 					get_template_part( 'content-entero', get_post_format() );	
 				}else{
@@ -50,13 +50,6 @@ get_header(); ?>
 			} else { 
 				// Contenido para paginas
 				if($i>=6){
-					if($iMini==0){
-						?>
-                        <h2>Más recetas deliciosas...</h2>
-                        <?
-					}
-					$iMini++;
-					get_template_part( 'content-mini', get_post_format() );	
 				}else
 				if($i==2){
 					get_template_part( 'content-entero', get_post_format() );	
@@ -72,7 +65,28 @@ get_header(); ?>
 				}
 				$i++;
 			}
-		endwhile;  ?>
+		endwhile;  
+		wp_reset_query();
+		?>
+         <h2>Más recetas deliciosas...</h2>
+        <?
+		$sticky = get_option( 'sticky_posts' ); // Get all sticky posts
+		if (!empty($sticky)) {
+			?><div class="Contenidostickys"><?
+		  	shuffle( $sticky ); // Sort the stickies, latest first
+		  	$sticky = array_slice( $sticky, 0, 4 ); // Number of stickies to show
+			$totalPostSticky=count($sticky);
+			$actualPostSticky=1;
+		  	query_posts( array( 'post__in' => $sticky, 'caller_get_posts' => 1 ) ); // The query
+		  	if (have_posts() ) { 
+			  	while ( have_posts() ) : the_post(); 
+					get_template_part( 'content-mini', get_post_format() );	
+                endwhile;
+		  	}
+		  	wp_reset_query();
+			?></div><?
+		} ?>
+			
 		<div class="clear"></div>
 		<?php toolbox_content_nav( 'nav-below' ); 
 	else : ?>

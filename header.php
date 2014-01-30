@@ -80,7 +80,7 @@ googletag.enableServices();
 <?php do_action( 'before' ); ?>
 <div id="wrap">
 	<?
-	if ( is_home()) { 	
+	if ( is_home() and !is_paged()) { 	
 		$sticky = get_option( 'sticky_posts' ); // Get all sticky posts
 		if (!empty($sticky)) {
 			?><div class="Contenidostickys"><?

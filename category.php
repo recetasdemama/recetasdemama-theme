@@ -21,12 +21,19 @@ get_header(); ?>
 
 	<?php 
 	$i = 0; // Variable para contar post
+	$est=2; //variable para saber si tengo que poner post entero
 	$iMini = 0; // Variable para contar post
 	if ( have_posts() ) : 
 		/* Start the Loop */ 
 		while ( have_posts() ) : the_post(); 
-				if($i==2){
+				if($i==$est){
 					get_template_part( 'content-entero', get_post_format() );	
+					if($est==2){
+						$est+=4;
+					}else{
+						$est+=5;
+					}
+					
 				}else{
 					if($i==4){
 						if ( is_active_sidebar( 'posts-ad-banner' ) ){ 

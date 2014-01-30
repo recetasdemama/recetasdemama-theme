@@ -42,31 +42,7 @@
 		list-style: none;
 		margin: 0;
 		padding-left: 0;
-	}
-	#access li#menu-item-8700{
-		display: block;
-		margin:0 0 0 0;
-		height:auto;
-		background-color:#fc7700;
-	}
-	#access li#menu-item-8700:hover{
-		background-color:#c25c00;
-	}
-	#access li#menu-item-8697{
-		display: block;
-		margin:0 0 0 0;
-	}
-	#access li#menu-item-8698{
-		display: block;
-		margin:0 0 0 0;
-	}
-	#access li#menu-item-8699{
-		display: block;
-		margin:0 0 0 0;
-	}
-	#access li#menu-item-10598{
-		display: block;
-		margin:0 0 0 0;
+		display:none;
 	}
 	#sidebar-header{
 		width:100%;
@@ -119,23 +95,6 @@
 	#sidebar-desktop{
 		display:none;
 	}
-	#comments{
-		display:block;
-		width:100%;
-		margin:20px 0 20px 0;
-	}
-	#sidebar-coments{
-		display:block;
-		width:100%;
-		margin:20px 0 0 0;
-	}
-	#access a {
-		font-size:14px;
-		line-height:14px;
-		padding: 0;
-		margin:0;
-		padding: 5px;	
-	}
 	
 @media screen and (max-width:640px){ 
 	.global#content{
@@ -177,7 +136,7 @@
 	#access li#menu-item-8700{
 		display: inline-block;
 		margin:0 0 0 0;
-		height:auto;
+		height:100px;
 		background-color:#fc7700;
 	}
 	#access li#menu-item-8700:hover{
@@ -190,19 +149,19 @@
 	}
 	#access li#menu-item-8697{
 		display: inline-block;
-		margin:0 5px 0 0;
+		margin:0 15px 0 0;
 	}
 	#access li#menu-item-8698{
 		display: inline-block;
-		margin:0 5px 0 0;
+		margin:0 15px 0 0;
 	}
 	#access li#menu-item-8699{
 		display: inline-block;
-		margin:0 5px 0 0;
+		margin:0 15px 0 0;
 	}
 	#access li#menu-item-10598{
 		display: inline-block;
-		margin:0 5px 0 0;
+		margin:0 15px 0 0;
 	}
 	#sidebar-header aside#search-2{
 		display:inline-block;
@@ -236,12 +195,19 @@
 	article.single .img-cabecera img{
 		top:-20%;
 	}
-	#access a {
-	  font-size:18px;
-	  line-height:18px;
-	  padding: 0;
-	  margin:0;
-	  padding: 15px;	
+	#access li#menu-item-8700{
+		display: inline-block;
+		margin:0 0 0 0;
+		height:auto;
+		background-color:#fc7700;
+	}
+	#access li#menu-item-8700:hover{
+		background-color:#c25c00;
+	}
+	#access li#menu-item-8700 a{
+	}
+	#access li#menu-item-8700 a:hover{
+		background-color:transparent;
 	}
 	#access li#menu-item-8697{
 		display: inline-block;
@@ -298,16 +264,6 @@
 @media screen and (min-width:1020px){ 
 	#sidebar-desktop{
 		display:block;
-	}
-	#comments{
-	display:inline-block;
-	width:65%;
-	margin:20px 3% 20px 0;
-	}
-	#sidebar-coments{
-	display:inline-block;
-	width:30%;
-	margin:20px 0 20px 2%;
 	}
 }
 @media screen and (min-width:1200px){ 
@@ -413,9 +369,14 @@ HEADER
 
 #access a {
 	color: #fff;
+	font-size:18px;
+	line-height:18px;
 	font-family:'Della Respira', serif;
 	text-decoration: none;
 	display: block;
+	padding: 0;
+	margin:0;
+	padding: 15px;	
 }
 #access li a:hover{
 	background-color:#6b0c1f
@@ -1135,11 +1096,13 @@ article.single.hrecipe .Cingredients h3{
 	width:80%;
 	font-size:0;
 	margin:0 10% 0 10%;
-	padding-bottom:20px;
 }
 #comments{
 	font-size:14px;
 	line-height:18px;
+	display:inline-block;
+	width:65%;
+	margin:20px 3% 20px 0;
 	padding:20px 0 0 0;
 	vertical-align:top;
 }
@@ -1174,6 +1137,9 @@ article.single.hrecipe .Cingredients h3{
 #sidebar-coments{
 	font-size:14px;
 	line-height:18px;
+	display:inline-block;
+	width:30%;
+	margin:20px 0 20px 2%;
 	padding:20px 0 0 0;
 	vertical-align:top;
 }
@@ -1635,269 +1601,4 @@ h1.tituloCategorias div.text{
 	padding:0;
 	font-size: 30px;
 	line-height: 35px;
-}
-/*SOBRE NOSOTROS*/
-.GlobalSobre{
-		margin:20px 0 0 0;
-		font-size:0;
-		-moz-box-sizing: border-box;
-		-webkit-box-sizing: border-box;
-		-ms-box-sizing: border-box;
-		box-sizing: border-box;
-		position:relative;
-		padding:30px 0 0 0;
-		min-height:1203px;
-}
-.GlobalSobre .SobreSup{
-	position:absolute;
-	background: url(images/fondo_sobre.png) no-repeat;
-	top:-20px;
-	left:0;
-	height:1203px;
-	width:100%;
-	z-index:10;
-}
-.GlobalSobre .SobreSup .PorQue{
-	display:inline-block;
-	width:650px;
-	height:1100px;
-	vertical-align:top;
-}
-.GlobalSobre .SobreSup .Historia{
-	display:inline-block;
-	width:550px;
-	height:1100px;
-	vertical-align:top;
-	position:relative;
-}
-.GlobalSobre .SobreSup .Historia .FondoHistoria{
-	position:absolute;
-	background: url(images/fondo_historia.png) no-repeat;
-	top:75px;
-	left:-100px;
-	height:1203px;
-	width:590px;
-	z-index:10;
-}
-.GlobalSobre .SobreSup .Historia .FondoHistoria .Titular{
-	display:block;
-	margin:340px 90px 20px 130px;
-	text-align:center;
-	font-size:20px;
-	color:#584017;
-	line-height:24px;
-	font-family:'Della Respira', serif;
-	background: url(images/tituloIngredientesDR.png) no-repeat center;
-}
-.GlobalSobre .SobreSup .Historia .FondoHistoria .TextoGeneral{
-	display:block;
-	margin:0 155px 20px 195px;
-	text-align:justify;
-	color:#584017;
-	font-size:14px;
-	line-height:16px;
-	font-family:'Open Sans', sans-serif;
-}
-.GlobalSobre .SobreSup .Historia .FondoHistoria .TituloRedes{
-	display:block;
-	margin:60px 155px 10px 195px;
-	text-align:justify;
-	color:#584017;
-	font-size:14px;
-	line-height:16px;
-	font-family:'Open Sans', sans-serif;
-}
-.GlobalSobre .SobreSup .Historia .FondoHistoria .Redes{
-	display:block;
-	margin:0 155px 5px 195px;
-}
-.GlobalSobre .SobreSup .Historia .FondoHistoria .Redes a {
-	background: url(images/social.png) no-repeat;
-	width:23px;
-	height:23px;
-	margin-right:10px;
-	display: inline-block;
-}
-.GlobalSobre .SobreSup .Historia .FondoHistoria .Redes a.facebook {background-position: 0 -106px;}
-.GlobalSobre .SobreSup .Historia .FondoHistoria .Redes a.twitter {background-position: 0 -133px;}
-.GlobalSobre .SobreSup .Historia .FondoHistoria .Redes a.youtube {background-position: 0 -158px;}
-
-.GlobalSobre .SobreSup .Historia .FondoHistoria .Redes a.facebook:hover {background-position: 0   0px;}
-.GlobalSobre .SobreSup .Historia .FondoHistoria .Redes a.twitter:hover  {background-position: 0 -27px;}
-.GlobalSobre .SobreSup .Historia .FondoHistoria .Redes a.youtube:hover  {background-position: 0 -53px;}
-
-.GlobalSobre .SobreSup .Historia .FondoHistoria a.mailto{
-	display:block;
-	margin:0 155px 20px 195px;
-	font-weight:600;
-	color:#ac1636;
-	font-size:14px;
-	line-height:16px;
-	text-decoration:none;
-}
-.GlobalSobre .SobreSup .PorQue .FondoPorQue{
-	position:absolute;
-	background: url(images/fondo_porque.png) no-repeat 0 230px;
-	top:75px;
-	left:60px;
-	height:1203px;
-	width:575px;
-	z-index:10;
-}
-.GlobalSobre .SobreSup .PorQue .FondoPorQue .Titular{
-	display:block;
-	margin:90px 0 15px 30px;
-	text-align:left;
-	font-size:30px;
-	color:#ffcb5a;
-	line-height:30px;
-	font-family:'Della Respira', serif;
-}
-
-.GlobalSobre .SobreSup .PorQue .FondoPorQue .TextoGeneral1{
-	display:block;
-	margin:0 85px 65px 30px;
-	text-align:left;
-	color:#fff;
-	font-size:16px;
-	line-height:18px;
-	font-family:'Open Sans', sans-serif;
-}
-
-.GlobalSobre .SobreSup .PorQue .FondoPorQue .TextoGeneral2{
-	display:block;
-	margin:0 285px 135px 30px;
-	text-align:left;
-	color:#fff;
-	font-size:16px;
-	line-height:18px;
-	font-family:'Open Sans', sans-serif;
-}
-
-.GlobalSobre .SobreSup .PorQue .FondoPorQue .TextoGeneral3{
-	display:block;
-	margin:0 40px 65px 315px;
-	text-align:right;
-	color:#fff;
-	font-size:16px;
-	line-height:18px;
-	font-family:'Open Sans', sans-serif;
-}
-
-.GlobalSobre .SobreSup .PorQue .FondoPorQue .TextoGeneral4{
-	display:block;
-	margin:0 350px 85px 30px;
-	text-align:left;
-	color:#fff;
-	font-size:16px;
-	line-height:18px;
-	font-family:'Open Sans', sans-serif;
-}
-
-.GlobalSobre .SobreSup .PorQue .FondoPorQue .TextoGeneral5{
-	display:block;
-	margin:0 40px 75px 245px;
-	text-align:right;
-	color:#fff;
-	font-size:16px;
-	line-height:18px;
-	font-family:'Open Sans', sans-serif;
-}
-.GlobalSobre .SobreSup .PorQue .FondoPorQue .TextoGeneral6{
-	display:block;
-	margin:0 85px 0 45px;
-	text-align:left;
-	color:#fff;
-	font-size:16px;
-	line-height:18px;
-	font-family:'Open Sans', sans-serif;
-}
-.GlobalSobre .SobreSup .CitaFinal{
-	display:block;
-	width:100%;
-	font-size:24px;
-	line-height:26px;
-	font-family:'Della Respira', serif;
-	text-align:center;
-	color:#FFF;
-}
-.GlobalSobre .Libros{
-	display:block;
-	width:100%;
-	padding:125px;
-	margin:1114px 0 0 0;
-	background-color:#FFF;
-	-moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-}
-.GlobalSobre .Libros .Titulo{
-	display:block;
-	width:100%;
-	font-size:33px;
-	line-height:25px;
-	font-family:'Della Respira', serif;
-	text-align:center;
-	color:#b10f2d;
-	margin-bottom:20px;
-}
-.GlobalSobre .Libros .TextoA{
-	display:block;
-	width:100%;
-	font-size:14px;
-	line-height:16px;
-	font-family:'Open Sans', sans-serif;
-	text-align:center;
-	color:#45310f;
-	margin-bottom:60px;
-}
-.GlobalSobre .Libros .Foto1{
-	display:inline-block;
-	width:241px;
-	height:305px;
-	background: url(images/libro1.png) no-repeat;
-	vertical-align:top;
-	margin-right:113px;
-	margin-bottom:15px;
-}
-.GlobalSobre .Libros .Foto2{
-	display:inline-block;
-	width:241px;
-	height:305px;
-	background: url(images/libro2.png) no-repeat;
-	vertical-align:top;
-	margin-right:113px;
-	margin-bottom:15px;
-}
-.GlobalSobre .Libros .Foto3{
-	display:inline-block;
-	width:241px;
-	height:305px;
-	background: url(images/libro3.png) no-repeat;
-	vertical-align:top;
-	margin-bottom:15px;
-}
-.GlobalSobre .Libros .Texto1{
-	display:inline-block;
-	width:241px;
-	vertical-align:top;
-	margin-right:113px;
-	color:#45310f;
-	font-size:14px;
-	line-height:18px;
-	font-family:'Open Sans', sans-serif;
-	text-align:justify;
-	margin-bottom:90px;
-}
-.GlobalSobre .Libros .Texto3{
-	display:inline-block;
-	width:241px;
-	vertical-align:top;
-	color:#45310f;
-	font-size:14px;
-	line-height:18px;
-	font-family:'Open Sans', sans-serif;
-	text-align:justify;
-	margin-bottom:90px;
 }
