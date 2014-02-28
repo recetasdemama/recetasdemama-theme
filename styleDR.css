@@ -1,4 +1,7 @@
 /*RESPONSIVE */
+	img{
+		border:none;
+	}
 	.page-wp {
 		width: auto;
 		margin: 0;
@@ -136,8 +139,57 @@
 		margin:0;
 		padding: 5px;	
 	}
+	header{
+		width:100%;
+	}
 	
+.GlobalSobre .SobreSup{
+	height:2350px;
+}
+.GlobalSobre .SobreSup .PorQue{
+	display:block;
+	margin: 0 auto;
+	height:1200px;
+}
+.GlobalSobre .SobreSup .PorQue .FondoPorQue{
+	top:135px;
+}
+.GlobalSobre .SobreSup .Historia{
+	display:block;
+	margin: 0 auto;
+}
+.GlobalSobre .SobreSup .Historia .FondoHistoria{
+	left:0;
+}
+.GlobalSobre .SobreSup .CitaFinal{
+	color:#45310f;
+}
+.GlobalSobre .Libros{
+	margin:2300px 0 0 0;
+}
+.GlobalSobre .Libros .ContenidoL1{
+	display:block;
+	width:50%;
+	margin:0 auto;
+}
+.GlobalSobre .Libros .ContenidoL2{
+	display:block;
+	width:50%;
+	margin:0 auto;
+}
+.GlobalSobre .Libros .ContenidoL3{
+	display:block;
+	width:50%;
+	margin:0 auto;
+}
+.GlobalSobre .Libros iframe{
+	width:100%!important;
+}
+
 @media screen and (max-width:640px){ 
+	header{
+		width:640px;
+	}
 	.global#content{
 		width:640px;
 	}
@@ -149,6 +201,24 @@
 	}
 	footer#colophon2{
 		width:640px;
+	}
+	.global#content article.entero{
+		position:relative;
+	}
+	.GlobalSobre .Libros .ContenidoL1{
+		display:block;
+		width:80%;
+		margin:0 auto;
+	}
+	.GlobalSobre .Libros .ContenidoL2{
+		display:block;
+		width:80%;
+		margin:0 auto;
+	}
+	.GlobalSobre .Libros .ContenidoL3{
+		display:block;
+		width:80%;
+		margin:0 auto;
 	}
 	
 }	
@@ -164,10 +234,6 @@
 	.Contenidostickys{
 		display:block;
 	}
-	/*#access li {
-		display: block;
-		margin:0 15px 0 0;
-	}*/
 	#access ul {
 		list-style: none;
 		margin: 0;
@@ -222,6 +288,20 @@
 	
 }
 @media screen and (min-width:920px){ 
+	.GlobalSobre .Libros .ContenidoL1{
+	  display:inline-block;
+	  width:25%;
+	  margin:0 12% 0 0;
+  	}
+	.GlobalSobre .Libros .ContenidoL2{
+	  display:inline-block;
+	  width:25%;
+	  margin:0 12% 0 0;
+	}
+	.GlobalSobre .Libros .ContenidoL3{
+		display:inline-block;
+		width:25%;
+	}
 	.global#content article.basico, .global#content .PublicidadEntrePost{
 		width:50%;
 		display:inline-block;
@@ -311,6 +391,32 @@
 	}
 }
 @media screen and (min-width:1200px){ 
+
+.GlobalSobre .SobreSup{
+	height:1203px;
+}
+.GlobalSobre .SobreSup .PorQue{
+	display:inline-block;
+	margin: 0 auto;
+	height:1100px;
+}
+.GlobalSobre .SobreSup .PorQue .FondoPorQue{
+	top:75px;
+}
+.GlobalSobre .SobreSup .Historia{
+	display:inline-block;
+	margin: 0;
+}
+.GlobalSobre .SobreSup .Historia .FondoHistoria{
+	left:-100px;
+}
+.GlobalSobre .SobreSup .CitaFinal{
+	color:#FFF;
+}
+.GlobalSobre .Libros{
+	margin:1114px 0 0 0;
+}
+
 	.page-wp {
 		width: 1200px;
 		margin: 0 auto;
@@ -922,7 +1028,7 @@ article.single.hrecipe .firma{
 	padding:50px 150px 0 0;
 	height:125px;
 	text-align:right;
-	border-bottom:#f2f2f2 10px solid;
+	/*border-bottom:#f2f2f2 10px solid;*/
 	background:url(images/firmaDR.png) no-repeat right;
 	-moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -1650,21 +1756,18 @@ h1.tituloCategorias div.text{
 }
 .GlobalSobre .SobreSup{
 	position:absolute;
-	background: url(images/fondo_sobre.png) no-repeat;
+	background: url(images/fondo_sobre.png) #FFF no-repeat;
 	top:-20px;
 	left:0;
-	height:1203px;
 	width:100%;
 	z-index:10;
 }
 .GlobalSobre .SobreSup .PorQue{
-	display:inline-block;
 	width:650px;
-	height:1100px;
 	vertical-align:top;
+	position:relative;
 }
 .GlobalSobre .SobreSup .Historia{
-	display:inline-block;
 	width:550px;
 	height:1100px;
 	vertical-align:top;
@@ -1674,7 +1777,6 @@ h1.tituloCategorias div.text{
 	position:absolute;
 	background: url(images/fondo_historia.png) no-repeat;
 	top:75px;
-	left:-100px;
 	height:1203px;
 	width:590px;
 	z-index:10;
@@ -1738,7 +1840,6 @@ h1.tituloCategorias div.text{
 .GlobalSobre .SobreSup .PorQue .FondoPorQue{
 	position:absolute;
 	background: url(images/fondo_porque.png) no-repeat 0 230px;
-	top:75px;
 	left:60px;
 	height:1203px;
 	width:575px;
@@ -1819,13 +1920,11 @@ h1.tituloCategorias div.text{
 	line-height:26px;
 	font-family:'Della Respira', serif;
 	text-align:center;
-	color:#FFF;
 }
 .GlobalSobre .Libros{
 	display:block;
 	width:100%;
 	padding:125px;
-	margin:1114px 0 0 0;
 	background-color:#FFF;
 	-moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -1852,37 +1951,24 @@ h1.tituloCategorias div.text{
 	color:#45310f;
 	margin-bottom:60px;
 }
-.GlobalSobre .Libros .Foto1{
-	display:inline-block;
-	width:241px;
-	height:305px;
-	background: url(images/libro1.png) no-repeat;
+.GlobalSobre .Libros .ContenidoL1{
 	vertical-align:top;
-	margin-right:113px;
-	margin-bottom:15px;
 }
-.GlobalSobre .Libros .Foto2{
-	display:inline-block;
-	width:241px;
-	height:305px;
-	background: url(images/libro2.png) no-repeat;
+.GlobalSobre .Libros .ContenidoL2{
 	vertical-align:top;
-	margin-right:113px;
-	margin-bottom:15px;
 }
-.GlobalSobre .Libros .Foto3{
-	display:inline-block;
-	width:241px;
-	height:305px;
-	background: url(images/libro3.png) no-repeat;
+.GlobalSobre .Libros .ContenidoL3{
+	vertical-align:top;
+}
+.GlobalSobre .Libros .FotoL{
+	display:block;
+	width:100%;
 	vertical-align:top;
 	margin-bottom:15px;
 }
 .GlobalSobre .Libros .Texto1{
-	display:inline-block;
-	width:241px;
+	display:block;
 	vertical-align:top;
-	margin-right:113px;
 	color:#45310f;
 	font-size:14px;
 	line-height:18px;
@@ -1891,8 +1977,7 @@ h1.tituloCategorias div.text{
 	margin-bottom:90px;
 }
 .GlobalSobre .Libros .Texto3{
-	display:inline-block;
-	width:241px;
+	display:block;
 	vertical-align:top;
 	color:#45310f;
 	font-size:14px;
@@ -1900,4 +1985,10 @@ h1.tituloCategorias div.text{
 	font-family:'Open Sans', sans-serif;
 	text-align:justify;
 	margin-bottom:90px;
+}
+.P404{
+	width:650px;
+	height:650px;
+	background: url(images/pagina404.jpg) no-repeat;
+	margin:0 auto;
 }

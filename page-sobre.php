@@ -59,17 +59,23 @@ Template Name:Sobre Nosotros
             <div class="TextoA">
             	Una de las mejores experiencias de publicar este blog fue conocer a <b>Juan Luis Miravet y Plataforma Editorial</b>. En la noche de reyes de 2009, Juan Luis se puso en contacto con nosotros a través de un comentario y nos propuso llevar nuestras recetas a un libro... ¡y acabamos publicando 3!
             </div>
-            <div class="Foto1"></div>
-            <div class="Foto2"></div>
-            <div class="Foto3"></div>
-            <div class="Texto1">
-            	En enero de 2010 recibimos una invitación de Juan Luis Miravet y Plataforma Editorial para escribir un libro con nuestras mejores recetas. Con mucha ilusión empezamos a trabajar en el libro: buscando <b>nuestras recetas más familiares</b> y haciendo las mejores fotos posibles para que el libro fuera muy apetitoso.
+            <div class="ContenidoL1">
+            	<img class="FotoL" src="<?php bloginfo( 'template_url' ); ?>/images/libro1.png" />
+                <div class="Texto1">
+            		En enero de 2010 recibimos una invitación de Juan Luis Miravet y Plataforma Editorial para escribir un libro con nuestras mejores recetas. Con mucha ilusión empezamos a trabajar en el libro: buscando <b>nuestras recetas más familiares</b> y haciendo las mejores fotos posibles para que el libro fuera muy apetitoso.
+            	</div>
             </div>
-            <div class="Texto1">
-            	Después del buen sabor de boca que nos dejó publicar nuestras recetas, fuimos a por el segundo libro. Esta vez dedicado a <b>dulces y postres</b>: una selección de recetas fáciles y vistosas, que son aptas para iniciarse en el mundo de la repostería. Con estas recetas siempre triunfarás.
+            <div class="ContenidoL2">
+            	<img class="FotoL" src="<?php bloginfo( 'template_url' ); ?>/images/libro2.png" />
+                <div class="Texto1">
+            		Después del buen sabor de boca que nos dejó publicar nuestras recetas, fuimos a por el segundo libro. Esta vez dedicado a <b>dulces y postres</b>: una selección de recetas fáciles y vistosas, que son aptas para iniciarse en el mundo de la repostería. Con estas recetas siempre triunfarás.
+           		</div>
             </div>
-            <div class="Texto3">
-            	Ya en 2012, y con la colaboración de Victor y Ana de "Caminar Sin Gluten", publicamos un libro para celíacos, con una <b>colección de recetas prácticas para cocinar sin gluten</b> y tener una dieta variada y divertida, que incluye desde panes y bizcochos hasta un capítulo para fiestas y cumpleaños.
+            <div class="ContenidoL3">
+            	<img class="FotoL" src="<?php bloginfo( 'template_url' ); ?>/images/libro3.png" />
+                <div class="Texto3">
+            		Ya en 2012, y con la colaboración de Victor y Ana de "Caminar Sin Gluten", publicamos un libro para celíacos, con una <b>colección de recetas prácticas para cocinar sin gluten</b> y tener una dieta variada y divertida, que incluye desde panes y bizcochos hasta un capítulo para fiestas y cumpleaños.
+            	</div>
             </div>
             <div class="Titulo">Redes Sociales</div>
             <!-- facebook -->
