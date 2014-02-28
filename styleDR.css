@@ -1,4 +1,11 @@
 /*RESPONSIVE */
+	html{
+		font-size:14px;
+	}
+	body{
+		font-size:14px;
+		font-size:1Rem;
+	}
 	img{
 		border:none;
 	}
@@ -133,7 +140,7 @@
 		margin:20px 0 0 0;
 	}
 	#access a {
-		font-size:14px;
+		font-size:14px; font-size:1Rem;
 		line-height:14px;
 		padding: 0;
 		margin:0;
@@ -185,9 +192,18 @@
 .GlobalSobre .Libros iframe{
 	width:100%!important;
 }
+.GlobalSobre .SobreSup{
+	width:100%;
+}
+.GlobalSobre .Libros{
+	width:100%;
+}
 
 @media screen and (max-width:640px){ 
-	header{
+	html{
+		font-size:16px;
+	}
+	header#branding{
 		width:640px;
 	}
 	.global#content{
@@ -219,6 +235,12 @@
 		display:block;
 		width:80%;
 		margin:0 auto;
+	}
+	.GlobalSobre .SobreSup{
+		width:640px;
+	}
+	.GlobalSobre .Libros{
+		width:640px;
 	}
 	
 }	
@@ -317,7 +339,7 @@
 		top:-20%;
 	}
 	#access a {
-	  font-size:18px;
+	  font-size:18px; font-size:1.285Rem;
 	  line-height:18px;
 	  padding: 0;
 	  margin:0;
@@ -465,7 +487,6 @@ cite{
 }
 body {
 	margin: 0;
-	font-size:12px;
 	line-height:14px;
 	font-family:'Open Sans', sans-serif;
 	color: #7F7E79;
@@ -546,7 +567,7 @@ CONTENT
 	border: 1px solid #a91231;
 	color: #363636;
 	background-color: #FFF;
-	font-size: 11px;
+	font-size:11px; font-size:0.785Rem;
 	padding: 7px;
 	margin: 0 0 10px 0;
 	-moz-box-sizing: border-box;
@@ -573,7 +594,7 @@ CONTENT
 }
 #sidebar-header .widget_siguenos_wg h1{
 	display:inline-block;
-	font-size:14px;
+	font-size:14px; font-size:1Rem;
 	font-weight:400;
 	margin:0;
 	padding:8px 0 0 0;
@@ -627,7 +648,7 @@ CONTENT
 .global#content .PublicidadEntrePost h1{
 	color:#a21b3e;
 	font-weight:normal;
-	font-size:20px;
+	font-size:20px; font-size:1.428Rem;
 	line-height:20px;
 	text-align:left;
 	font-family:'Della Respira', serif;
@@ -664,7 +685,7 @@ article.entero .entry-categorias ul{
 article.entero .entry-categorias ul li{
 	padding:0;
 	margin:0 10px 0 0;
-	font-size:14px;
+	font-size:14px; font-size:1Rem;
 	font-weight:600;
 	display:inline-block;
 	color:#000;
@@ -744,14 +765,14 @@ article.entero .contenidoImg .extend .ContenedorClip .Clip{
 article.entero .contenidoImg .extend .ContenedorClip .Clip h1 a{
 	color:#a51a41;
 	font-weight:normal;
-	font-size:20px;
+	font-size:20px; font-size:1.428Rem;
 	line-height:20px;
 	font-family:'Della Respira', serif;
 }
 article.entero .contenidoImg .extend .ContenedorClip .Clip .entry-content{
 	display:block;
 	position:relative;
-	font-size:12px;
+	font-size:12px; font-size:0.857Rem;
 	line-height:16px;
 	font-weight:400;
 	padding:0 0 30px 0;
@@ -760,7 +781,7 @@ article.entero .contenidoImg .extend .ContenedorClip .Clip .entry-content a.more
 	position:absolute;
 	right:0;
 	bottom:0;
-	font-size:14px;
+	font-size:14px; font-size:1Rem;
 	line-height:14px;
 	color:#a91231;
 	font-weight:800; 
@@ -783,7 +804,7 @@ article.basico h1{
 article.basico h1 a{
 	color:#a51a41;
 	font-weight:normal;
-	font-size:26px;
+	font-size:26px; font-size:1.857Rem;
 	line-height:26px;
 	font-family:'Della Respira', serif;
 	position:absolute;
@@ -827,7 +848,7 @@ article.basico .entry-categorias ul li{
 	padding:0;
 	margin:0 0 5px 10%;
 	width:90%;
-	font-size:14px;
+	font-size:14px; font-size:1Rem;
 	font-weight:600;
 	display:block;
 	color:#000;
@@ -844,7 +865,7 @@ article.basico .entry-categorias ul li a{
 	color:#2e2b32;
 }
 article.basico .entry-content{
-	font-size:14px;
+	font-size:14px; font-size:1Rem;
 	line-height:18px;
 	font-weight:400;
 }
@@ -852,7 +873,7 @@ article.basico .entry-content a.more-link{
 	position:absolute;
 	right:0;
 	bottom:0;
-	font-size:14px;
+	font-size:14px; font-size:1Rem;
 	line-height:14px;
 	color:#a91231;
 	font-weight:800; 
@@ -869,7 +890,7 @@ article.basico .entry-content a.more-link{
 	font-size:0;
 	color:#a51a41;
 	font-weight:normal;
-	font-size:25px;
+	font-size:25px; font-size:1.785Rem;
 	line-height:25px;
 	font-family:'Della Respira', serif;
 	padding:0;
@@ -885,7 +906,7 @@ article.basico .entry-content a.more-link{
 article.mini h1 a, #related_posts article h1 a{
 	color:#333333;
 	font-weight:normal;
-	font-size:17px;
+	font-size:17px; font-size:1.214Rem;
 	line-height:17px;
 	font-family:'Della Respira', serif;
 	padding:15px 0 0 0;
@@ -901,7 +922,7 @@ article.mini img, #related_posts article img{
 	display:block;
 }
 article.mini .entry-content, #related_posts article .entry-content{
-	font-size:12px;
+	font-size:12px; font-size:0.857Rem;
 	line-height:16px;
 	font-weight:400;
 	display:inline-block;
@@ -919,7 +940,7 @@ article.mini .entry-content a.more-link, #related_posts article .entry-content a
 	position:absolute;
 	right:0;
 	bottom:0;
-	font-size:14px;
+	font-size:14px; font-size:1Rem;
 	line-height:14px;
 	color:#a91231;
 	font-weight:800; 
@@ -962,7 +983,7 @@ article.single .entry-categorias ul li{
 	padding:0;
 	margin:0 0 5px 10%;
 	width:90%;
-	font-size:14px;
+	font-size:14px; font-size:1Rem;
 	font-weight:600;
 	display:block;
 	background-color:#fedeab;
@@ -983,7 +1004,7 @@ article.single .entry-categorias ul li a{
 article.single .entry-header h1{
 	color:#a51a41;
 	font-weight:normal;
-	font-size:34px;
+	font-size:34px; font-size:2.428Rem;
 	line-height:34px;
 	text-align:center;
 	font-family:'Della Respira', serif;
@@ -992,14 +1013,14 @@ article.single .entry-header h1{
 }
 article.single .entry-meta{
 	text-align:center;
-	font-size:11px;
+	font-size:11px; font-size:0.785Rem;
 }
 article.single .entry-meta span{
 	color:#a51a41;
 	font-weight:600;
 }
 article.single.hrecipe .entry-content>p{
-	font-size:14px;
+	font-size:14px; font-size:1Rem;
 	line-height:18px;
 	display:block;
 	width:80%;
@@ -1020,7 +1041,7 @@ article.single.hrecipe .entry-content>h2{
 	width:100%!important;
 }
 article.single.hrecipe .firma{
-	font-size:14px;
+	font-size:14px; font-size:1Rem;
 	line-height:18px;
 	display:block;
 	width:80%;
@@ -1040,7 +1061,7 @@ article.single.hrecipe .firma{
 article.single.hrecipe>.entry-content>p:first-child{
 	width:80%;
 	margin:20px 10% 20px 10%;
-	font-size:18px;
+	font-size:18px; font-size:1.285Rem;
 	line-height:22px;
 	text-align:center;
 	background:url(images/comillasDR.png) no-repeat;
@@ -1052,7 +1073,7 @@ article.single.hrecipe>.entry-content>p:first-child{
 }
 
 article.single.hrecipe .entry-content ul{
-	font-size:14px;
+	font-size:14px; font-size:1Rem;
 	line-height:18px;
 	display:block;
 	width:55%;
@@ -1060,7 +1081,7 @@ article.single.hrecipe .entry-content ul{
 	padding:0;
 }
 article.single.hrecipe .entry-content .yarpp-related p{
-	font-size:12px;
+	font-size:12px; font-size:0.857Rem;
 	line-height:18px;
 	display:block;
 	width:100%;
@@ -1077,7 +1098,7 @@ article.single.hrecipe #recipress_recipe{
 	min-height:900px;
 }
 article.single.hrecipe .Cinstructions{
-	font-size:14px;
+	font-size:14px; font-size:1Rem;
 	line-height:18px;
 	padding:0;
 	border-top:#f2f2f2 10px solid;
@@ -1085,7 +1106,7 @@ article.single.hrecipe .Cinstructions{
 article.single.hrecipe .Cinstructions h3{
 	color:#a51a41;
 	font-weight:normal;
-	font-size:24px;
+	font-size:24px; font-size:1.714Rem;
 	line-height:24px;
 	text-align:left;
 	font-family:'Della Respira', serif;
@@ -1113,7 +1134,7 @@ article.single.hrecipe .Cinstructions li ol,
 article.single.hrecipe .Cinstructions li ul {margin-top:6px;}
 article.single.hrecipe .Cinstructions ol ol li:last-child {margin-bottom:0;}
 article.single.hrecipe .Cinstructions li{
-	font-size:14px;
+	font-size:14px; font-size:1Rem;
 	line-height:22px;
 	margin:0 0 30px 0;
 }
@@ -1123,7 +1144,7 @@ article.single.hrecipe .SidebarSingleingredients{
 	
 }
 article.single.hrecipe #sidebar-single{
-	font-size:14px;
+	font-size:14px; font-size:1Rem;
 	display:block;
 	width:100%;
 	vertical-align:top;
@@ -1133,7 +1154,7 @@ article.single.hrecipe #sidebar-single{
 	padding:0 0 20px 0;
 }
 article.single.hrecipe .Cingredients{
-	font-size:14px;
+	font-size:14px; font-size:1Rem;
 	display:block;
 	width:100%;
 	vertical-align:top;
@@ -1157,7 +1178,7 @@ article.single.hrecipe .Cingredients .clipSolo{
 	background:url(images/clipSoloDR.png) no-repeat;
 }
 article.single.hrecipe .Cingredients ul{
-	font-size:14px;
+	font-size:14px; font-size:1Rem;
 	line-height:21px;
 	display:block;
 	width:auto;
@@ -1190,7 +1211,7 @@ article.single.hrecipe .Cingredients ul.recipe-details.detalles-abajo .flechaArr
 article.single.hrecipe .Cingredients ul.recipe-details li{
 	display:inline-block;
 	width:50%;
-	font-size:12px;
+	font-size:12px; font-size:0.857Rem;
 	line-height:16px;
 	-moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -1217,13 +1238,13 @@ article.single.hrecipe .Cingredients ul.recipe-details li.tTotal{
 	border-left:#fbb542 1px solid;
 	padding:7px 10px 7px 40px;
 	margin:5px 0 5px 0;
-	font-size:10px;
+	font-size:10px; font-size:0.174Rem;
 	background:url(images/tTotlaDR.png) no-repeat 10px 5px;
 }
 article.single.hrecipe .Cingredients h3{
 	color:#584017;
 	font-weight:normal;
-	font-size:24px;
+	font-size:24px; font-size:1.714Rem;
 	line-height:24px;
 	text-align:center;
 	font-family:'Della Respira', serif;
@@ -1244,7 +1265,7 @@ article.single.hrecipe .Cingredients h3{
 	padding-bottom:20px;
 }
 #comments{
-	font-size:14px;
+	font-size:14px; font-size:1Rem;
 	line-height:18px;
 	padding:20px 0 0 0;
 	vertical-align:top;
@@ -1259,18 +1280,18 @@ article.single.hrecipe .Cingredients h3{
 	width:50%;
 	display:inline-block;
 	text-align:left;
-	font-size:14px;
+	font-size:14px; font-size:1Rem;
 	line-height:18px;
 }
 #comments #comment-nav-below .nav-next{
 	width:50%;
 	display:inline-block;
 	text-align:right;
-	font-size:14px;
+	font-size:14px; font-size:1Rem;
 	line-height:18px;
 }
 #sidebar-desktop{
-	font-size:14px;
+	font-size:14px; font-size:1Rem;
 	line-height:18px;
 	width:30%;
 	margin:20px 0 20px 2%;
@@ -1278,7 +1299,7 @@ article.single.hrecipe .Cingredients h3{
 	vertical-align:top;
 }
 #sidebar-coments{
-	font-size:14px;
+	font-size:14px; font-size:1Rem;
 	line-height:18px;
 	padding:20px 0 0 0;
 	vertical-align:top;
@@ -1286,7 +1307,7 @@ article.single.hrecipe .Cingredients h3{
 #sidebar-coments h1,#sidebar-desktop h1{
 	color:#a21b3e;
 	font-weight:normal;
-	font-size:20px;
+	font-size:20px; font-size:1.428Rem;
 	line-height:20px;
 	text-align:left;
 	font-family:'Della Respira', serif;
@@ -1297,7 +1318,7 @@ article.single.hrecipe .Cingredients h3{
 #comments h2{
 	color:#5e5e5e!important;
 	font-weight:normal!important;
-	font-size:20px!important;
+	font-size:20px!important; font-size:1.428Rem!important;
 	line-height:20px!important;
 	text-align:right!important;
 	font-family:'Della Respira', serif!important;
@@ -1332,7 +1353,7 @@ article.single.hrecipe .Cingredients h3{
 	color:#ffe4c7;
 }
 #comments ol li footer .comment-author{
-	font-size:16px;
+	font-size:16px; font-size:1.142Rem;
 	padding-right:10px;
 	border-right:#292929 1px solid;
 }
@@ -1358,14 +1379,14 @@ article.single.hrecipe .Cingredients h3{
 	color:#FFF;
 }
 #comments .comment-respond{
-	font-size:12px;
+	font-size:12px; font-size:0.857Rem;
 	font-weight:400;
 }
 #comments .comment-respond h3{
 	display:block;
 	margin:0;
 	padding:0;
-	font-size:18px;
+	font-size:18px; font-size:1.285Rem;
 	font-weight:400;
 }
 
@@ -1378,7 +1399,7 @@ article.single.hrecipe .Cingredients h3{
 	border: 1px solid #FFF;
 	color: #363636;
 	background-color: #FFF;
-	font-size: 11px;
+	font-size:11px; font-size:0.785Rem;
 	padding: 7px;
 	margin: 0 0 10px 0;
 	-moz-box-sizing: border-box;
@@ -1393,7 +1414,7 @@ article.single.hrecipe .Cingredients h3{
 	display:inline-block;
 	color: #a91231;
 	background-color: #ffb96e;
-	font-size: 14px;
+	font-size:14px; font-size:1Rem;
 	font-weight:600;
 	padding: 10px;
 	border:#FFF 1px solid;
@@ -1432,7 +1453,7 @@ nav#nav-below .nav-next{
 nav#nav-below .nav-previous a{
 	display:inline-block;
 	padding:10px;
-	font-size: 14px;
+	font-size:14px; font-size:1Rem;
 	line-height:16px;
 	background-color:#ffe4c7;
 	margin-left:15px;
@@ -1441,7 +1462,7 @@ nav#nav-below .nav-previous a{
 nav#nav-below .nav-next a{
 	display:inline-block;
 	padding:10px;
-	font-size: 14px;
+	font-size:14px; font-size:1Rem;
 	line-height:16px;
 	background-color:#ffe4c7;
 	margin-right:15px;
@@ -1453,7 +1474,7 @@ FOOTER
 footer#colophon{
 	background:#363636 url(images/recetasdemama-sign.png?jcb=1337530905) no-repeat center 15px;
 	padding:70px 0 20px 0;
-	font-size: 0;
+	font-size:0;
 	overflow: hidden;
 }
 footer#colophon a       {color: #FFF;}
@@ -1481,7 +1502,7 @@ footer#colophon a:hover {color: #FFF;border:0}
 	
 }
 #sidebar-footer  h1.widget-title {
-	font-size: 20px;
+	font-size:20px; font-size:1.428Rem;
 	line-height:22px;
 	color:#FFF;
 	font-weight:600;
@@ -1492,7 +1513,7 @@ footer#colophon #sidebar-footer  h1.widget-title {
 }
 /* Categories List */
 .widget_categories ul{
-	font-size:11px;
+	font-size:11px; font-size:0.785Rem;
 	margin: 0;
 	padding: 0;
 }
@@ -1513,7 +1534,7 @@ footer#colophon #sidebar-footer  h1.widget-title {
 .nsu_widget label  {
 	display:block;
 	color:#fff;
-	font-size:11px;
+	font-size:11px; font-size:0.785Rem;
 	line-height:13px;
 	margin:0 0 3px 0;
 }
@@ -1523,7 +1544,7 @@ footer#colophon #sidebar-footer  h1.widget-title {
 	border: 1px solid #FFF;
 	color:#363636;
 	background-color:#FFF;
-	font-size:11px;
+	font-size:11px; font-size:0.785Rem;
 	padding: 7px;
 	margin:0 0 10px 0;
 }
@@ -1538,7 +1559,7 @@ footer#colophon #sidebar-footer  h1.widget-title {
 	position:absolute;
 	right:20px;
 	bottom:10px;
-	font-size:14px;
+	font-size:14px; font-size:1Rem;
 }
 /* Social */
 #colophon ul.social li a {
@@ -1547,7 +1568,7 @@ footer#colophon #sidebar-footer  h1.widget-title {
 	margin: 3px 0;
 	display: block;
 	color:#FFF;
-	font-size:11px;
+	font-size:11px; font-size:0.785Rem;
 	line-height:16px;
 }
 #colophon ul.social li.facebook a {background-position: 0   -106px;}
@@ -1566,7 +1587,7 @@ FOOTER 2
 footer#colophon2{
 	background:url(images/fondo-rojo.jpg) repeat #a91231;
 	padding:40px 0 40px 0;
-	font-size: 0;
+	font-size:0;
 	overflow: hidden;
 }
 footer#colophon2 a       {color: #FFF;}
@@ -1595,7 +1616,7 @@ footer#colophon2 a:hover {color: #FFF;border:0}
 }
 /* Otros Blogs */
 .widget_execphp ul{
-	font-size:11px;
+	font-size:11px; font-size:0.785Rem;
 	margin: 0;
 	padding: 0;
 }
@@ -1609,7 +1630,7 @@ footer#colophon2 a:hover {color: #FFF;border:0}
 }
 /* Boton tienda  y sobre nosotros*/
 .widget_text ul{
-	font-size:11px;
+	font-size:11px; font-size:0.785Rem;
 	margin: 0;
 	padding: 0;
 }
@@ -1630,7 +1651,7 @@ footer#colophon2 a:hover {color: #FFF;border:0}
 	text-align: center;
 	background-color:#fc7700;
 	display:block;
-	font-size:15px;
+	font-size:15px; font-size:1.071Rem;
 	width:90px;
 }
 /* Foto recetas de mama */
@@ -1675,8 +1696,8 @@ footer#colophon2 a:hover {color: #FFF;border:0}
 	background-color:#FFF;
 	color: #a51a41;
 	font-weight: normal;
-	font-size: 20px;
-	line-height: 20px;
+	font-size:20px; font-size:1.428Rem;
+	line-height:20px;
 	font-family: 'Della Respira', serif;
 }
 .stickys.Sticky-1-1 a.tit{
@@ -1718,7 +1739,7 @@ h1.tituloCategorias{
 	display:block;
 	text-align:center;
 	margin:25px 0 0 0 ;
-	font-size: 0;
+	font-size:0;
 }
 h1.tituloCategorias div.left{
 	width:60px;
@@ -1739,8 +1760,8 @@ h1.tituloCategorias div.text{
 	vertical-align:top;
 	margin:0;
 	padding:0;
-	font-size: 30px;
-	line-height: 35px;
+	font-size:30px; font-size:2.142Rem;
+	line-height:35px;
 }
 /*SOBRE NOSOTROS*/
 .GlobalSobre{
@@ -1759,11 +1780,10 @@ h1.tituloCategorias div.text{
 	background: url(images/fondo_sobre.png) #FFF no-repeat;
 	top:-20px;
 	left:0;
-	width:100%;
 	z-index:10;
 }
 .GlobalSobre .SobreSup .PorQue{
-	width:650px;
+	width:640px;
 	vertical-align:top;
 	position:relative;
 }
@@ -1785,7 +1805,7 @@ h1.tituloCategorias div.text{
 	display:block;
 	margin:340px 90px 20px 130px;
 	text-align:center;
-	font-size:20px;
+	font-size:20px; font-size:1.428Rem;
 	color:#584017;
 	line-height:24px;
 	font-family:'Della Respira', serif;
@@ -1796,7 +1816,7 @@ h1.tituloCategorias div.text{
 	margin:0 155px 20px 195px;
 	text-align:justify;
 	color:#584017;
-	font-size:14px;
+	font-size:14px; font-size:1Rem;
 	line-height:16px;
 	font-family:'Open Sans', sans-serif;
 }
@@ -1805,7 +1825,7 @@ h1.tituloCategorias div.text{
 	margin:60px 155px 10px 195px;
 	text-align:justify;
 	color:#584017;
-	font-size:14px;
+	font-size:14px; font-size:1Rem;
 	line-height:16px;
 	font-family:'Open Sans', sans-serif;
 }
@@ -1833,7 +1853,7 @@ h1.tituloCategorias div.text{
 	margin:0 155px 20px 195px;
 	font-weight:600;
 	color:#ac1636;
-	font-size:14px;
+	font-size:14px; font-size:1Rem;
 	line-height:16px;
 	text-decoration:none;
 }
@@ -1849,7 +1869,7 @@ h1.tituloCategorias div.text{
 	display:block;
 	margin:90px 0 15px 30px;
 	text-align:left;
-	font-size:30px;
+	font-size:30px; font-size:2.142Rem;
 	color:#ffcb5a;
 	line-height:30px;
 	font-family:'Della Respira', serif;
@@ -1860,7 +1880,7 @@ h1.tituloCategorias div.text{
 	margin:0 85px 65px 30px;
 	text-align:left;
 	color:#fff;
-	font-size:16px;
+	font-size:16px; font-size:1.142Rem;
 	line-height:18px;
 	font-family:'Open Sans', sans-serif;
 }
@@ -1870,27 +1890,27 @@ h1.tituloCategorias div.text{
 	margin:0 285px 135px 30px;
 	text-align:left;
 	color:#fff;
-	font-size:16px;
+	font-size:16px; font-size:1.142Rem;
 	line-height:18px;
 	font-family:'Open Sans', sans-serif;
 }
 
 .GlobalSobre .SobreSup .PorQue .FondoPorQue .TextoGeneral3{
 	display:block;
-	margin:0 40px 65px 315px;
+	margin:0 40px 55px 315px;
 	text-align:right;
 	color:#fff;
-	font-size:16px;
+	font-size:16px; font-size:1.142Rem;
 	line-height:18px;
 	font-family:'Open Sans', sans-serif;
 }
 
 .GlobalSobre .SobreSup .PorQue .FondoPorQue .TextoGeneral4{
 	display:block;
-	margin:0 350px 85px 30px;
+	margin:0 350px 95px 30px;
 	text-align:left;
 	color:#fff;
-	font-size:16px;
+	font-size:16px; font-size:1.142Rem;
 	line-height:18px;
 	font-family:'Open Sans', sans-serif;
 }
@@ -1900,7 +1920,7 @@ h1.tituloCategorias div.text{
 	margin:0 40px 75px 245px;
 	text-align:right;
 	color:#fff;
-	font-size:16px;
+	font-size:16px; font-size:1.142Rem;
 	line-height:18px;
 	font-family:'Open Sans', sans-serif;
 }
@@ -1909,21 +1929,21 @@ h1.tituloCategorias div.text{
 	margin:0 85px 0 45px;
 	text-align:left;
 	color:#fff;
-	font-size:16px;
+	font-size:16px; font-size:1.142Rem;
 	line-height:18px;
 	font-family:'Open Sans', sans-serif;
 }
 .GlobalSobre .SobreSup .CitaFinal{
 	display:block;
-	width:100%;
-	font-size:24px;
+	width:90%;
+	font-size:24px; font-size:1.714Rem;
 	line-height:26px;
 	font-family:'Della Respira', serif;
 	text-align:center;
+	margin:0 auto;
 }
 .GlobalSobre .Libros{
 	display:block;
-	width:100%;
 	padding:125px;
 	background-color:#FFF;
 	-moz-box-sizing: border-box;
@@ -1934,7 +1954,7 @@ h1.tituloCategorias div.text{
 .GlobalSobre .Libros .Titulo{
 	display:block;
 	width:100%;
-	font-size:33px;
+	font-size:33px; font-size:2.357Rem;
 	line-height:25px;
 	font-family:'Della Respira', serif;
 	text-align:center;
@@ -1944,7 +1964,7 @@ h1.tituloCategorias div.text{
 .GlobalSobre .Libros .TextoA{
 	display:block;
 	width:100%;
-	font-size:14px;
+	font-size:14px; font-size:1Rem;
 	line-height:16px;
 	font-family:'Open Sans', sans-serif;
 	text-align:center;
@@ -1970,7 +1990,7 @@ h1.tituloCategorias div.text{
 	display:block;
 	vertical-align:top;
 	color:#45310f;
-	font-size:14px;
+	font-size:14px; font-size:1Rem;
 	line-height:18px;
 	font-family:'Open Sans', sans-serif;
 	text-align:justify;
@@ -1980,7 +2000,7 @@ h1.tituloCategorias div.text{
 	display:block;
 	vertical-align:top;
 	color:#45310f;
-	font-size:14px;
+	font-size:14px; font-size:1Rem;
 	line-height:18px;
 	font-family:'Open Sans', sans-serif;
 	text-align:justify;
