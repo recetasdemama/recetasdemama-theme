@@ -1777,7 +1777,7 @@ h1.tituloCategorias div.text{
 }
 .GlobalSobre .SobreSup{
 	position:absolute;
-	background: url(images/fondo_sobre.png) #FFF no-repeat;
+	background: url(images/fondo_sobre.png) no-repeat;
 	top:-20px;
 	left:0;
 	z-index:10;
