@@ -49,6 +49,10 @@ function recetasdemama_remove_pagination_on_category_and_search_pages($query){
       if( $query->is_main_query() && (is_category() || is_search()) ){
           $query->set('posts_per_page', -1);
       }
+	  if( $query->is_main_query() && is_home()){
+		  $query->set('ignore_sticky_posts', 1);
+			 
+	  }
 }
 add_action('pre_get_posts','recetasdemama_remove_pagination_on_category_and_search_pages');
 
