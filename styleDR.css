@@ -46,7 +46,12 @@
 		top:0;
 	}
 	.Contenidostickys{
+		height:380px;
 		display:none;
+	}
+	.global .Contenidostickys{
+		height:auto;
+		display:block;
 	}
 	#access ul {
 		list-style: none;
@@ -152,18 +157,24 @@
 	
 .GlobalSobre .SobreSup{
 	height:2350px;
+	position:absolute;
+	background: url(images/fondo_sobre.png) #FFF no-repeat;
 }
+
 .GlobalSobre .SobreSup .PorQue{
 	display:block;
 	margin: 0 auto;
 	height:1200px;
+	width:640px;
 }
 .GlobalSobre .SobreSup .PorQue .FondoPorQue{
 	top:135px;
 }
 .GlobalSobre .SobreSup .Historia{
+	width:550px;
 	display:block;
 	margin: 0 auto;
+	height:1100px;
 }
 .GlobalSobre .SobreSup .Historia .FondoHistoria{
 	left:0;
@@ -198,8 +209,619 @@
 .GlobalSobre .Libros{
 	width:100%;
 }
+.global#content{
+	padding:30px;
+}
+.global#content article.basico{
+	padding:0 20px 0 20px;
+}
+article.basico .entry-content{
+	display:inline-block;
+	width:60%;
+	padding:10px 15px 20px 0px;
+	margin:0 0 60px 0;
+}
+article.basico .entry-categorias{
+	display:inline-block;
+	width:40%;
+	padding:10px 0 20px 0px;
+	margin:0 0 60px 0;
+}
+#access {
+	display: block;
+	width: 100%;
+	text-align: right;
+}
+#branding h1 {
+	margin:0;
+	padding:0;
+	text-indent: -99999.999em;
+	position:absolute;
+	left:0;
+	top:-15px;
+	width: 249px;
+	height: 158px;
+	z-index:1000;
+}
+article.entero .contenidoImg{
+	width:100%;
+	height:360px;
+	display:block;
+	text-align:right;
+	margin:0 0 60px 0;
+}
+article.entero .contenidoImg .extend{
+	height:367px;
+	position:absolute;
+	overflow:hidden;
+	left:0;
+	padding:7px 0 0 0;
+	background-color:#ffdfaa;
+}
+article.entero .contenidoImg .inf{
+	width:100%;
+	height:7px;
+	position:absolute;
+	left:0;
+	margin:367px 0 0 0;
+	background-color:#ffdfaa;
+}
+article.entero .contenidoImg .extend>a{
+	width:100%;
+	position:absolute;
+	bottom:0;
+	left:0;
+	height:367px;
+	z-index:0;
+	overflow:hidden;
+}
+article.entero .contenidoImg .extend img{
+	width:100%;
+	position:absolute;
+	left:0;
+	z-index:0;
+}
+article.entero .contenidoImg .extend .ContenedorClip{
+	height:100%;
+	z-index:1;
+	position:relative;
+	text-align:right;
+	display:block;
+}
+article.entero .contenidoImg .extend .ContenedorClip .Clip{
+	width: 278px;
+	margin:50px 30px 0 0;
+	height:219px;
+	display:inline-block;
+	background:url(images/clipDR.png) no-repeat;
+	padding:40px 20px 20px 20px;
+}
+nav#nav-below{
+	width:80%;
+	margin:10px 10% 10px 10%;
+}
+nav#nav-below .nav-previous{
+	display:inline-block;
+	width:50%;
+}
+nav#nav-below .nav-next{
+	display:inline-block;
+	width:50%;
+}
+nav#nav-below .nav-previous a{
+	display:inline-block;
+}
+nav#nav-below .nav-next a{
+	display:inline-block;
+}
+.GlobalSobre .Libros{
+	padding:125px 125px 125px 125px;
+}
+/*SOBRE NOSOTROS*/
+.GlobalSobre{
+		margin:20px 0 0 0;
+		font-size:0;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		-ms-box-sizing: border-box;
+		box-sizing: border-box;
+		position:relative;
+		padding:30px 0 0 0;
+		min-height:1203px;
+}
+.GlobalSobre .SobreSup{
+	
+	top:-20px;
+	left:0;
+	z-index:10;
+}
+.GlobalSobre .SobreSup .PorQue{
+	vertical-align:top;
+	position:relative;
+}
+.GlobalSobre .SobreSup .Historia{
+	vertical-align:top;
+	position:relative;
+}
+.GlobalSobre .SobreSup .Historia .FondoHistoria{
+	position:absolute;
+	background: url(images/fondo_historia.png) no-repeat;
+	top:75px;
+	height:1203px;
+	width:590px;
+	z-index:10;
+}
+.GlobalSobre .SobreSup .Historia .FondoHistoria .Titular{
+	display:block;
+	margin:340px 90px 20px 130px;
+	text-align:center;
+	font-size:20px; font-size:1.428Rem;
+	color:#584017;
+	line-height:24px;
+	font-family:'Della Respira', serif;
+	background: url(images/tituloIngredientesDR.png) no-repeat center;
+}
+.GlobalSobre .SobreSup .Historia .FondoHistoria .TextoGeneral{
+	display:block;
+	margin:0 155px 20px 195px;
+	text-align:justify;
+	color:#584017;
+	font-size:14px; font-size:1Rem;
+	line-height:16px;
+	font-family:'Open Sans', sans-serif;
+}
+.GlobalSobre .SobreSup .Historia .FondoHistoria .TituloRedes{
+	display:block;
+	margin:60px 155px 10px 195px;
+	text-align:justify;
+	color:#584017;
+	font-size:14px; font-size:1Rem;
+	line-height:16px;
+	font-family:'Open Sans', sans-serif;
+}
+.GlobalSobre .SobreSup .Historia .FondoHistoria .Redes{
+	display:block;
+	margin:0 155px 5px 195px;
+}
+.GlobalSobre .SobreSup .Historia .FondoHistoria .Redes a {
+	background: url(images/social.png) no-repeat;
+	width:23px;
+	height:23px;
+	margin-right:10px;
+	display: inline-block;
+}
+.GlobalSobre .SobreSup .Historia .FondoHistoria .Redes a.facebook {background-position: 0 -106px;}
+.GlobalSobre .SobreSup .Historia .FondoHistoria .Redes a.twitter {background-position: 0 -133px;}
+.GlobalSobre .SobreSup .Historia .FondoHistoria .Redes a.youtube {background-position: 0 -158px;}
 
+.GlobalSobre .SobreSup .Historia .FondoHistoria .Redes a.facebook:hover {background-position: 0   0px;}
+.GlobalSobre .SobreSup .Historia .FondoHistoria .Redes a.twitter:hover  {background-position: 0 -27px;}
+.GlobalSobre .SobreSup .Historia .FondoHistoria .Redes a.youtube:hover  {background-position: 0 -53px;}
+
+.GlobalSobre .SobreSup .Historia .FondoHistoria a.mailto{
+	display:block;
+	margin:0 155px 20px 195px;
+	font-weight:600;
+	color:#ac1636;
+	font-size:14px; font-size:1Rem;
+	line-height:16px;
+	text-decoration:none;
+}
+.GlobalSobre .SobreSup .PorQue .FondoPorQue{
+	position:absolute;
+	background: url(images/fondo_porque.png) no-repeat 0 230px;
+	left:60px;
+	height:1203px;
+	width:575px;
+	z-index:10;
+}
+.GlobalSobre .SobreSup .PorQue .FondoPorQue .Titular{
+	display:block;
+	margin:90px 0 15px 30px;
+	text-align:left;
+	font-size:30px; font-size:2.142Rem;
+	color:#ffcb5a;
+	line-height:30px;
+	font-family:'Della Respira', serif;
+}
+
+.GlobalSobre .SobreSup .PorQue .FondoPorQue .TextoGeneral1{
+	display:block;
+	margin:0 85px 65px 30px;
+	text-align:left;
+	color:#fff;
+	font-size:16px; font-size:1.142Rem;
+	line-height:18px;
+	font-family:'Open Sans', sans-serif;
+}
+
+.GlobalSobre .SobreSup .PorQue .FondoPorQue .TextoGeneral2{
+	display:block;
+	margin:0 285px 135px 30px;
+	text-align:left;
+	color:#fff;
+	font-size:16px; font-size:1.142Rem;
+	line-height:18px;
+	font-family:'Open Sans', sans-serif;
+}
+
+.GlobalSobre .SobreSup .PorQue .FondoPorQue .TextoGeneral3{
+	display:block;
+	margin:0 40px 55px 315px;
+	text-align:right;
+	color:#fff;
+	font-size:16px; font-size:1.142Rem;
+	line-height:18px;
+	font-family:'Open Sans', sans-serif;
+}
+
+.GlobalSobre .SobreSup .PorQue .FondoPorQue .TextoGeneral4{
+	display:block;
+	margin:0 350px 95px 30px;
+	text-align:left;
+	color:#fff;
+	font-size:16px; font-size:1.142Rem;
+	line-height:18px;
+	font-family:'Open Sans', sans-serif;
+}
+
+.GlobalSobre .SobreSup .PorQue .FondoPorQue .TextoGeneral5{
+	display:block;
+	margin:0 40px 75px 245px;
+	text-align:right;
+	color:#fff;
+	font-size:16px; font-size:1.142Rem;
+	line-height:18px;
+	font-family:'Open Sans', sans-serif;
+}
+.GlobalSobre .SobreSup .PorQue .FondoPorQue .TextoGeneral6{
+	display:block;
+	margin:0 85px 0 45px;
+	text-align:left;
+	color:#fff;
+	font-size:16px; font-size:1.142Rem;
+	line-height:18px;
+	font-family:'Open Sans', sans-serif;
+}
+.GlobalSobre .SobreSup .CitaFinal{
+	display:block;
+	width:90%;
+	font-size:24px; font-size:1.714Rem;
+	line-height:26px;
+	font-family:'Della Respira', serif;
+	text-align:center;
+	margin:0 auto;
+}
+.GlobalSobre .Libros{
+	display:block;
+	background-color:#FFF;
+	-moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.GlobalSobre .Libros .Titulo{
+	display:block;
+	width:100%;
+	font-size:33px; font-size:2.357Rem;
+	line-height:25px;
+	font-family:'Della Respira', serif;
+	text-align:center;
+	color:#b10f2d;
+	margin-bottom:20px;
+}
+.GlobalSobre .Libros .TextoA{
+	display:block;
+	width:100%;
+	font-size:14px; font-size:1Rem;
+	line-height:16px;
+	font-family:'Open Sans', sans-serif;
+	text-align:center;
+	color:#45310f;
+	margin-bottom:60px;
+}
+.GlobalSobre .Libros .ContenidoL1{
+	vertical-align:top;
+}
+.GlobalSobre .Libros .ContenidoL2{
+	vertical-align:top;
+}
+.GlobalSobre .Libros .ContenidoL3{
+	vertical-align:top;
+}
+.GlobalSobre .Libros .FotoL{
+	display:block;
+	width:100%;
+	vertical-align:top;
+	margin-bottom:15px;
+}
+.GlobalSobre .Libros .Texto1{
+	display:block;
+	vertical-align:top;
+	color:#45310f;
+	font-size:14px; font-size:1Rem;
+	line-height:18px;
+	font-family:'Open Sans', sans-serif;
+	text-align:justify;
+	margin-bottom:90px;
+}
+.GlobalSobre .Libros .Texto3{
+	display:block;
+	vertical-align:top;
+	color:#45310f;
+	font-size:14px; font-size:1Rem;
+	line-height:18px;
+	font-family:'Open Sans', sans-serif;
+	text-align:justify;
+	margin-bottom:90px;
+}
+.yarpp-related #related_posts{
+	padding:0 30px 30px 30px;
+}
+article.single .img-cabecera{
+	display:block;
+	width:100%;
+	height:490px;
+	overflow:hidden;
+	position:relative;
+}
+article.single .img-cabecera img{
+	position:absolute;
+	left:0;
+	width:100%;
+}
+article.single .img-cabecera .entry-categorias{
+	position:absolute;
+	width:20%;
+	-moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+	text-align:right;
+	top:20px;
+	right:20px;
+}
+article.single .entry-categorias ul li{
+	padding:0;
+	margin:0 0 5px 10%;
+	width:90%;
+	font-size:14px; font-size:1Rem;
+	font-weight:600;
+	display:block;
+	background-color:#fedeab;
+	color:#000;
+}
+h1.tituloCategorias div.left{
+	width:60px;
+	height:35px;
+	display:inline-block;
+	background: url(images/1.png) no-repeat center;
+	vertical-align:top;
+}
+h1.tituloCategorias div.right{
+	width:60px;
+	height:35px;
+	display:inline-block;
+	background: url(images/2.png) no-repeat center;
+	vertical-align:top;
+}
+@media screen and (max-width:390px){ 
+	#access {
+		text-align: center;
+		padding-top:150px;
+	}
+	#branding h1 {
+		margin-left:-124px;
+		left:50%;
+	}
+	article.entero .contenidoImg .extend .ContenedorClip .Clip{
+		width:100%;
+		margin:0;
+		height:auto;
+		display:block;
+		background: none;
+		padding:0;
+	}
+	nav#nav-below .nav-previous{
+		display:block;
+		width:100%;
+		margin-bottom:5px;
+	}
+	nav#nav-below .nav-next{
+		display:block;
+		width:100%;
+	}
+	nav#nav-below .nav-previous a{
+		display:block;
+	}
+	nav#nav-below .nav-next a{
+		display:block;
+	}
+	h1.tituloCategorias div.left{
+		display:none;
+	}
+	h1.tituloCategorias div.right{
+		display:none;
+	}
+}
+@media screen and (max-width:500px){ 
+	.GlobalSobre .Libros{
+		padding:30px 10px 125px 10px;
+	}
+}
+@media screen and (min-width:501px) and (max-width:640px){ 
+	.GlobalSobre .Libros{
+		padding:30px 125px 125px 125px;
+	}
+}
 @media screen and (max-width:640px){ 
+	.yarpp-related #related_posts{
+		border-top: #fff2e2 10px solid;
+		padding:20px 30px 30px 30px;
+	}
+	nav#nav-below{
+		width:96%;
+		margin:10px 2% 10px 2%;
+	}
+	.global#content{
+		padding:5px;
+	}
+	.global#content article.basico{
+		padding:0 5px 0 5px;
+	}
+	article.basico .entry-content{
+		display:block;
+		width:100%;
+		padding:10px 0 20px 0px;
+		margin:0 0 0 0;
+	}
+	article.basico .entry-categorias{
+		display:block;
+		width:100%;
+		padding:10px 0 0 0px;
+		margin:0 0 60px 0;
+	}
+	.global .Contenidostickys{
+		height: auto;
+	}
+	
+	article.entero .contenidoImg{
+		height:auto;
+	}
+	article.entero .contenidoImg .extend{
+		height:auto;
+		position:inherit;
+		padding:0 0 0 0;
+		background-color:transparent;
+	}
+	article.entero .contenidoImg .inf{
+		display:none;
+	}
+	article.entero .contenidoImg .extend>a{
+		position:inherit;
+		height:auto;
+	}
+	article.entero .contenidoImg .extend img{
+		position:inherit;
+	}
+	article.entero .contenidoImg .extend .ContenedorClip{
+		text-align:center;
+	}
+	article.entero .contenidoImg .extend .ContenedorClip .Clip{
+		margin:0;
+	}
+	.GlobalSobre .Libros {
+		margin:0;
+	}
+	
+	.GlobalSobre .Libros .ContenidoL1{
+		display:block;
+		width:80%;
+		margin:0 auto;
+	}
+	.GlobalSobre .Libros .ContenidoL2{
+		display:block;
+		width:80%;
+		margin:0 auto;
+	}
+	.GlobalSobre .Libros .ContenidoL3{
+		display:block;
+		width:80%;
+		margin:0 auto;
+	}
+	.GlobalSobre .SobreSup{
+		height:auto;
+		position:inherit;
+		background: none;
+		background-color:#FFF;
+		top:0;
+	}
+	.GlobalSobre .SobreSup .PorQue{
+		height:auto;
+		width:90%;
+	}
+	.GlobalSobre .SobreSup .Historia{
+		height:auto;
+		width:90%;
+		margin-bottom:20px;
+	}
+	.GlobalSobre .SobreSup .PorQue .FondoPorQue{
+		position:inherit;
+		background: none;
+		height:auto;
+		width:100%;
+		left:0;
+		top:0;
+	}
+	.GlobalSobre .SobreSup .PorQue .FondoPorQue .Titular{
+		margin:0 0 20px 0;
+		padding-top:20px;
+		text-align:center;
+		color: #a51a41;
+	}
+
+	.GlobalSobre .SobreSup .PorQue .FondoPorQue .TextoGeneral6,.GlobalSobre .SobreSup .PorQue .FondoPorQue .TextoGeneral5,.GlobalSobre .SobreSup .PorQue .FondoPorQue .TextoGeneral4,.GlobalSobre .SobreSup .PorQue .FondoPorQue .TextoGeneral3,.GlobalSobre .SobreSup .PorQue .FondoPorQue .TextoGeneral2,.GlobalSobre .SobreSup .PorQue .FondoPorQue .TextoGeneral1{
+		margin:0 0 15px 0;
+		text-align:justify;
+		color: #45310f;
+		font-size: 14px; font-size: 1Rem;
+	}
+	.GlobalSobre .SobreSup .Historia .FondoHistoria{
+		position:inherit;
+		background: none;
+		top:0;
+		height:auto;
+		width:100%;
+	}
+	.GlobalSobre .SobreSup .Historia .FondoHistoria .Titular{
+		display:block;
+		margin:0 0 20px 0;
+		padding-top:20px;
+		text-align:center;
+		color: #a51a41;
+		background: none;
+		font-size: 30px; font-size: 2.142Rem;
+	}
+	.GlobalSobre .SobreSup .Historia .FondoHistoria .TextoGeneral{
+		display:block;
+		margin:0 0 15px 0;
+		text-align:justify;
+		color: #45310f;
+	}
+	.GlobalSobre .SobreSup .Historia .FondoHistoria .TituloRedes{
+		display:block;
+		margin:0;
+		text-align:left;
+		color: #45310f;
+	}
+	.GlobalSobre .SobreSup .Historia .FondoHistoria .Redes{
+		margin:10px 0 0 0;
+	}
+	.GlobalSobre .SobreSup .Historia .FondoHistoria a.mailto{
+		margin:10px 0 0 0;
+	}
+	article.single .img-cabecera{
+		height:auto;
+	}
+	article.single .img-cabecera img{
+		position:inherit;
+		left:0;
+		width:100%;
+	}
+	article.single .img-cabecera .entry-categorias{
+		display:block;
+		width:100%;
+		position:inherit;
+		right:0;
+		top:0;
+	}
+	article.single .entry-categorias ul li{
+		margin:0 0 5px 0;
+		width:100%;
+	}
+	
+}
+/*@media screen and (max-width:640px){ 
 	html{
 		font-size:16px;
 	}
@@ -221,21 +843,7 @@
 	.global#content article.entero{
 		position:relative;
 	}
-	.GlobalSobre .Libros .ContenidoL1{
-		display:block;
-		width:80%;
-		margin:0 auto;
-	}
-	.GlobalSobre .Libros .ContenidoL2{
-		display:block;
-		width:80%;
-		margin:0 auto;
-	}
-	.GlobalSobre .Libros .ContenidoL3{
-		display:block;
-		width:80%;
-		margin:0 auto;
-	}
+	
 	.GlobalSobre .SobreSup{
 		width:640px;
 	}
@@ -243,7 +851,7 @@
 		width:640px;
 	}
 	
-}	
+}*/	
 @media screen and (min-width:700px){ 
 	.global#content article.basico, .global#content .PublicidadEntrePost{
 		width:100%;
@@ -511,17 +1119,7 @@ HEADER
 	background:url(images/fondo-rojo.jpg) repeat #a91231;
 }
 /* Logo */
-#branding h1 {
-	margin:0;
-	padding:0;
-	text-indent: -99999.999em;
-	position:absolute;
-	left:0;
-	top:-15px;
-	width: 249px;
-	height: 158px;
-	z-index:1000;
-}
+
 #branding h1 a {
 	display: block;
 	width: 249px;
@@ -530,11 +1128,7 @@ HEADER
 }
 #branding h1 a:hover {border:0;}
 /* Menu */
-#access {
-	display: block;
-	width: 100%;
-	text-align: right;
-}
+
 
 
 
@@ -630,7 +1224,6 @@ CONTENT
 #sidebar-header ul.social li.rss a:hover      {background-position: 0 -79px;}
 /**/
 .global#content{
-	
 	margin:20px 0 0 0;
 	background-color: #FFF;
 	font-size:0;
@@ -638,7 +1231,6 @@ CONTENT
     -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
-	padding:30px;
 }
 
 /*PUBLICIDAD ENTRE POST*/
@@ -701,44 +1293,7 @@ article.entero .entry-categorias ul li a{
 	color:#2e2b32;
 	text-align:center;
 }
-article.entero .contenidoImg{
-	width:100%;
-	height:360px;
-	display:block;
-	text-align:right;
-	margin:0 0 60px 0;
-}
-article.entero .contenidoImg .extend{
-	height:367px;
-	position:absolute;
-	overflow:hidden;
-	left:0;
-	padding:7px 0 0 0;
-	background-color:#ffdfaa;
-}
-article.entero .contenidoImg .inf{
-	width:100%;
-	height:7px;
-	position:absolute;
-	left:0;
-	margin:367px 0 0 0;
-	background-color:#ffdfaa;
-}
-article.entero .contenidoImg .extend>a{
-	width:100%;
-	position:absolute;
-	bottom:0;
-	left:0;
-	height:367px;
-	z-index:0;
-	overflow:hidden;
-}
-article.entero .contenidoImg .extend img{
-	width:100%;
-	position:absolute;
-	left:0;
-	z-index:0;
-}
+
 article.entero .contenidoImg .extend .LinkTotal{
 	width:100%;
 	position:absolute;
@@ -747,21 +1302,7 @@ article.entero .contenidoImg .extend .LinkTotal{
 	z-index:5;
 	height:367px;
 }
-article.entero .contenidoImg .extend .ContenedorClip{
-	height:100%;
-	z-index:1;
-	position:relative;
-	text-align:right;
-	display:block;
-}
-article.entero .contenidoImg .extend .ContenedorClip .Clip{
-	width: 278px;
-	margin:50px 30px 0 0;
-	height:219px;
-	display:inline-block;
-	background:url(images/clipDR.png) no-repeat;
-	padding:40px 20px 20px 20px;
-}
+
 article.entero .contenidoImg .extend .ContenedorClip .Clip h1 a{
 	color:#a51a41;
 	font-weight:normal;
@@ -791,7 +1332,6 @@ article.entero .contenidoImg .extend .ContenedorClip .Clip .entry-content a.more
 /* POST BASICO */
 .global#content article.basico{
 	vertical-align:top;
-	padding:0 20px 0 20px;
 	-moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -816,29 +1356,21 @@ article.basico img{
 	display:block;
 }
 article.basico .entry-content{
-	display:inline-block;
-	width:60%;
 	-moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
-	padding:10px 15px 20px 0px;
 	vertical-align:top;
 	position:relative;
-	margin:0 0 60px 0;
 }
 article.basico .entry-categorias{
-	display:inline-block;
-	width:40%;
 	-moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
 	text-align:right;
-	padding:10px 0 20px 0px;
 	vertical-align:top;
 	position:relative;
-	margin:0 0 60px 0;
 }
 article.basico .entry-categorias ul{
 	margin: 0;
@@ -881,9 +1413,7 @@ article.basico .entry-content a.more-link{
 }
 
 /* POST MINI Y RELATED POST */
-.yarpp-related #related_posts{
-	padding:0 30px 30px 30px;
-}
+
 .global#content h2, #related_posts h3{
 	width:100%;
 	margin:0 0 15px 0;
@@ -952,43 +1482,13 @@ article.mini .entry-content a.more-link, #related_posts article .entry-content a
 	margin:10px 0 0 0;
 	position:relative;
 }
-article.single .img-cabecera{
-	display:block;
-	width:100%;
-	height:490px;
-	overflow:hidden;
-	position:relative;
-}
-article.single .img-cabecera img{
-	position:absolute;
-	left:0;
-	width:100%;
-}
-article.single .img-cabecera .entry-categorias{
-	position:absolute;
-	width:20%;
-	-moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-	text-align:right;
-	top:20px;
-	right:20px;
-}
+
+
 article.single .entry-categorias ul{
 	margin: 0;
 	padding: 0;
 }
-article.single .entry-categorias ul li{
-	padding:0;
-	margin:0 0 5px 10%;
-	width:90%;
-	font-size:14px; font-size:1Rem;
-	font-weight:600;
-	display:block;
-	background-color:#fedeab;
-	color:#000;
-}
+
 article.single .entry-categorias ul li a:hover{
 	color:#FFF;
 	background-color:#a51a41;
@@ -1095,7 +1595,7 @@ article.single.hrecipe .entry-content p.seo_only{
 }
 article.single.hrecipe #recipress_recipe{
 	position:relative;
-	min-height:900px;
+	/*min-height:900px;*/
 }
 article.single.hrecipe .Cinstructions{
 	font-size:14px; font-size:1Rem;
@@ -1427,13 +1927,9 @@ article.single.hrecipe .Cingredients h3{
 /*NAV BELOW */
 nav#nav-below{
 	display:block;
-	width:80%;
 	font-size:0;
-	margin:10px 10% 10px 10%;
 }
 nav#nav-below .nav-previous{
-	display:inline-block;
-	width:50%;
 	-moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -1441,8 +1937,6 @@ nav#nav-below .nav-previous{
 	background:url(images/flechaIzqDR.png) no-repeat 0 0;
 }
 nav#nav-below .nav-next{
-	display:inline-block;
-	width:50%;
 	-moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -1451,16 +1945,13 @@ nav#nav-below .nav-next{
 	background:url(images/flechaderDR.png) no-repeat right;
 }
 nav#nav-below .nav-previous a{
-	display:inline-block;
 	padding:10px;
 	font-size:14px; font-size:1Rem;
 	line-height:16px;
 	background-color:#ffe4c7;
 	margin-left:15px;
-	
 }
 nav#nav-below .nav-next a{
-	display:inline-block;
 	padding:10px;
 	font-size:14px; font-size:1Rem;
 	line-height:16px;
@@ -1661,7 +2152,6 @@ footer#colophon2 a:hover {color: #FFF;border:0}
 
 /*  STICKYS */
 .Contenidostickys{
-	height:380px;
 	width:100%;
 	font-size:0;
 	background-color:#FFF;
@@ -1741,20 +2231,7 @@ h1.tituloCategorias{
 	margin:25px 0 0 0 ;
 	font-size:0;
 }
-h1.tituloCategorias div.left{
-	width:60px;
-	height:35px;
-	display:inline-block;
-	background: url(images/1.png) no-repeat center;
-	vertical-align:top;
-}
-h1.tituloCategorias div.right{
-	width:60px;
-	height:35px;
-	display:inline-block;
-	background: url(images/2.png) no-repeat center;
-	vertical-align:top;
-}
+
 h1.tituloCategorias div.text{
 	display:inline-block;
 	vertical-align:top;
@@ -1763,249 +2240,7 @@ h1.tituloCategorias div.text{
 	font-size:30px; font-size:2.142Rem;
 	line-height:35px;
 }
-/*SOBRE NOSOTROS*/
-.GlobalSobre{
-		margin:20px 0 0 0;
-		font-size:0;
-		-moz-box-sizing: border-box;
-		-webkit-box-sizing: border-box;
-		-ms-box-sizing: border-box;
-		box-sizing: border-box;
-		position:relative;
-		padding:30px 0 0 0;
-		min-height:1203px;
-}
-.GlobalSobre .SobreSup{
-	position:absolute;
-	background: url(images/fondo_sobre.png) no-repeat;
-	top:-20px;
-	left:0;
-	z-index:10;
-}
-.GlobalSobre .SobreSup .PorQue{
-	width:640px;
-	vertical-align:top;
-	position:relative;
-}
-.GlobalSobre .SobreSup .Historia{
-	width:550px;
-	height:1100px;
-	vertical-align:top;
-	position:relative;
-}
-.GlobalSobre .SobreSup .Historia .FondoHistoria{
-	position:absolute;
-	background: url(images/fondo_historia.png) no-repeat;
-	top:75px;
-	height:1203px;
-	width:590px;
-	z-index:10;
-}
-.GlobalSobre .SobreSup .Historia .FondoHistoria .Titular{
-	display:block;
-	margin:340px 90px 20px 130px;
-	text-align:center;
-	font-size:20px; font-size:1.428Rem;
-	color:#584017;
-	line-height:24px;
-	font-family:'Della Respira', serif;
-	background: url(images/tituloIngredientesDR.png) no-repeat center;
-}
-.GlobalSobre .SobreSup .Historia .FondoHistoria .TextoGeneral{
-	display:block;
-	margin:0 155px 20px 195px;
-	text-align:justify;
-	color:#584017;
-	font-size:14px; font-size:1Rem;
-	line-height:16px;
-	font-family:'Open Sans', sans-serif;
-}
-.GlobalSobre .SobreSup .Historia .FondoHistoria .TituloRedes{
-	display:block;
-	margin:60px 155px 10px 195px;
-	text-align:justify;
-	color:#584017;
-	font-size:14px; font-size:1Rem;
-	line-height:16px;
-	font-family:'Open Sans', sans-serif;
-}
-.GlobalSobre .SobreSup .Historia .FondoHistoria .Redes{
-	display:block;
-	margin:0 155px 5px 195px;
-}
-.GlobalSobre .SobreSup .Historia .FondoHistoria .Redes a {
-	background: url(images/social.png) no-repeat;
-	width:23px;
-	height:23px;
-	margin-right:10px;
-	display: inline-block;
-}
-.GlobalSobre .SobreSup .Historia .FondoHistoria .Redes a.facebook {background-position: 0 -106px;}
-.GlobalSobre .SobreSup .Historia .FondoHistoria .Redes a.twitter {background-position: 0 -133px;}
-.GlobalSobre .SobreSup .Historia .FondoHistoria .Redes a.youtube {background-position: 0 -158px;}
 
-.GlobalSobre .SobreSup .Historia .FondoHistoria .Redes a.facebook:hover {background-position: 0   0px;}
-.GlobalSobre .SobreSup .Historia .FondoHistoria .Redes a.twitter:hover  {background-position: 0 -27px;}
-.GlobalSobre .SobreSup .Historia .FondoHistoria .Redes a.youtube:hover  {background-position: 0 -53px;}
-
-.GlobalSobre .SobreSup .Historia .FondoHistoria a.mailto{
-	display:block;
-	margin:0 155px 20px 195px;
-	font-weight:600;
-	color:#ac1636;
-	font-size:14px; font-size:1Rem;
-	line-height:16px;
-	text-decoration:none;
-}
-.GlobalSobre .SobreSup .PorQue .FondoPorQue{
-	position:absolute;
-	background: url(images/fondo_porque.png) no-repeat 0 230px;
-	left:60px;
-	height:1203px;
-	width:575px;
-	z-index:10;
-}
-.GlobalSobre .SobreSup .PorQue .FondoPorQue .Titular{
-	display:block;
-	margin:90px 0 15px 30px;
-	text-align:left;
-	font-size:30px; font-size:2.142Rem;
-	color:#ffcb5a;
-	line-height:30px;
-	font-family:'Della Respira', serif;
-}
-
-.GlobalSobre .SobreSup .PorQue .FondoPorQue .TextoGeneral1{
-	display:block;
-	margin:0 85px 65px 30px;
-	text-align:left;
-	color:#fff;
-	font-size:16px; font-size:1.142Rem;
-	line-height:18px;
-	font-family:'Open Sans', sans-serif;
-}
-
-.GlobalSobre .SobreSup .PorQue .FondoPorQue .TextoGeneral2{
-	display:block;
-	margin:0 285px 135px 30px;
-	text-align:left;
-	color:#fff;
-	font-size:16px; font-size:1.142Rem;
-	line-height:18px;
-	font-family:'Open Sans', sans-serif;
-}
-
-.GlobalSobre .SobreSup .PorQue .FondoPorQue .TextoGeneral3{
-	display:block;
-	margin:0 40px 55px 315px;
-	text-align:right;
-	color:#fff;
-	font-size:16px; font-size:1.142Rem;
-	line-height:18px;
-	font-family:'Open Sans', sans-serif;
-}
-
-.GlobalSobre .SobreSup .PorQue .FondoPorQue .TextoGeneral4{
-	display:block;
-	margin:0 350px 95px 30px;
-	text-align:left;
-	color:#fff;
-	font-size:16px; font-size:1.142Rem;
-	line-height:18px;
-	font-family:'Open Sans', sans-serif;
-}
-
-.GlobalSobre .SobreSup .PorQue .FondoPorQue .TextoGeneral5{
-	display:block;
-	margin:0 40px 75px 245px;
-	text-align:right;
-	color:#fff;
-	font-size:16px; font-size:1.142Rem;
-	line-height:18px;
-	font-family:'Open Sans', sans-serif;
-}
-.GlobalSobre .SobreSup .PorQue .FondoPorQue .TextoGeneral6{
-	display:block;
-	margin:0 85px 0 45px;
-	text-align:left;
-	color:#fff;
-	font-size:16px; font-size:1.142Rem;
-	line-height:18px;
-	font-family:'Open Sans', sans-serif;
-}
-.GlobalSobre .SobreSup .CitaFinal{
-	display:block;
-	width:90%;
-	font-size:24px; font-size:1.714Rem;
-	line-height:26px;
-	font-family:'Della Respira', serif;
-	text-align:center;
-	margin:0 auto;
-}
-.GlobalSobre .Libros{
-	display:block;
-	padding:125px;
-	background-color:#FFF;
-	-moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-}
-.GlobalSobre .Libros .Titulo{
-	display:block;
-	width:100%;
-	font-size:33px; font-size:2.357Rem;
-	line-height:25px;
-	font-family:'Della Respira', serif;
-	text-align:center;
-	color:#b10f2d;
-	margin-bottom:20px;
-}
-.GlobalSobre .Libros .TextoA{
-	display:block;
-	width:100%;
-	font-size:14px; font-size:1Rem;
-	line-height:16px;
-	font-family:'Open Sans', sans-serif;
-	text-align:center;
-	color:#45310f;
-	margin-bottom:60px;
-}
-.GlobalSobre .Libros .ContenidoL1{
-	vertical-align:top;
-}
-.GlobalSobre .Libros .ContenidoL2{
-	vertical-align:top;
-}
-.GlobalSobre .Libros .ContenidoL3{
-	vertical-align:top;
-}
-.GlobalSobre .Libros .FotoL{
-	display:block;
-	width:100%;
-	vertical-align:top;
-	margin-bottom:15px;
-}
-.GlobalSobre .Libros .Texto1{
-	display:block;
-	vertical-align:top;
-	color:#45310f;
-	font-size:14px; font-size:1Rem;
-	line-height:18px;
-	font-family:'Open Sans', sans-serif;
-	text-align:justify;
-	margin-bottom:90px;
-}
-.GlobalSobre .Libros .Texto3{
-	display:block;
-	vertical-align:top;
-	color:#45310f;
-	font-size:14px; font-size:1Rem;
-	line-height:18px;
-	font-family:'Open Sans', sans-serif;
-	text-align:justify;
-	margin-bottom:90px;
-}
 .P404{
 	width:650px;
 	height:650px;
