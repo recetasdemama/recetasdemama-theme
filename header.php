@@ -35,8 +35,6 @@
 
 	?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11" />
-<link href='http://fonts.googleapis.com/css?family=Della+Respira' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,800' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'template_url' ); ?>/styleDR.css" />
 <link rel="publisher" href="https://plus.google.com/101111441869338785722" />
 <?php if ( is_singular() && get_option( 'thread_comments' ) ) wp_enqueue_script( 'comment-reply' ); ?>
@@ -52,32 +50,6 @@
 <body <?php body_class(); ?>>
 <?php do_action( 'before' ); ?>
 <div id="wrap">
-	<?
-	if ( is_home() and !is_paged()) { 	
-		$sticky = get_option( 'sticky_posts' ); // Get all sticky posts
-		if (!empty($sticky)) {
-			?><div class="Contenidostickys"><?
-		  	rsort( $sticky ); // Sort the stickies, latest first
-		  	$sticky = array_slice( $sticky, 0, 3 ); // Number of stickies to show
-			$totalPostSticky=count($sticky);
-			$actualPostSticky=1;
-		  	query_posts( array( 'post__in' => $sticky, 'caller_get_posts' => 1 ) ); // The query
-		  	if (have_posts() ) { 
-			  	while ( have_posts() ) : the_post(); 
-					?>
-                    <div class="stickys Sticky-<?=$actualPostSticky;?>-<?=$totalPostSticky;?>">
-				  		<?php get_the_image( array( 'size' => 'full_img' ) ); ?>
-                        <a class="tit" href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'toolbox' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a>
-                    </div>
-			  		<?
-					$actualPostSticky++;
-                endwhile;
-		  	}
-		  	wp_reset_query();
-			?></div><?
-		}
-	}
-	?>
 	<header id="branding" role="banner">
 		<div class="page-wp relative">
 			
