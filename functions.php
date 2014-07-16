@@ -39,6 +39,7 @@ add_filter('the_excerpt', 'new_excerpt_more');
 /*
  * Añadimos tamaños de imagenes personalizados
  */
+add_image_size( 'extend_img', 1660, 1582, true);
 add_image_size( 'full_img', 630, 380, true);
 add_image_size( 'list_img', 180, 130, true);
 

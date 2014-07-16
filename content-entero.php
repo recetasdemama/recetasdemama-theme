@@ -10,7 +10,7 @@
     <div class="contenidoImg">
     	<div class="extend">
         	<a href="<?php the_permalink(); ?>" class="LinkTotal"></a>
-			<?php get_the_image( array( 'size' => 'full_img' ) ); ?>
+			<?php get_the_image( array( 'size' => 'extend_img' ) ); ?>
             <div class="ContenedorClip">
             	<div class="Clip"
                     <header class="entry-header">

@@ -6,7 +6,7 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class('single hrecipe'); ?>>
 	<div class="img-cabecera">
-		<?php get_the_image( array( 'size' => 'full_img', 'image_class' => 'photo') ); ?>
+		<?php get_the_image( array( 'size' => 'extend_img', 'image_class' => 'photo') ); ?>
         <div class="entry-categorias">
 			<?php echo get_the_category_list(); ?>
 		</div>
