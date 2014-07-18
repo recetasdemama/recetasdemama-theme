@@ -1,4 +1,29 @@
-@import url(http://fonts.googleapis.com/css?family=Della+Respira|Open+Sans:400,800,600);
+@charset 'UTF-8'
+
+@font-face {
+  font-family: 'Della Respira';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Della Respira'), local('DellaRespira-Regular'), url(http://fonts.gstatic.com/s/dellarespira/v3/F4E6Lo_IZ6L9AJCcbqtDVcm50xh7hW5sbYCmNlLTrHY.woff2) format('woff2'), url(http://fonts.gstatic.com/s/dellarespira/v3/F4E6Lo_IZ6L9AJCcbqtDVftOKfn-q1pHeFCOAPylEgI.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/cJZKeOuBrn4kERxqtaUH3bO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/MTP_ySUJH_bn48VBG8sNSqRDOzjiPcYnFooOUGCOsRk.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Open Sans Extrabold'), local('OpenSans-Extrabold'), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/EInbV5DfGHOiMmvb1Xr-hqRDOzjiPcYnFooOUGCOsRk.woff) format('woff');
+}
 
 /*RESPONSIVE */
 html{
@@ -2189,4 +2214,38 @@ h1.tituloCategorias div.text{
 .taxonomy-images-the-terms li {
     list-style-type:none;
     margin:0 10px 10px 0;
+}
+.yarpp_pro_msg{
+    border: 1px ridge #D0D0D0;
+    padding: 0.4em 2em 0.8em;
+    text-align: justify;
+}
+.yarpp_pro_msg strong{
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    color: orange;
+}
+.yarpp_help {
+    position: relative;
+    display: inline-block;
+    background: transparent url('../../../../wp-includes/images/wpicons.png') no-repeat -520px -20px;
+    vertical-align: text-bottom;
+    width: 20px;
+    height: 20px;
+}
+.yarpp_help_msg {
+    position: absolute;
+    left: 25px;
+    display: none;
+    border: 1px solid #D0D0D0;
+    width: 250px;
+    text-align: justify;
+    padding: 10px 15px;
+    background-color: #FFF;
+    box-shadow: 0 0 0.4em -0.15em #333;
+    z-index: 100;
+}
+.yarpp_help:hover .yarpp_help_msg{
+    display: block
 }
