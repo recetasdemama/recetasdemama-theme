@@ -445,3 +445,22 @@ add_filter( 'attachment_link', 'toolbox_enhanced_image_navigation' );
  * This theme was built with PHP, Semantic HTML, CSS, love, and a Toolbox.
  */
 
+
+/**
+ * Move JavaScript files to footer
+ */
+
+function rdm_load_scripts () {
+		if (!is_admin()) {
+			wp_deregister_script('comment-reply');
+			wp_deregister_script('jquery');
+
+		  wp_register_script('comment-reply', '/wp-includes/js/jquery/comment-reply.js', false, null, true);
+		  wp_register_script('jquery', '/wp-includes/js/jquery/jquery.js', false, null, true);
+
+			wp_enqueue_script('comment-reply');
+			wp_enqueue_script('jquery');
+		}
+}
+
+add_action('wp_enqueue_scripts', 'rdm_load_scripts');
