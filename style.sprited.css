@@ -2019,6 +2019,7 @@ footer#colophon a:hover {color: #FFF;border:0}
     line-height:22px;
     color:#FFF;
     font-weight:600;
+    background-repeat: no-repeat;
 }
 footer#colophon #sidebar-footer  h1.widget-title {
     padding:0 0 0 16px;
@@ -2110,6 +2111,7 @@ footer#colophon2 a:hover {color: #FFF;border:0}
 .caricatura{
     background-image: url(images/rdm_sprite.png);
     background-position: 495px -858px;
+    background-repeat: no-repeat;
 }
 #sidebar-footer .Wantes{
     width:20%;
@@ -2263,3 +2265,4 @@ h1.tituloCategorias div.text{
 .yarpp_help:hover .yarpp_help_msg{
     display: block
 }
+#infscr-loading { text-align: center; }
