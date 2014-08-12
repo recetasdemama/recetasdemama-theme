@@ -37,5 +37,9 @@
 </footer><!-- #colophon2 -->
 
 <?php wp_footer(); ?>
+<?php if(is_home() || is_page_template("category-list.php") || is_single() || is_category() || is_tag()){ ?>
+    <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'template_url' ); ?>/style.sprited.min.css" />
+<?php } ?>
+
 </body>
 </html>

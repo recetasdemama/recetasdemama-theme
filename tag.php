@@ -8,59 +8,66 @@
 
 get_header(); ?>
 
-		<section id="primary">
-			<div id="content" role="main">
+<?php  $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
 
-			<?php if ( have_posts() ) : ?>
+<?php if ( is_active_sidebar( 'sidebar-header' ) ) : ?>
+    <div id="sidebar-header" class="widget-area" role="complementary">
+        <?php dynamic_sidebar( 'sidebar-header' ); ?>
+    </div>
+<?php endif; ?>
 
-				<header class="page-header">
-					<h1 class="page-title"><?php
-						printf( __( 'Tag Archives: %s', 'toolbox' ), '<span>' . single_tag_title( '', false ) . '</span>' );
-					?></h1>
+    <h1 class="page-title tituloCategorias">
+        <div class="left"></div>
+        <?php
+        echo '<div class="text">' . single_tag_title( '', false ) . '</div>' ;
+        ?><div class="right"></div></h1>
 
-					<?php
-						$tag_description = tag_description();
-						if ( ! empty( $tag_description ) )
-							echo apply_filters( 'tag_archive_meta', '<div class="tag-archive-meta">' . $tag_description . '</div>' );
-					?>
-				</header>
 
-				<?php rewind_posts(); ?>
+<div class="global" id="content" role="main">
+    <?php
+    $i = 0; // Variable para contar post
+    $est=2; //variable para saber si tengo que poner post entero
+    $iMini = 0; // Variable para contar post
 
-				<?php toolbox_content_nav( 'nav-above' ); ?>
+    query_posts( 'tag='. single_cat_title("",false) .'&posts_per_page=5&paged='. $paged );
+    if ( have_posts() ) :
+    /* Start the Loop */
+    while ( have_posts() ) : the_post();
+        if($i==$est){
+            get_template_part( 'content-entero', get_post_format() );
+            if($est==2){
+                $est+=4;
+            }else{
+                $est+=5;
+            }
 
-				<?php /* Start the Loop */ ?>
-				<?php while ( have_posts() ) : the_post(); ?>
+        }else{
+            if($i==4){
+                if ( is_active_sidebar( 'posts-ad-banner' ) ){
+                    ?><div class="PublicidadEntrePost"><?
+                    dynamic_sidebar( 'posts-ad-banner' );
+                    ?></div><?
+                }
+            }
+            get_template_part( 'content-basico', get_post_format() );
+        }
+        $i++;
+        //get_template_part('content-list', get_post_format());
+    endwhile;  ?>
+    <div class="clear"></div>
+    <?php toolbox_content_nav( 'nav-below' );
+    else : ?>
+        <article id="post-0" class="post no-results not-found">
+            <header class="entry-header">
+                <h1 class="entry-title"><?php _e( 'Nothing Found', 'toolbox' ); ?></h1>
+            </header><!-- .entry-header -->
 
-					<?php
-						/* Include the Post-Format-specific template for the content.
-						 * If you want to overload this in a child theme then include a file
-						 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-						 */
-						get_template_part( 'content', get_post_format() );
-					?>
+            <div class="entry-content">
+                <p><?php _e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'toolbox' ); ?></p>
+                <?php get_search_form(); ?>
+            </div><!-- .entry-content -->
+        </article><!-- #post-0 -->
+    <?php endif; ?>
 
-				<?php endwhile; ?>
-
-				<?php toolbox_content_nav( 'nav-below' ); ?>
-
-			<?php else : ?>
-
-				<article id="post-0" class="post no-results not-found">
-					<header class="entry-header">
-						<h1 class="entry-title"><?php _e( 'Nothing Found', 'toolbox' ); ?></h1>
-					</header><!-- .entry-header -->
-
-					<div class="entry-content">
-						<p><?php _e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'toolbox' ); ?></p>
-						<?php get_search_form(); ?>
-					</div><!-- .entry-content -->
-				</article><!-- #post-0 -->
-
-			<?php endif; ?>
-
-			</div><!-- #content -->
-		</section><!-- #primary -->
-
-<?php get_sidebar('single'); ?>
+</div><!-- #content -->
 <?php get_footer(); ?>
