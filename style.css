@@ -77,13 +77,13 @@ article.single .img-cabecera img{
     margin: 0;
     padding-left: 0;
 }
-#access li#menu-item-8700{
+#access li:last-child{
     display: block;
     margin:0 0 0 0;
     height:auto;
     background-color:#fc7700;
 }
-#access li#menu-item-8700:hover{
+#access li:last-child:hover{
     background-color:#c25c00;
 }
 #access li#menu-item-8697{
@@ -883,18 +883,18 @@ h1.tituloCategorias div.right{
         padding-left: 0;
         display:block;
     }
-    #access li#menu-item-8700{
+    #access li:last-child{
         display: inline-block;
         margin:0 0 0 0;
         height:auto;
         background-color:#fc7700;
     }
-    #access li#menu-item-8700:hover{
+    #access li:last-child:hover{
         background-color:#c25c00;
     }
-    #access li#menu-item-8700 a{
+    #access li:last-child a{
     }
-    #access li#menu-item-8700 a:hover{
+    #access li:last-child a:hover{
         background-color:transparent;
     }
     #access li#menu-item-8697{
