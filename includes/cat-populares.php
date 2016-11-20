@@ -1,6 +1,10 @@
 <?php
 class Popular_Cats extends WP_Widget {
-	function Popular_Cats() { parent::WP_Widget(false, 'Categorías destacadas'); }
+	function __construct() { parent::WP_Widget(false, 'Categorías destacadas'); }
+
+	function Popular_Cats() {
+		self::__construct();
+	}
 
 	function form($instance) {
 		/* Options of the widget */

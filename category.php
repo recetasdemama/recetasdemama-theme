@@ -22,7 +22,7 @@ get_header(); ?>
 					?><div class="right"></div></h1>
 <div class="global" id="content" role="main">
 
-	<?php 
+	<?php
 	$i = 0; // Variable para contar post
 	$est=2; //variable para saber si tengo que poner post entero
 	$iMini = 0; // Variable para contar post
@@ -43,16 +43,17 @@ get_header(); ?>
 
             }else{
                 if($i==4){
-                    if ( is_active_sidebar( 'posts-ad-banner' ) ){
-                        ?><div class="PublicidadEntrePost"><?
-                        dynamic_sidebar( 'posts-ad-banner' );
-                        ?></div><?
+                    if ( is_active_sidebar( 'posts-ad-banner' ) ){?>
+                    <div class="PublicidadEntrePost">
+                        <?php dynamic_sidebar( 'posts-ad-banner' ); ?>
+                        </div>
+                    <?php
                     }
                 }
                 get_template_part( 'content-basico', get_post_format() );
 				}
 				$i++;
-				//get_template_part('content-list', get_post_format()); 			
+				//get_template_part('content-list', get_post_format());
 		endwhile;  ?>
 		<div class="clear"></div>
 		<?php toolbox_content_nav( 'nav-below' );
@@ -61,7 +62,7 @@ get_header(); ?>
             <header class="entry-header">
                 <h1 class="entry-title"><?php _e( 'Nothing Found', 'toolbox' ); ?></h1>
             </header><!-- .entry-header -->
-      
+
             <div class="entry-content">
                 <p><?php _e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'toolbox' ); ?></p>
                 <?php get_search_form(); ?>

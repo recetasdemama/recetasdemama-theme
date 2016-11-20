@@ -1,7 +1,11 @@
 <?php
 class Siguenos_Wg extends WP_Widget {
-	function Siguenos_Wg() { parent::WP_Widget(false, 'Siguenos'); }
-	
+	function __construct() { parent::WP_Widget(false, 'Siguenos'); }
+
+	function Siguenos_Wg() {
+		self::__construct();
+	}
+
 	function update($new_instance, $old_instance) { return $new_instance; }
 
 	function form($instance) {
@@ -36,7 +40,7 @@ class Siguenos_Wg extends WP_Widget {
 
 		// Print everything
 		echo $args['before_widget'];
-		echo $args['before_title'] . $args['title'] . $args['after_title']; 
+		echo $args['before_title'] . $args['title'] . $args['after_title'];
 		?>
 		<ul class="social">
 			<li class="facebook"><a href="<?=$args['facebook']?>">Facebook</a></li>
@@ -44,7 +48,7 @@ class Siguenos_Wg extends WP_Widget {
 			<li class="youtube"><a href="<?=$args['youtube']?>">Youtube</a></li>
 			<li class="rss"><a href="<?=$args['rss']?>">RSS</a></li>
 		</ul>
-		<?php 
+		<?php
 		echo $args['after_widget'];
 	}
 }

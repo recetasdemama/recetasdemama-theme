@@ -43,10 +43,11 @@ get_header(); ?>
 
         }else{
             if($i==4){
-                if ( is_active_sidebar( 'posts-ad-banner' ) ){
-                    ?><div class="PublicidadEntrePost"><?
-                    dynamic_sidebar( 'posts-ad-banner' );
-                    ?></div><?
+                if ( is_active_sidebar( 'posts-ad-banner' ) ){ ?>
+                    <div class="PublicidadEntrePost">
+                    <?php dynamic_sidebar( 'posts-ad-banner' ); ?>
+                    </div>
+                    <?php
                 }
             }
             get_template_part( 'content-basico', get_post_format() );
