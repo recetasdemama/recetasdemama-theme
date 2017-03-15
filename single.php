@@ -12,7 +12,7 @@ get_header(); ?>
 		<?php dynamic_sidebar( 'sidebar-header' ); ?>
 	</div>
 <?php endif; ?>
-		
+
 			<div class="global contenidosingle" id="content" role="main">
 
 			<?php while ( have_posts() ) : the_post(); ?>
