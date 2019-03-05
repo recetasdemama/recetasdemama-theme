@@ -1,7 +1,7 @@
 <?php
 /*
  *  Get First image from post
- */ 
+ */
 include 'includes/get-the-image.php';
 
 /*
@@ -22,7 +22,7 @@ include 'includes/cat-populares.php';
 /*
  * Añadimos soporte para miniaturas por post
  */
-add_theme_support( 'post-thumbnails' ); 
+add_theme_support( 'post-thumbnails' );
 
 /*
  * Modificamos the_excerpt para añadir enlace final
@@ -52,7 +52,7 @@ function recetasdemama_remove_pagination_on_category_and_search_pages($query){
       }
 	  if( $query->is_main_query() && is_home()){
 		  $query->set('ignore_sticky_posts', 1);
-			 
+
 	  }
 }
 add_action('pre_get_posts','recetasdemama_remove_pagination_on_category_and_search_pages');
@@ -447,20 +447,14 @@ add_filter( 'attachment_link', 'toolbox_enhanced_image_navigation' );
 
 
 /**
- * Move JavaScript files to footer
+ * Unload JavaScript
  */
 
-function rdm_load_scripts () {
-		if (!is_admin()) {
-			wp_deregister_script('comment-reply');
-			wp_deregister_script('jquery');
-
-		  wp_register_script('comment-reply', '/wp-includes/js/jquery/comment-reply.js', false, null, true);
-		  wp_register_script('jquery', '/wp-includes/js/jquery/jquery.js', false, null, true);
-
-			wp_enqueue_script('comment-reply');
-			wp_enqueue_script('jquery');
-		}
+function rdm_unload_scripts () {
+	if (!is_admin()) {
+		wp_deregister_script('comment-reply');
+		wp_deregister_script('jquery');
+	}
 }
 
-add_action('wp_enqueue_scripts', 'rdm_load_scripts');
+add_action('wp_enqueue_scripts', 'rdm_unload_scripts');
