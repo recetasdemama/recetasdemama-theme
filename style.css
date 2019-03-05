@@ -1,12 +1,5 @@
 @charset 'UTF-8'
 
-@font-face {
-  font-family: 'Della Respira';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Della Respira'), local('DellaRespira-Regular'), url(http://fonts.gstatic.com/s/dellarespira/v3/F4E6Lo_IZ6L9AJCcbqtDVcm50xh7hW5sbYCmNlLTrHY.woff2) format('woff2'), url(http://fonts.gstatic.com/s/dellarespira/v3/F4E6Lo_IZ6L9AJCcbqtDVftOKfn-q1pHeFCOAPylEgI.woff) format('woff');
-}
-
 /*RESPONSIVE */
 html{
     font-size:14px;
@@ -359,7 +352,7 @@ nav#nav-below .nav-next a{
     font-size:20px; font-size:1.428Rem;
     color:#584017;
     line-height:24px;
-    font-family:'Della Respira', serif;
+    font-family:'Georgia', serif;
     background: url(images/tituloIngredientesDR.png) no-repeat center;
 }
 .GlobalSobre .SobreSup .Historia .FondoHistoria .TextoGeneral{
@@ -423,7 +416,7 @@ nav#nav-below .nav-next a{
     font-size:30px; font-size:2.142Rem;
     color:#ffcb5a;
     line-height:30px;
-    font-family:'Della Respira', serif;
+    font-family:'Georgia', serif;
 }
 
 .GlobalSobre .SobreSup .PorQue .FondoPorQue .TextoGeneral1{
@@ -489,7 +482,7 @@ nav#nav-below .nav-next a{
     width:90%;
     font-size:24px; font-size:1.714Rem;
     line-height:26px;
-    font-family:'Della Respira', serif;
+    font-family:'Georgia', serif;
     text-align:center;
     margin:0 auto;
 }
@@ -506,7 +499,7 @@ nav#nav-below .nav-next a{
     width:100%;
     font-size:33px; font-size:2.357Rem;
     line-height:25px;
-    font-family:'Della Respira', serif;
+    font-family:'Georgia', serif;
     text-align:center;
     color:#b10f2d;
     margin-bottom:20px;
@@ -1129,7 +1122,7 @@ HEADER
 
 #access a {
     color: #fff;
-    font-family:'Della Respira', serif;
+    font-family:'Georgia', serif;
     text-decoration: none;
     display: block;
 }
@@ -1238,7 +1231,7 @@ CONTENT
     font-size:20px; font-size:1.428Rem;
     line-height:20px;
     text-align:left;
-    font-family:'Della Respira', serif;
+    font-family:'Georgia', serif;
     padding:10px 0 10px 0;
     margin:0;
 }
@@ -1303,7 +1296,7 @@ article.entero .contenidoImg .extend .ContenedorClip .Clip h1 a{
     font-weight:normal;
     font-size:20px; font-size:1.428Rem;
     line-height:20px;
-    font-family:'Della Respira', serif;
+    font-family:'Georgia', serif;
 }
 article.entero .contenidoImg .extend .ContenedorClip .Clip .entry-content{
     display:block;
@@ -1341,7 +1334,7 @@ article.basico h1 a{
     font-weight:normal;
     font-size:26px; font-size:1.857Rem;
     line-height:26px;
-    font-family:'Della Respira', serif;
+    font-family:'Georgia', serif;
     position:absolute;
     bottom:0;
 }
@@ -1417,7 +1410,7 @@ article.basico .entry-content a.more-link{
     font-weight:normal;
     font-size:25px; font-size:1.785Rem;
     line-height:25px;
-    font-family:'Della Respira', serif;
+    font-family:'Georgia', serif;
     padding:0;
 }
 .global#content article.mini, #related_posts article{
@@ -1433,7 +1426,7 @@ article.mini h1 a, #related_posts article h1 a{
     font-weight:normal;
     font-size:17px; font-size:1.214Rem;
     line-height:17px;
-    font-family:'Della Respira', serif;
+    font-family:'Georgia', serif;
     padding:15px 0 0 0;
     display:block;
     text-align:left;
@@ -1502,7 +1495,7 @@ article.single .entry-header h1{
     font-size:34px; font-size:2.428Rem;
     line-height:34px;
     text-align:center;
-    font-family:'Della Respira', serif;
+    font-family:'Georgia', serif;
     padding:0;
     margin:20px 0 10px 0;
 }
@@ -1604,7 +1597,7 @@ article.single.hrecipe .Cinstructions h3{
     font-size:24px; font-size:1.714Rem;
     line-height:24px;
     text-align:left;
-    font-family:'Della Respira', serif;
+    font-family:'Georgia', serif;
     padding:0;
     margin:20px 0 10px 0;
 }
@@ -1742,7 +1735,7 @@ article.single.hrecipe .Cingredients h3{
     font-size:24px; font-size:1.714Rem;
     line-height:24px;
     text-align:center;
-    font-family:'Della Respira', serif;
+    font-family:'Georgia', serif;
     padding:10px 0 10px 0;
     margin:0 0 10px 0;
     border-top:#ffe5ba 1px solid;
@@ -1805,7 +1798,7 @@ article.single.hrecipe .Cingredients h3{
     font-size:20px; font-size:1.428Rem;
     line-height:20px;
     text-align:left;
-    font-family:'Della Respira', serif;
+    font-family:'Georgia', serif;
     padding:10px 0 10px 0;
     margin:0;
 }
@@ -1816,7 +1809,7 @@ article.single.hrecipe .Cingredients h3{
     font-size:20px!important; font-size:1.428Rem!important;
     line-height:20px!important;
     text-align:right!important;
-    font-family:'Della Respira', serif!important;
+    font-family:'Georgia', serif!important;
     padding:0 0 10px 0!important;
     margin:0!important;
 }
@@ -2150,7 +2143,7 @@ footer#colophon2 a:hover {color: #FFF;border:0}
 h1.tituloCategorias{
     color: #6B0C1A;
     font-weight: normal;
-    font-family: 'Della Respira', serif;
+    font-family: 'Georgia', serif;
     display:block;
     text-align:center;
     margin:25px 0 0 0 ;
