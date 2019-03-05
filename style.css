@@ -6,12 +6,6 @@
   font-weight: 400;
   src: local('Della Respira'), local('DellaRespira-Regular'), url(http://fonts.gstatic.com/s/dellarespira/v3/F4E6Lo_IZ6L9AJCcbqtDVcm50xh7hW5sbYCmNlLTrHY.woff2) format('woff2'), url(http://fonts.gstatic.com/s/dellarespira/v3/F4E6Lo_IZ6L9AJCcbqtDVftOKfn-q1pHeFCOAPylEgI.woff) format('woff');
 }
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Open Sans'), local('OpenSans'), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/cJZKeOuBrn4kERxqtaUH3bO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
-}
 
 /*RESPONSIVE */
 html{
@@ -375,7 +369,7 @@ nav#nav-below .nav-next a{
     color:#584017;
     font-size:14px; font-size:1Rem;
     line-height:16px;
-    font-family:'Open Sans', sans-serif;
+    font-family:'Verdana', sans-serif;
 }
 .GlobalSobre .SobreSup .Historia .FondoHistoria .TituloRedes{
     display:block;
@@ -384,7 +378,7 @@ nav#nav-below .nav-next a{
     color:#584017;
     font-size:14px; font-size:1Rem;
     line-height:16px;
-    font-family:'Open Sans', sans-serif;
+    font-family:'Verdana', sans-serif;
 }
 .GlobalSobre .SobreSup .Historia .FondoHistoria .Redes{
     display:block;
@@ -439,7 +433,7 @@ nav#nav-below .nav-next a{
     color:#fff;
     font-size:16px; font-size:1.142Rem;
     line-height:18px;
-    font-family:'Open Sans', sans-serif;
+    font-family:'Verdana', sans-serif;
 }
 
 .GlobalSobre .SobreSup .PorQue .FondoPorQue .TextoGeneral2{
@@ -449,7 +443,7 @@ nav#nav-below .nav-next a{
     color:#fff;
     font-size:16px; font-size:1.142Rem;
     line-height:18px;
-    font-family:'Open Sans', sans-serif;
+    font-family:'Verdana', sans-serif;
 }
 
 .GlobalSobre .SobreSup .PorQue .FondoPorQue .TextoGeneral3{
@@ -459,7 +453,7 @@ nav#nav-below .nav-next a{
     color:#fff;
     font-size:16px; font-size:1.142Rem;
     line-height:18px;
-    font-family:'Open Sans', sans-serif;
+    font-family:'Verdana', sans-serif;
 }
 
 .GlobalSobre .SobreSup .PorQue .FondoPorQue .TextoGeneral4{
@@ -469,7 +463,7 @@ nav#nav-below .nav-next a{
     color:#fff;
     font-size:16px; font-size:1.142Rem;
     line-height:18px;
-    font-family:'Open Sans', sans-serif;
+    font-family:'Verdana', sans-serif;
 }
 
 .GlobalSobre .SobreSup .PorQue .FondoPorQue .TextoGeneral5{
@@ -479,7 +473,7 @@ nav#nav-below .nav-next a{
     color:#fff;
     font-size:16px; font-size:1.142Rem;
     line-height:18px;
-    font-family:'Open Sans', sans-serif;
+    font-family:'Verdana', sans-serif;
 }
 .GlobalSobre .SobreSup .PorQue .FondoPorQue .TextoGeneral6{
     display:block;
@@ -488,7 +482,7 @@ nav#nav-below .nav-next a{
     color:#fff;
     font-size:16px; font-size:1.142Rem;
     line-height:18px;
-    font-family:'Open Sans', sans-serif;
+    font-family:'Verdana', sans-serif;
 }
 .GlobalSobre .SobreSup .CitaFinal{
     display:block;
@@ -522,7 +516,7 @@ nav#nav-below .nav-next a{
     width:100%;
     font-size:14px; font-size:1Rem;
     line-height:16px;
-    font-family:'Open Sans', sans-serif;
+    font-family:'Verdana', sans-serif;
     text-align:center;
     color:#45310f;
     margin-bottom:60px;
@@ -548,7 +542,7 @@ nav#nav-below .nav-next a{
     color:#45310f;
     font-size:14px; font-size:1Rem;
     line-height:18px;
-    font-family:'Open Sans', sans-serif;
+    font-family:'Verdana', sans-serif;
     text-align:justify;
     margin-bottom:90px;
 }
@@ -558,7 +552,7 @@ nav#nav-below .nav-next a{
     color:#45310f;
     font-size:14px; font-size:1Rem;
     line-height:18px;
-    font-family:'Open Sans', sans-serif;
+    font-family:'Verdana', sans-serif;
     text-align:justify;
     margin-bottom:90px;
 }
@@ -1097,7 +1091,7 @@ cite{
 body {
     margin: 0;
     line-height:14px;
-    font-family:'Open Sans', sans-serif;
+    font-family:'Verdana', sans-serif;
     color: #7F7E79;
     background-color:#fff2e2;
 }
