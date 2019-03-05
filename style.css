@@ -18,12 +18,6 @@
   font-weight: 600;
   src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/MTP_ySUJH_bn48VBG8sNSqRDOzjiPcYnFooOUGCOsRk.woff) format('woff');
 }
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 800;
-  src: local('Open Sans Extrabold'), local('OpenSans-Extrabold'), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/EInbV5DfGHOiMmvb1Xr-hqRDOzjiPcYnFooOUGCOsRk.woff) format('woff');
-}
 
 /*RESPONSIVE */
 html{
@@ -837,7 +831,7 @@ h1.tituloCategorias div.right{
     }
 
 }
-/*@media screen and (max-width:640px){ 
+/*@media screen and (max-width:640px){
 	html{
 		font-size:16px;
 	}
@@ -859,14 +853,14 @@ h1.tituloCategorias div.right{
 	.global#content article.entero{
 		position:relative;
 	}
-	
+
 	.GlobalSobre .SobreSup{
 		width:640px;
 	}
 	.GlobalSobre .Libros{
 		width:640px;
 	}
-	
+
 }*/
 @media screen and (min-width:700px){
     .global#content article.basico, .global#content .PublicidadEntrePost{
@@ -1126,7 +1120,7 @@ header, nav, article, footer, address {
     display:block;
 }
 /*///////////////////////////////////////////////////////
-HEADER 
+HEADER
 ///////////////////////////////////////////////////////*/
 #branding {
     background:url(images/fondo-rojo.jpg) repeat #a91231;
