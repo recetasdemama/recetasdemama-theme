@@ -451,3 +451,19 @@ function rdm_unload_scripts () {
 	}
 }
 
+/**
+ * Unload CSS
+ */
+add_filter('taxonomy-images-disable-public-css', '__return_true' );
+
+add_action( 'wp_print_styles', 'rdm_deregister_yarpp_header_styles' );
+function rdm_deregister_yarpp_header_styles() {
+   wp_dequeue_style('yarppWidgetCss');
+   // Next line is required if the related.css is loaded in header when disabled in footer.
+   wp_deregister_style('yarppRelatedCss');
+}
+
+add_action( 'wp_footer', 'rdm_deregister_yarpp_footer_styles' );
+function rdm_deregister_yarpp_footer_styles() {
+   wp_dequeue_style('yarppRelatedCss');
+}
