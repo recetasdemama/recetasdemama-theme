@@ -9,7 +9,7 @@
 	</div><!-- .entry-content -->
     <div class="contenidoImg">
     	<div class="extend">
-        	<a href="<?php the_permalink(); ?>" class="LinkTotal"></a>
+        	<a href="<?php the_permalink(); ?>" class="LinkTotal" title="<?php printf( esc_attr__( 'Permalink to %s', 'toolbox' ), the_title_attribute( 'echo=0' ) ); ?>"></a>
 			<?php get_the_image( array( 'size' => 'extend_img' ) ); ?>
             <div class="ContenedorClip">
             	<div class="Clip"
@@ -30,7 +30,7 @@
             </div>
         </div>
         <div class="inf">
-			
+
         </div>
    	</div>
 </article>
