@@ -440,12 +440,6 @@ function toolbox_enhanced_image_navigation( $url ) {
 }
 add_filter( 'attachment_link', 'toolbox_enhanced_image_navigation' );
 
-
-/**
- * This theme was built with PHP, Semantic HTML, CSS, love, and a Toolbox.
- */
-
-
 /**
  * Unload JavaScript
  */
