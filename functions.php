@@ -443,7 +443,7 @@ add_filter( 'attachment_link', 'toolbox_enhanced_image_navigation' );
 /**
  * Unload JavaScript
  */
-
+add_action('wp_enqueue_scripts', 'rdm_unload_scripts');
 function rdm_unload_scripts () {
 	if (!is_admin()) {
 		wp_deregister_script('comment-reply');
@@ -451,4 +451,3 @@ function rdm_unload_scripts () {
 	}
 }
 
-add_action('wp_enqueue_scripts', 'rdm_unload_scripts');
